@@ -1,0 +1,2259 @@
+一楼、学习笔记：
+
+[注：以后如果内容有改动，会用彩色文本标注，以便查阅，如果是改错字或改笔误，则仍使用黑色文本]
+
+==============================
+
+学习 Grub4Dos（最好在虚拟机中进行练习，以免损坏电脑中的系统和文件）
+
+==============================
+
+下载 Grub4Dos：
+
+http://code.google.com/p/grub4dos-chenall/downloads/list
+
+==============================
+
+版本 0.4.5c 和 0.4.6a 的区别：
+
+0.4.5c 是稳定版。0.4.6a 处于 alpha 测试阶段。但是，这个系列有新功能，比如，支持微软的 exFAT 文件系统。0.4.6 最大的改动是启动代码，比如，grldr.mbr，bootlace.com 之类的。
+
+差别主要在启动代码，即自举 grldr 。
+0.4.6a 可以从 exFAT 文件系统启动（原内核已支持exFAT 文件系统）；
+0.4.6a 可以从 ext4 文件系统启动；
+0.4.6a 可以在启动之初（加载 grldr 之前）加载 usb2.0 驱动，使被 BIOS 识别为软盘的 u 盘支持 LBA  读写；
+0.4.6a 可以支持 udf 格式的光盘，可以支持 iso9600 扩展的 Joliet 格式，并启动之（修改了内核，正在优化中，近期发布）。
+
+因为 Grub4Dos 还在不断的完善，所以上面的信息也不一定完全准确。
+
+要稳定就用 0.4.5c，要支持更多的磁盘格式就用 0.4.6a。
+
+==============================
+
+进入 Grub4Dos 的方法：
+
+1、将下载的 grub4dos 压缩包解压
+
+2、创建执行环境：
+
+方法一：用 FbinstTool 创建一个 fba 文件，然后将解压后的文件拖拽到 fba 的根目录中，启动 Qemu 虚拟机，进入 Grub4Dos 环境（你要会用 FbinstTool）。
+
+方法二：在纯 DOS 下运行解压后的 grub.exe，进入 Grub4Dos 环境（你要会用纯 DOS）。
+
+方法三：将解压后的文件复制到 C 盘根目录，然后在 ntldr 的配置文件 boot.ini 中添加 C:\grldr="进入 GRUB4DOS"，重启系统，选择 "进入 GRUB4DOS" 菜单项，进入 Grub4Dos 环境（你要有 ntldr 引导的分区，或者 WinXP 系统）。
+
+方法四：将解压后的文件复制到 U 盘或硬盘任意分区的根目录中，然后用 BootICE 修改 U 盘或硬盘的主引导记录为 Grub4Dos，从 U 盘或硬盘启动，进入 Grub4Dos 环境（你要会用 BootICE）。
+
+方法五：其它 ...
+
+==============================
+
+学习方法（一共83个命令）：
+
+在启动 Grub4Dos 的过程中不停的按 c 键，进入 Grub4Dos 的命令行模式，通过手动输入命令来学习 Grub4Dos。
+
+学习过程中参考 Grub4Dos 0.4.5c 的帮助文档：
+http://bbs.wuyou.net/forum.php?m ... &extra=page%3D1
+
+Grub4Dos 命令要区分大小写，路径不区分大小写。
+
+Tab 键可以实现命令或文件名补全
+
+在终端中一条一条的输入下面的命令进行学习
+
+==========================================================================================
+
+先学习这些命令（16个）：
+
+ls、find、root、rootnoverify、map、cdrom、cat、cmp、dd、write、read、calc、checktime、echo、pager、clear
+
+==============================
+
+ls
+类似 Linux 中的 ls 命令，类似 Dos 下的 dir 命令，列出当前目录（工作目录）下的文件和目录
+
+ls /boot
+列出当前目录（工作目录）下名称以 boot 开头的文件和目录，不要用 ls boot，它只在根目录下有效。
+
+ls /boot/
+列出当前目录下 boot 目录中的文件和目录，不要用 ls boot/，它只在根目录下有效。
+
+ls (hd0,0)/
+列出 (hd0,0) 中的文件和目录，不要用 ls (hd0,0)，它只在 (hd0,0) 为当前磁盘时有效。
+
+ls dev
+列出所有驱动器列表（驱动器不包括分区）
+
+ls /boot/ > nul && echo exist
+判断目录 /boot/ 是否存在，如果存在，则输出 exist（这个方法对空目录无效）
+
+ls /boot > nul && echo exist ! echo not exist
+判断当前目录（工作目录）中是否存在文件名以 boot 开头的文件或目录，如果存在，则输出 exist，否则输出 not exist
+
+ls (hd0,0)/boot/ > nul && echo exist ! echo not exist
+判断目录 (hd0,0)/boot/ 是否存在，如果存在，则输出 exist，否则输出 not exist
+
+[注意：若文件夹下无任何文件，对 ls 命令而言，认为该文件夹不存在。]
+
+[注意：由于 (ud) 中不存在目录，所谓的目录只是带 / 的文件名所产生的假象，所以 ls (ud)/ 时，会列出 (ud) 中的所有文件，但是 ls (ud)/boot/ 却可以列出 /boot/ 下的所有文件，因为这些文件的文件名都是以 /boot/ 开头]
+
+==============================
+
+debug on
+find
+列出所有磁盘（磁盘包括分区）（debug off 静默模式下无法显示磁盘列表）
+
+debug on
+find +1
+列出文件系统已知的所有磁盘（debug off 静默模式下无法显示磁盘列表）
+
+debug on
+find checkrange 0x07 parttype
+列出分区类型为 0x07（NTFS）的所有分区（debug off 静默模式下无法显示磁盘列表）
+
+find /ntldr checkrange 0x07 parttype
+在分区类型为 0x07（NTFS）的分区中查找 /ntldr 文件，并列出找到的分区。
+
+find --set-root /ntldr
+查找包含 /ntldr 文件的设备，把第一个找到的设备设为当前设备。
+
+find --set-root --ignore-floppies --ignore-cd /ntldr
+查找包含 /ntldr 文件的设备，把第一个找到的设备设为当前设备。忽略软盘和光盘。
+
+find --set-root --devices=upnhcf /ntldr
+查找包含 /ntldr 文件的设备，把第一个找到的设备设为当前设备。指定查找顺序：ud，pxe，网络设备，硬盘，光盘，软盘
+
+find --set-root --devices=upnh /ntldr
+查找包含 /ntldr 文件的设备，把第一个找到的设备设为当前设备。指定查找顺序，并忽略软盘和光盘。
+
+find --set-root ls /grub/
+查找包含 /grub/ 目录的设备，把第一个找到的设备设为当前设备。/grub/ 目录不能为空，否则会忽略该目录。
+
+debug on
+find --set-root makeactive --status 
+查找活动主分区，把第一个找到的设备设为当前设备。（debug off 静默模式下无法显示磁盘列表）
+
+find --set-root=/boot/grub /boot/grub/menu.lst 
+查找包含 /boot/grub/menu.lst  的设备，把第一个找到的设备设为当前设备，并将工作目录设置为 /boot/grub
+
+[注意：查找的时候会优先查找当前设备（如果在列表中的话），不再查找 (hdx) 设备，仍会查找 (hdx,y) 设备]
+
+[题外话：如果 find 支持 find /FILE 和 find /DIR/ 就好了，这样可以实现更精确的查找。]
+
+==============================
+
+root
+显示当前设备名称及其相关信息。
+
+root (hd0,0)
+将 (hd0,0) 作为当前磁盘，工作目录为 /，效果和 root (hd0,0)/ 一样。
+
+root (hd-1,0)
+将 (hd-1,0) 作为当前磁盘，工作目录为 /，效果和 root (hd-1,0)/ 一样
+
+root (hd0,0)/boot
+将 (hd0,0) 作为当前磁盘，工作目录为 /BOOT，效果和 root (hd0,0)/boot/ 一样。
+
+root ()/boot
+修改工作目录为当前磁盘下的 /BOOT 目录，效果和 root ()/boot/ 一样。
+
+root (hd0,0) > nul && echo ok ! echo fail
+root (hd0,0) > nul || echo fail ! echo ok
+将 (hd0,0) 设置为当前设备，如果成功，则输出 ok，如果不成功，则输出 fail。（上面两条命令效果相同）
+
+==============================
+
+rootnoverify (hd0,0)
+相当于 root (hd0,0)，但不测试安装该分区。这用于有些系统装在 GRUB 能访问的磁盘区之外, 但仍需要设置正确的根分区的情况。有些需要安装分区才能确定的参数可能会有问题。
+
+下面的命令可以正确执行，但是换成 root 就不行了：
+
+rootnoverify (hd0)
+chainloader +1
+boot
+
+[题外话：这个命令如果改成 root --nv (hd0) 或许更简单一些，输入字符也少一些]
+
+==============================
+
+设备类型：
+
+(fd0)       第一个软盘
+(fd1)       第二个软盘
+
+(hd0)       第一个硬盘
+(hd1)       第二个硬盘
+(hd-1)      最后一个硬盘
+(hd)        最后一个硬盘之后的硬盘号码，创建新的虚拟硬盘时使用
+
+(cd0)       第一个光驱，相当于 (hd32)，由 cdrom --init 创建
+(cd1)       第二个光驱，相当于 (hd33)，由 cdrom --init 创建
+由于 cdrom 的识别能力太低，同时市场上的光驱设备几乎全被U盘代替，所以 (cd?) 这种格式可能面临淘汰。
+
+(hd0,0)     第一块硬盘的第一主分区
+(hd0,4)     第一块硬盘的第一扩展分区
+(hd-1,0)    最后一块硬盘的第一主分区，没有 (hd-2,0) 这种格式，也没有 (hd-1,-1) 这种格式。
+
+(hd#,0)     第一主分区(在硬盘#上)
+(hd#,1)     第二主分区(在硬盘#上)
+(hd#,2)     第三主分区(在硬盘#上)
+(hd#,3)     第四主分区(在硬盘#上)
+
+(hd#,4)     第一逻辑分区(在硬盘#上)
+(hd#,5)     第二逻辑分区(在硬盘#上)
+(hd#,6)     第三逻辑分区(在硬盘#上)
+(hd#,7)     第四逻辑分区(在硬盘#上)
+
+(hd32)      第一个光驱
+(hd33)      第二个光驱
+(0xFF)      最后一个光驱（hd127）
+
+()          当前磁盘
+(bd)        初始启动设备（设备包括磁盘和驱动器）
+(cd)        从光盘启动后，Grub4Dos 捕获到的启动光盘，如果不是从光盘启动，则没有 (cd) 设备
+(ud)        Fbinst 启动方式制作的隐藏分区
+(pd)        PXE 网络启动设备
+(nd)        网络驱动器，现已不常用（nd 已经不存在了，已经被pd代替）
+(md)        内存驱动器，实现了将整个内存作为一个磁盘驱动器来访问
+(rd)        随机存贮驱动器。(md) 设备访问内存是从物理地址 0 开始，而 (rd) 可以访问起始于任何基地址的内存
+
+以数字命名的设备：
+fd0 - fd126    :     0x0 - 0x7E  （软盘和虚拟软盘，排除 0x21 和 0x23）
+pxe            :     0x21        （网络启动设备）
+ud             :     0x23        （Fbinst 隐藏分区）
+rd             :     0x7F        （随机存贮驱动器）
+hd0 - hd30     :     0x80 - 0x9E （硬盘和虚拟硬盘）
+cd             :     0x9F        （捕获到的启动光盘，这个不一定正确，视 bios 而定）
+hd32 - hd127   :     0xA0 - 0xFF （光盘和虚拟光盘）
+
+设备后面跟随 +1 表示将设备的第 1 个扇区当作一个单一的文件看待：
+
+(hd0)+1     将整个硬盘的第一个扇区当作一个文件（共 1 个扇区）
+(hd0,0)+1   将整个分区的第一个扇区当作一个文件（共 1 个扇区）
+(fd0)+1     将整个软盘的第一个扇区当作一个文件（共 1 个扇区）
+(cd0)+1     将整个光盘的第一个扇区当作一个文件（共 1 个扇区）
+(md)+1      将整个内存的第一个扇区当作一个文件（共 1 个扇区）
+(rd)+1      这个比较特殊，将指定内存的所有内容当作一个文件
+
+[注意：(rd)+1 这个标志始终代表文件，它包含存储在 (rd) 中的所有字节。 ]
+
+同样可以使用 +2、+3 等，表示将前 2 个或前 3 个扇区当作单一的文件看待：
+
+(hd0)+2     将整个硬盘的前 2  个扇区当作一个文件（共 2  个扇区）
+(hd0,0)+3   将整个分区的前 3  个扇区当作一个文件（共 3  个扇区）
+(fd0)+5     将整个软盘的前 5  个扇区当作一个文件（共 5  个扇区）
+(cd0)+10    将整个光盘的前 10 个扇区当作一个文件（共 10 个扇区）
+(md)+32     将整个内存的前 32 个扇区当作一个文件（共 32 个扇区）
+(rd)+2      将指定内存的前 2  个扇区当作一个文件（共 2  个扇区）
+
+也可以使用类似 32+5 的方法：
+
+(hd0)512+2  将整个硬盘的第 512 个扇区之后的 2  个扇区当作一个文件（共 2 个扇区）
+(hd0,0)32+3 将整个分区的第 32  个扇区之后的 3  个扇区当作一个文件（共 3 个扇区）
+(fd0)1+1    将整个软盘的第 2   个扇区当作一个文件（共 1  个扇区）
+(cd0)128+1  将整个光盘的第 129 个扇区当作一个文件（共 1  个扇区）
+(md)0+32    将整个内存的前 32  个扇区当作一个文件（共 32 个扇区）
+(rd)0+1     等效于 (rd)+1，将指定内存的所有内容当作一个文件
+
+关于 (rd) 设备：
+
+(rd) 设备只是对内存区域的引用，(rd) 设备所引用的内存区域是不被保护的，你可以将 (rd) 理解为指向内存块的指针。在 Grub4Dos 中，很多东西都是自由的、无保护的、没有限制的，(rd) 就是其中之一。
+
+(rd) 不是一个 int13 设备，而仅仅是一个 grub4dos 设备。在 grub4dos 里面，存在 (rd) 设备，但进入 DOS 以后，就没有 (rd) 设备了。
+
+(rd)+1 始终表示 (rd) 设备的整个内容，而不是第一个扇区。
+
+通过下面的地址可以获取 (rd) 设备的信息：
+set /a rdnum=*0x82CC    # (rd) 设备的设备号
+set /a rdbase=*0x82D0   # (rd) 设备的起始地址
+set /a rdsize=*0x82D8   # (rd) 设备的总长度
+
+通过下面的方法可以自由设置 (rd) 设备的信息：
+map --ram-drive=0xFF7F      # 修改 (rd) 设备的设备号
+map --mem --rd-base=50000   # 设置 (rd) 设备的起始地址
+map --mem --rd-size=30000   # 设置 (rd) 设备的总长度
+
+下面的命令仅仅修改了 (rd) 设备的信息：
+map --mem /FILE (rd)
+这里的 (rd) 指向了一块内存区域，这块内存区域中存放了 /FILE 文件的内容，但是这块内存是不被保护的，这块内存随时都可能被其他代码修改，甚至被 Grub4Dos 自身修改。
+
+下面的命令也修改了 (rd) 设备的信息，但是 (rd) 指向的内存区域是受保护的，因为它和 (fd0) 重叠，而 (fd0) 是受保护的：
+map --mem /FILE (rd)
+map --mem /FILE (fd0)
+map --hook
+如果第一条命令和第二条命令交换一下顺序，那么结果就不一样了。
+
+什么情况下需要使用 (rd) 设备？当你需要它的时候就去用它，如果你实在不知道什么时候需要用到 (rd)，那么很简单，不要用它。
+
+==============================
+
+map --status
+显示磁盘仿真的状态。
+
+map /PE.ISO (0xFF)
+map --hook
+将 /PE.ISO 映射到 (hd127) 仿真磁盘，/PE.ISO 必须在磁盘中连续存放，不能有碎片。
+
+map --mem /PE.ISO (0xFF)
+map --hook
+先将 /PE.ISO 加载到内存，然后再映射到 (hd127) 仿真磁盘，/PE.ISO 可以有碎片。
+
+map --mem=-2880 /FLOPPY.IMG (fd0)
+map --hook
+先将 /FLOPPY.IMG 加载到内存，然后再映射到 (fd0) 仿真软盘，(fd0) 将占用至少 1440KB 的内存。
+
+map --mem --top /PE.ISO (0xFF) 
+map --hook
+将 /PE.ISO 加载到高端内存，然后再映射到 (hd127) 仿真磁盘，把镜像加载到高位内存就不能使用 gzip 压缩，两者不能同时实现。
+在 grub4dos 中，内存在 3.25G 处被分成了高端内存和低端内存两端，镜像不能跨 3.25G 这个点。如果你的内存小于 3.25G，你就没有高端内存可用。 
+
+map --unmap=0xFF
+map --rehook
+卸载 (hd127) 仿真磁盘。不能使用 --unmap=(0xFF) 的方法卸载，--unmap= 后面必须是数字。
+--rehook 用于停止仿真盘并释放内存，相当于 --unhook 然后 --hook（这样看来，map --unhook 命令似乎不会被单独使用了）
+
+map --unmap=0,0x80,0xFF
+map --rehook
+卸载多个仿真磁盘。
+
+map --unmap=0:0xFF
+map --rehook
+卸载所有仿真磁盘。
+
+如果要通过设备名的方法卸载某个设备，可以这样做：
+map (hd127) (hd127)
+map --rehook
+
+map --read-only /FLOPPY.IMG (fd0)
+map --hook
+(fd0) 只能读，不能写，防止 /FLOPPY.IMG 文件被破坏。
+映射到仿真盘中的文件都是可以修改的，无论是 IMG、ISO、VHD 等，除非使用 --read-only 参数。
+
+map --fake-write /FLOPPY.IMG (fd0)
+map --hook
+(fd0) 处于假写状态，可以写入数据，但并未记录到 (fd0) 上，防止 /FLOPPY.IMG 文件被破坏。
+
+map --unsafe-boot /FLOPPY.IMG (fd0)
+map --hook
+这个参数不知道是什么作用，大概是允许修改 (fd0) 的引导扇区。
+
+map ---disable-chs-mode /FLOPPY.IMG (fd0)
+map --hook
+禁用 (fd0) 的 CHS 访问功能。
+
+map --disable-lba-mode /FLOPPY.IMG (fd0)
+map --hook
+禁用 (fd0) 的 LBA 访问功能。
+
+map 命令还可以用来修改 (rd) 随机存储器的信息，上面已经说过了。
+
+[注：其他 map 参数似乎不怎么常用，也不太理解其含义，这里就不总结了]
+
+[注意：在map命令行中，(hdm,n)+1 式的写法被解释成代表整个(hdm,n)分区，而不仅仅是此分区的第一扇区。]
+
+[注意：--unhook 的仿真盘，如果没有 --unmap，则在需要的时候会自动 --hook。]
+
+==============================
+
+关于 map 命令的磁盘交换：
+
+# 打算把当前设备映射为(hd0) 
+map () (hd0)
+# 打算把(hd0)映射为当前设备
+map (hd0) ()
+#开始执行映射
+map --rehook
+
+==============================
+
+cdrom --init
+map --hook
+挂载 ATAPI 接口的光驱（map --hook 后才能访问）
+
+cdrom --stop
+map --rehook
+卸载 ATAPI 接口的光驱
+
+==============================
+
+cat /menu.lst
+显示 /menu.lst 的内容
+
+cat --hex /grldr
+以十六进制显示 /grldr 的内容
+
+cat --skip=1024 /menu.lst
+显示 /menu.lst 的内容，跳过前面 1KB 的内容
+
+cat --length=10 /menu.lst
+显示 /menu.lst 的内容，只显示前面 10 个字节的内容
+
+cat --locate="\x20 " /menu.lst
+在 /menu.lst 中查找连续的两个空格（转义字符 + 非转义字符）（区分大小写）
+
+cat --locate=abc /menu.lst
+在 /menu.lst 中查找 abc 字符串（非转义字符）（区分大小写）
+
+cat --locatei=abc /menu.lst
+在 /menu.lst 中查找 abc 字符串（不区分大小写）
+
+cat --locate=abc --number=3 /menu.lst
+在 /menu.lst 中查找 abc 字符串，只显示前 3 个找到的结果
+
+cat --locate=abc --replace=def /menu.lst
+在 /menu.lst 中查找 abc 字符串，并替换为 def
+
+cat --locate=abc --replace=def --number=3 /menu.lst
+在 /menu.lst 中查找 abc 字符串，并替换为 def，只替换前 3 个找到的结果
+
+cat --locate=abc --replace=def --locate-align=16 /menu.lst
+在 /menu.lst 中查找 abc 字符串，并替换为 def，只替换位置与 16 对齐的结果
+
+通过下面的命令来查看 --locate-align=16 的效果：
+echo -n > /menu.lst
+cat --locate=\x0 --replace=1 /menu.lst
+cat /menu.lst
+cat --locate=1 --replace=0 --locate-align=16 /menu.lst
+cat /menu.lst
+
+cat --length=0 ()-1
+固定用法，获取当前分区地址偏移
+
+cat --length=0 ()/menu.lst
+获取 /menu.lst 的文件大小
+
+cat --length=0 ()/menu.lst > nul && echo exist ! echo not exist
+判断文件 /menu.lst 是否存在，如果存在，则输出 exist，否则输出 not exist
+
+转义字符总结：
+\???    1到3位八进制代码表示的字符（\377）八进制最大取值 \377，超出 377 的代码将与 377 取模后再进行转换，比如 \400 表示 \0
+\x??    1到2位十六进制代码表示的字符（\xFF）最大取值 \xFF
+\空格   空格字符
+\\      \ 字符（反斜线）
+\"      " 字符（双引号）
+\'      ' 字符（单引号）
+\a      警报 （声音）
+\b      退格符
+\f      换页符
+\n      换行符
+\r      回车符
+\t      水平制表符
+\v      垂直制表符
+
+[注意：执行 cat --locate= 或 cat --locatei= 后，可以用 %?% 获取最后一个查找结果，只有在 cat 命令行执行完毕后，才能获取正确的 %?%]
+
+例如：
+cat --locate=a /File && set /a Last=%?% > nul ! set Last=-1
+
+由于 %?% 和 cat 命令在同一条语句中，所以得不到正确的 %?% 结果。只有在 cat 命令行执行完毕后，再执行 set Last=%?% 才能获取正确的 %?% 结果。
+
+有一个技巧，可以用 &; 操作符实现变量的刷新：
+set Last=-1 && cat --locate=a /File &; set /a Last=%?% > nul
+
+==============================
+
+cmp /menu.lst /m.lst
+比较两个文件是否相同。
+
+cmp --hex /menu.lst /m.lst
+比较两个文件是否相同，并以十六进制格式显示对比结果。
+
+cmp /menu.lst /m.lst > nul && echo same ! different
+比较两个文件是否相同，如果相同，则输出 same，否则输出 different。
+
+==============================
+
+dd if=()/menu.lst of=()/m.lst
+将 /menu.lst 的内容复制到 /m.lst 中
+
+dd if=()/menu.lst of=()/m.lst bs=32 count=5
+以 32 为块大小（默认 512），从 /menu.lst 中复制 5 块数据到 /m.lst 中。e
+
+dd if=()/menu.lst of=()/m.lst bs=10 skip=5 seek=6
+以 10 为块大小，从 /menu.lst 中复制数据到 /m.lst 中。复制时，跳过 /menu.lst 的前 5 个块，从第 6 个块开始读取，写入时，跳过 /m.lst 的前 7 个块，从第 8 个块开始写入。
+
+dd if=()/menu.lst of=()/m.lst buf=0x2000000 buflen=0x2000000
+将 /menu.lst 的内容复制到 /m.lst 中，复制时，从内存的 0x2000000 位置（32M的位置）取 0x2000000 空间（32M的空间）作为缓存，对于复制大文件来说，增加缓存的大小能够加快 dd 的读写速度。
+
+[注意：源文件和目标文件都必须存在，路径必须以设备名开头，超出文件长度的部分会被丢弃，目标文件不能是 gz 压缩文件，源文件可以是 gz 压缩文件，压缩文件在复制前会被解压。dd 可以对整个设备进行读写操作：dd if=(fd0) of=(fd1)，慎用。]
+
+[注意：使用 dd 命令时，不建议设置缓存，因为设置的缓存区域可能被其它程序混用，从而导致不可预知的后果]
+
+==============================
+
+write /menu.lst abc
+在 /menu.lst 文件的开头写入 3 个字符 abc，覆盖原来的字符。
+
+write /menu.lst "abc"
+在 /menu.lst 文件的开头写入 5 个字符 "abc"，覆盖原来的字符。
+
+write /menu.lst \"abc\"
+在 /menu.lst 文件的开头写入 5 个字符 "abc"，覆盖原来的字符。
+
+[注意：被写入的字符串，除了开头的空格，其他空格或单引号或双引号都不需要转义，转义也可以被处理，反斜线必须被转义]
+
+[注意：被写入的目标文件必须存在，超出文件长度的部分会被丢弃，目标文件不能是 gz 压缩文件，源文件可以是 gz 压缩文件，压缩文件在复制前会被解压。write 命令可以对设备进行操作：write (fd0) abc，慎用。]
+
+write 0x8274 0x2001
+
+[建议：使用和 calc 相同的语法 write *0x8274 0x2001 和 write *0x8274 *0x8280]
+
+如果写入的对象不是文件或设备，而是一个数字，则该数字表示内存地址，write 将该地址处的内存数据修改为指定值，被写入的数据必须为整数，不能是字符串。用下面的内存地址进行练习：
+write 0x50000 -1
+redad 0x50000
+write 0x50000 0
+redad 0x50000
+
+==============================
+
+read 0x8280
+
+[建议：使用和 calc 相同的语法 read *0x8280]
+
+从内存的指定位置读取一个 32-bit 的值，并以十六进制形式显示出来。
+
+==============================
+
+现在 grub4dos 本身对常规内存的占用情况如下：
+
+00000～0FFFF 被 grub4dos 的程序代码和堆栈占用。
+10000～1FFFF 为 grub4dos 将来的代码和数据保留。
+20000～2FFFF 被 grub4dos 内核中的自动几何参数探测占用，作为缓冲区。
+30000～37FFF 被 grub4dos 内核中的常规磁盘读写缓冲区占用。
+38000～4FFFF 保留给 grub4dos 将来的扩展。
+50000～7FFFF 保留给用户使用
+100000～110000 被 dd 命令的磁盘缓冲区占用。
+
+[注意：以上关于内存分配的内容不一定准确，希望开发人员指正]
+
+==============================
+
+calc 1+1
+计算 1+1 的结果，可执行的操作：+(加)、-(减)、*(乘)、/(除)、%(余)、<<(左移)、>>(右移)、&(与)、|(或)、^(异或) 
+
+calc 0xFF
+显示 0xFF 的十进制和十六进制结果
+
+calc *0x8280
+显示内存 0x8280 处存储的整数值
+
+calc *50000=1
+将内存 0x50000 处存储的整数值修改为 1
+
+calc *50000=*0x8280
+将内存 0x50000 处存储的整数值修改为 0x8280 处存储的整数值
+
+calc *50000=1<<4
+将内存 0x50000 处存储的整数值修改为计算后的结果（1<<4=16）
+
+[注意：在 set /a var=value 中，value 也可以用上面的方法进行计算：set /a b=*0x8280]
+
+calc 和 set /a 可以将负数当做被减数处理，不过要在减号之后添加一个空格，例如下面的代码：
+
+set a=-32
+set /a b=0-%a%
+
+上面的 set 命令无法计算 0--32 的值，用下面的写法就可以计算了（在减号之后添加一个空格）：
+
+set a=-32
+set /a b=0- %a%
+
+上面的 set 命令可以计算 0- -32 的值，结果为 32。
+
+==============================
+
+checktime
+显示当前日期时间星期
+
+checktime * 0-12 * * * && echo 上午 ! echo 下午
+根据不同的时间显示不同的信息。（checktime 分 时 日 月 星期）
+
+checktime * * * * 6,0 && echo 周末 ! echo 非周末
+根据不同的时间显示不同的信息。（checktime 分 时 日 月 星期）
+
+checktime * * * * */2 && echo 双周 ! echo 单周
+根据不同的时间显示不同的信息。（checktime 分 时 日 月 星期）
+
+checktime 0,1-59/15 * * * * && echo 整刻钟 ! echo 非整刻钟
+根据不同的时间显示不同的信息。（checktime 分 时 日 月 星期）
+
+==============================
+
+echo \\Hello
+在屏幕上输出 \\Hello（行尾会自动添加换行符）
+
+echo -n \\Hello
+在屏幕上输出 \\Hello（行尾不会自动添加换行符）
+
+echo -e \\Hello
+在屏幕上输出 \Hello（-e 表示处理转义字符）
+
+echo -h
+显示 echo 支持的颜色表
+
+echo $[0x1F] abc
+使用颜色表 1F 处的前景色和背景色显示 abc
+
+echo $[0x1F] abc $[0xE4] def
+使用颜色表 1F 处的前景色和背景色显示 abc，然后使用颜色表 E4 处的前景色和背景色显示 def
+
+echo -P:0101 abc
+在屏幕的第一行第一列显示 abc
+
+echo -n > /menu.lst
+清空 /menu.lst 文件的内容
+
+==============================
+
+pager on
+打开满屏分页显示模式
+[Hit Q to quit, any other key to continue]
+
+pager off
+关闭满屏分页显示模式
+
+pager
+切换满屏分页显示模式
+
+pager status
+输出当前满屏分页显示模式
+
+==============================
+
+clear
+清屏（清除屏幕上显示的内容）
+
+==========================================================================================
+
+接下来学习这些命令（9个）：
+
+graphicsmode、vbeprobe、testvbe、setvbe、terminal、terminfo、font、background、foreground
+
+==============================
+
+graphicsmode
+显示当前使用的图形模式
+
+graphicsmode 0x12
+使用 vga 模式（640×480），推荐使用 vbe 模式
+
+graphicsmode 0x6A
+使用 vga 模式（800x600，对一些机子支持不是很好，有可能会死机），推荐使用 vbe 模式
+
+graphicsmode -1 640
+使用 vbe 模式，指定分辨率宽度为 640，若显示器不支持此宽度的分辨率，将执行失败
+
+graphicsmode -1 800 600
+使用 vbe 模式，指定分辨率宽度为 800，高度为 600，若显示器不支持此分辨率，将执行失败
+
+graphicsmode -1 1024 768 32
+使用 vbe 模式，指定分辨率宽度为 1024，高度为 768，使用 32 位色，若显示器不支持此分辨率或位色，将执行失败
+
+graphicsmode -1 100:1000 100:1000
+使用 vbe 模式，分辨率宽度从 100 到 1000 这个范围内选取可用的最大值，高度从 100 到 1000 这个范围内选取可用的最大值
+即，上面的命令可选 320×200，320×400，640×400，640×480，800×600 等分辨率，从中选取可用的最高分辨率
+
+graphicsmode -1 100:1000 100:1000 24:32
+效果同上，但是增加了颜色深度的范围，同样，在 24 位色和 32 位色中选取可用的最高颜色深度
+
+[注意：grub4dos 的 vbe 不支持 16 位及更低的色深，只支持 24 位和 32 位色深。所以，你的所有的 graphicsmode 命令，都需要显式地指定 24:32 的色深，不可以省略。比如，使用 graphicsmode -1 和 graphicsmode -1 800 600 都是不完全正确的，应该分别改成 graphicsmode -1 -1 -1 24:32 和 graphicsmode -1 800 600 24:32 才算是对的。]
+
+==============================
+
+vbeprobe
+侦测 vbe 信息
+
+vbeprobe 1024x768x32
+侦测指定的 vbe 信息
+
+vbeprobe 0x100
+侦测指定的 vbe 信息
+
+==============================
+
+testvbe 800x600
+测试指定的 vbe 模式，直接调用有时候会花屏
+
+==============================
+
+setvbe 800x600x32
+在系统核心运行前用来改变视频模式，视频模式信息会传递给核心。直接调用大部分情况下会花屏
+
+[注意：setvbe 命令主要是为了某些 Linux 启动过程的图形界面而设计的，一般是用不着的。建议永远不要使用它。如果你能避免使用它，就尽量避免使用它。通常 Linux 在自己的启动过程中，会自行设置相应的图形模式，而不是需要经过 grub4dos 的设置才行。所以，将来有可能取缔这条 setvbe 命令。]
+
+==============================
+
+terminal console
+选择文本模式的终端
+
+terminal graphics
+选择图形模式的终端
+
+terminal --no-echo graphics
+选择图形模式的终端，并且不显示用户输入的字符
+
+terminal --font-spacing=1:2 
+在 vbe 模式下，设置字距为 1，行距为2，单位：像数点。
+
+[注：更多关于 terminal 的用法不知道怎么用，似乎也用不上。]
+
+==============================
+
+terminfo
+显示当前终端的配置信息
+
+[注：更多关于 terminfo 的用法不知道怎么用，似乎也用不上。]
+
+==============================
+
+font /unifont.hex.gz
+加载字库文件，用于在 vbe 模式下显示汉字
+字库下载地址：
+https://code.google.com/p/grub4d ... name=unifont.hex.gz
+http://bbs.wuyou.net/forum.php?mod=viewthread&tid=256198
+
+==============================
+
+background 303030
+在 vga 模式下设置背景色，其它模式下不起作用
+
+==============================
+
+foreground FFFF00
+在 vga 模式下设置前景色，其它模式下不起作用
+
+==========================================================================================
+
+接下来学习这些命令（11个）：
+
+halt、reboot、hide、unhide、hiddenflag、makeactive、partnew、parttype、blocklist、uuid、fstest
+
+==============================
+
+halt
+关机（halt 还有很多参数，当你关机出问题的时候再去研究它的参数吧）
+
+==============================
+
+reboot
+重启（没有参数）
+
+==============================
+
+hide (hd0,0)
+隐藏第一硬盘第一主分区
+
+==============================
+
+unhide (hd0,0)
+取消隐藏第一硬盘第一主分区 
+
+==============================
+
+hiddenflag
+显示当前根设备的显/隐状态（对 ud、cd 等不起作用）
+
+hiddenflag (hd0,0)
+显示第一硬盘第一主分区的显/隐状态
+
+hiddenflag --set 
+将当前跟设备设置为隐藏
+
+hiddenflag --set (hd0,0)
+将第一硬盘第一主分区设置为隐藏（即若原分区类型为 0x07，现在分区类型为 0x17）
+
+hiddenflag --clear
+将当前跟设备设置为显现
+
+hiddenflag --clear (hd0,0)
+将第一硬盘第一主分区设置为显现（即若原分区类型为 0x17，现在分区类型为 0x07）
+
+==============================
+
+makeactive
+将当前设备设置为活动
+
+makeactive (hd0,0)
+将第一硬盘第一主分区设置为活动
+
+makeactive --status
+显示当前设备是否为活动状态
+
+makeactive --status (hd0,0)
+显示第一硬盘第一主分区是否为活动状态
+
+==============================
+
+partnew [--active] 分区号 类型 起始扇区 [长度]
+
+这个不多研究，要修改分区，还是用专用软件吧。
+Grub4Dos 0.4.5c 的帮助文档中有一些例子，感兴趣的可以研究一下。
+
+==============================
+
+parttype
+显示当前分区的分区类型
+
+parttype (hd0,0)
+显示第一硬盘第一分区的分区类型
+
+parttype (hd0,0) 0x17
+将第一硬盘第一分区的分区类型改为 0x17
+
+==============================
+
+blocklist /grldr
+显示文件的块信息，即文件所在区域的起始块和块长度。 
+blocklist 命令不能用于 pxe 设备上的文件。 
+
+[注意：如果文件有碎片，blocklist 会列出文件的所有块，包括碎片，如果碎片太多，超出了 Grub4Dos 的缓冲区，则该命令会失败]
+
+==============================
+
+uuid
+列处所有设备的 uuid 号
+
+uuid (hd0,0)
+显示指定设备的 uuid 号
+
+uuid 000E0336000C1B8D
+查找 uuid 号为 000E0336000C1B8D 的设备，并将其设置为当前设备
+
+uuid (hd0,0) 000E0336000C1B8D && echo yes ! echo no
+如果 (hd0,0) 的 uuid 号为 000E0336000C1B8D 则输出 yes，否则输出 no
+
+==============================
+
+fstest
+为了帮助开发者开发文件系统支持代码而设置的命令，终端用户不需要它。
+
+==========================================================================================
+
+接下来学习这些命令（8个）：
+
+kernel、initrd、module、modulenounzip、chainloader、boot、pxe、quit
+
+==============================
+
+kernel [--no-mem-option] [--type=TYPE] FILE [ARG ...]
+
+尝试载入主引导映像文件。其它项将被作为内核的命令行参数而传递给内核。
+使用此命令以前，内核所用到的模块应该被重新载入。
+
+参数 --type 用于说明内核的类型，包括 "netbsd", "freebsd", "openbsd", "linux", "biglinux" 和 "multiboot"。
+
+参数 --no-mem-option 用于说明不必自动传递 Linux 的内存参数。
+
+==============================
+
+initrd FILE [FILE...]
+
+加载 Linux 格式的初始化虚拟盘, 并设置必要的参数。 指定在系统启动访问真正的根文件系统前，访问的 ramdisk 映象。 
+
+下面通过 kernel 和 initrd 命令启动 Ubuntu 13.10 LiveCD：
+
+# 菜单标题
+title 启动 Ubuntu 13.10 amd64 LiveCD
+# 查找 UBUNTU-13.10-X64.ISO 所在磁盘并将其设置为当前磁盘
+find --set-root /BOOT/UBUNTU/UBUNTU-13.10-X64.ISO
+# 尝试载入主引导映像文件 vmlinuz.efi，后面是传递给 vmlinuz.efi 的参数。
+kernel /BOOT/UBUNTU/vmlinuz.efi boot=casper iso-scan/filename=/BOOT/UBUNTU/UBUNTU-13.10-X64.ISO locale=zh_CN.UTF-8
+# 加载 Linux 格式的初始化虚拟盘 initrd.lz。
+initrd /BOOT/UBUNTU/initrd.lz
+
+==============================
+
+module FILE [ARG ...]
+
+对多重启动映像, 加载启动模块文件（不处理该文件的内容, 用户必须自己确定核心的要求）。
+剩余参数作为“模快命令行”传递，象 kernel 命令一样。
+
+这个命令一般用不上，当你要启动 Linux 系统的时候，而且系统要求加载模块文件的时候，才会用到，相关 Linux 系统中会有说明，一般用户可以忽略这个命令。
+
+==============================
+
+modulenounzip FILE [ARG ...]
+
+与 module 类似，但是禁用了自动解压缩。
+
+功能同上，一般用户可以忽略这个命令。
+
+==============================
+
+chainloader /ntldr
+加载 ntldr 启动文件
+
+chainloader (hd0,0)+1
+加载 (hd0,0) 的第一扇区
+
+chainloader +1
+加载当前设备的第一扇区
+
+chainloader --force (hd0,0)+1
+加载 (hd0,0) 的第一扇区，忽略该扇区启动标识的有效性，强制启动
+
+[注：chainloader 还有许多其它参数，可以在启动之前修改 CPU 的寄存器，不过对于普通用户来说，这些东西不会用到，如果想知道 chainloader 的更多参数，可以参考《Grub4Dos 0.4.5c 的帮助文档》]
+
+==============================
+
+boot
+引导已加载的操作系统或扇区链式加载器，确定进行启动，通常和 chainloader 命令搭配使用，在菜单文件中可以省略，命令行模式下需要。
+
+chainloader /ntldr
+boot
+加载 ntldr 启动文件，然后启动。
+
+boot -1
+调用 BIOS 的 int18 功能，根据 BIOS 设置的启动顺序，启动下一设备。
+
+boot --int18
+功能同上，调用 BIOS 的 int18 功能，根据 BIOS 设置的启动顺序，启动下一设备。
+
+==============================
+
+pxe
+
+这个命令比较复杂，以后再研究，先把本地启动搞懂。
+
+==============================
+
+quit
+如果是从 DOS 环境进入 GRUB 环境中，使用本命令可以退回到 DOS 环境中。
+
+quit --disable-a20
+使用 --disable-a20 参数，将会在把控制权移交给 DOS 时关闭 A20 总线。
+
+==========================================================================================
+
+接下来学习这些命令（15个）：
+
+configfile、default、savedefault、timeout、title、iftitle、hiddenmenu、password、lock、md5crypt、commandline、gfxmenu、splashimage、color、outline
+
+==============================
+
+用在命令行或菜单文件中：
+
+configfile /menu.lst
+加载当前设备根目录下的菜单文件 /menu.lst。
+
+configfile (hd0,0)/menu.lst
+加载 (hd0,0)/menu.lst。
+
+configfile (md)4+8
+特殊用法，回到 grldr 内置菜单。
+
+新版返回内置菜单的命令：
+write 0x307ff8 1  && configfile
+
+[注意：configfile 命令执行后，当前设备和当前目录将同时更新为 FILE 文件所在的设备。如果在内置菜单的初始化命令组中出现不带任何参数的 configfile 命令，那么控制将转到启动设备上的 menu.lst 文件。]
+
+==============================
+
+用在所有菜单项之前：
+
+default 0
+默认选择第一个菜单项（如果用户不手动选择的话）
+
+default saved
+默认选择上次 savedefault 保存的菜单项（savedefault 在菜单项中执行，默认保存到 /default 文件中）
+
+default /FILE
+默认选择上次 savedefault 保存的菜单项（savedefault 在菜单项中执行，默认保存到 /FILE 文件中）
+
+[注意：/default 文件或 /FILE 文件必须为 2048 字节，手动修改后也要保证文件长度为 2048 字节]
+
+==============================
+
+用在菜单项中：
+
+savedefault
+将当前菜单项作为默认菜单保存到 /default 中或 default 命令指定的 /FILE 中。
+
+savedefault --wait=5 
+将当前菜单项作为默认菜单保存到 /default 中或 default 命令指定的 /FILE 中，保存前给用户一个 5 秒的提示：
+About to write the entry number x to file
+Press Y to allow or N to deny.
+如果用户在 5 秒内没有按 Y 键，则默认不保存菜单项。
+
+==============================
+
+用在所有菜单项之前：
+
+timeout 10
+在出现菜单列表后，10 秒钟之内，如果用户没有手动进行选择，则执行默认菜单项。
+
+==============================
+
+title 菜单标题
+指定菜单项的标题文本
+
+title 菜单标题\n菜单提示第一行\n菜单提示第二行\n...
+指定菜单项的标题文本和提示文本
+
+[注意：如果菜单项中没有启动敏感命令，则该菜单不能用上下方向键选择，只能用左右方向键选择。]
+
+启动敏感命令：
+boot、chainloader、configfile、command、commandline、halt、kernel、pxe、quit、reboot
+
+在菜单列表界面可以执行如下操作：
+e  ：编辑当前的启动菜单项
+b  ：启动当前的菜单项
+c  ：进入 grub 的命令行方式
+
+在编辑菜单项时可以执行如下操作：
+e  ：编辑当前行
+d  ：删除当前行
+o  ：在当前行下面插入新行
+O  ：在当前行上面插入新行
+b  ：启动当前菜单
+c  ：进入 grub 的命令行方式
+esc：返回 grub 菜单列表，取消对当前菜单项所做的任何修改
+
+[注意：对菜单的修改只是临时的，只对本次启动有效]
+
+在命令行下可以执行如下操作：
+esc：返回 grub 菜单列表
+
+在菜单列表中可以按数字键来选择菜单，如果要选择 9 以上的菜单项，可以按两次数字键，比如要选择第 25 菜单项，可以先按下 2 再按下 5（菜单序号从 0 开始，即第一个菜单的序号为 0）。
+
+==============================
+
+iftitle [if exist (hd0,0)/bootmgr] 启动 (hd0,0) 中的 NT6.x
+如果 [] 中的条件成立，则显示该菜单，否则不显示该菜单
+
+==============================
+
+用在所有菜单项之前：
+
+hiddenmenu 3
+不显示菜单列表，使用菜单项 3 启动，在 timeout 时间内按任意键可以显示菜单列表。
+
+hiddenmenu --chkpass=0x5700
+不显示菜单列表，使用菜单项 default 启动，在 timeout 时间内按 F11 键可以显示菜单列表。
+
+[注意：按键代码如果不清楚可以使用 pause --test-key 命令来获取功能]
+
+==============================
+
+用在菜单项中，或用在所有菜单项之前：
+
+password 密码
+对菜单进行加锁，看下面的示例：
+
+title 菜单标题
+password 123
+commandline
+要执行该菜单需要输入密码 123
+
+title 菜单标题
+password --md5 $1$JS/2$CKT61E11gzkdEKQnEpqjhS1
+commandline
+要执行该菜单需要输入密码 123（密码 123 是经过 md5 加密的）
+
+timeout 10
+default 0
+password 123
+title 菜单1
+commandline
+title 菜单2
+commandline
+对整个菜单列表进行加锁，被加锁后的菜单列表不能按 e 键进行编辑，不能按 c 键进入命令行，解锁后才能使用这些功能，在菜单列表界面下按下 p 键可以输入解锁密码。
+
+[注意：要想获取字符串的 md5 编码，可以执行 md5crypt 123]
+
+==============================
+
+用在菜单项中：
+
+lock
+锁定当前菜单，需要解锁后才能进入。看下面的示例：
+
+timeout 10
+default 0
+password 123
+title 菜单1
+lock
+commandline
+title 菜单2
+commandline
+解锁前，“菜单1”不能执行，“菜单2”可以执行，解锁后，“菜单1”和“菜单2”都可以执行
+
+==============================
+
+用在命令行中：
+
+md5crypt abc
+获取字符串 abc 的 md5 编码。
+
+==============================
+
+用在菜单项中：
+
+commandline
+进入 Grub4Dos 的命令行。
+
+==============================
+
+用在所有菜单项之前：
+
+gfxmenu /message
+使用 /message 中的图形菜单
+
+由于 gfxmenu 与 Grub4Dos 兼容性不好，所以不建议使用
+
+==============================
+
+用在所有菜单项之前：
+
+splashimage /FILE
+vbe 图形模式下载入背景图片文件。在 vbe 模式下，可使用 24位色或32位色 BMP 格式或 XPM 格式的图片作为背景。
+
+==============================
+
+用在所有菜单项之前：
+
+color normal=0xFFFFFF highlight=0xFF0000
+设置未选中菜单为白色，选中菜单为红色
+
+color heading=0x0000FF helptext=0x00FF00
+设置菜单顶部信息的颜色为蓝色，菜单帮助信息的颜色为绿色
+
+color standard=0xFFFFFF
+设置控制台的文本颜色为白色
+
+color border=0xFF00FF
+设置菜单边框颜色为品红色（VBE模式下有效）
+
+color normal=0xFFFFFF highlight=0xFF0000 heading=0x0000FF helptext=0x00FF00 standard=0xFFFFFF border=0xFFFF00
+同时设置上面所有颜色
+
+color 0xFFFFFF 0xFF0000 0x0000FF 0x00FF00 0xFFFFFF 0xFFFF00
+同时设置上面所有颜色（如果按顺序设置，可以省略状态标记）
+
+color 0xFFFFFF 0xFF0000
+设置未选中菜单为白色，选中菜单为红色（如果按顺序设置，可以省略状态标记）
+
+[注：0xFFFFFF 表示红绿蓝三种颜色的值：0xRRGGBB]
+
+==============================
+
+用在所有菜单项之前：
+
+outline on
+打开图形模式下的字符轮廓显示模式。
+
+outline off
+关闭图形模式下的字符轮廓显示模式。
+
+outline
+切换图形模式下的字符轮廓显示模式。
+
+outline status
+显示当前图形模式下的字符轮廓显示模式。
+
+[注：当由于背景的原因字迹显示不清时可以尝试开启，会获得比较好的显示效果]
+
+==========================================================================================
+
+接下来学习这些命令（16个）：
+
+call、exit、shift、goto、set、setlocal、endlocal、if、checkrange、errorcheck、errnum、fallback、pause、command、insmod、delmod
+
+==============================
+
+call :标签1 参数1 参数2 ...
+转到到“标签1”执行行并在 :eof 处返回，通过 goto :eof 或 exit 可以跳转到 :eof 处。
+
+!BAT #注：文件头 !BAT 是必须的，用于识别这是一个 Grub4Dos 批处理脚本
+# 将此文件保存为 test，然后在 Grub4Dos 的命令行中输入 test 执行它
+call :label1 参数1 参数2 参数3 参数4 参数5 参数6 && echo ok ! echo fail
+call :label2 参数1 参数2 参数3 参数4 参数5 参数6 && echo ok ! echo fail
+echo 脚本结束 
+exit
+:label1
+echo %1 %2 %3 %4 %5 %6 %7 %8 %9
+exit 0
+:label2
+echo %9 %8 %7 %6 %5 %4 %3 %2 %1
+exit 1
+
+调用 label1 并获取其返回值，根据返回值显示 ok 或 fail
+调用 label2 并获取其返回值，根据返回值显示 ok 或 fail
+label1 始终返回 true
+label2 始终返回 false
+
+call 可以刷新环境变量，进入新的环境，例如下面的代码：
+iftitle [find --set-root --devices=h /bootmgr && call set bootmgr=%@root^%] load BOOTMGR of Windows VISTA/WIN7/WIN2008 on %bootmgr%
+如果不加 call 则 --set-root 不能立即生效。
+
+这里还要注意一点，整行命令在执行之前会被解析，解析的过程中，会将其中的变量替换成实际的值。%@root^% 的写法就是为了防止在解析命令行的时候将其扩展成实际的值，而是将其扩展成字符串 %@root%，以便下次解析的时候继续扩展。当 find --set-root --devices=h /bootmgr 执行成功后，需要执行 && call set bootmgr=%@root^%（此时 %@root^% 已经被扩展成 %@root% 了）的时候，又要执行一次解析，此时会将 %@root% 扩展成实际的值。
+
+==============================
+
+exit
+跳转到脚本文件的 :eof 处（脚本文件的结尾处）。功能同 goto :eof
+
+==============================
+
+shift
+批处理专用，丢弃第一个参数，后面的参数向前移动。
+
+shift 3
+批处理专用，丢弃第三个参数，后面的参数向前移动。
+
+[注意：Grub4Dos 中可以使用 %1～%9 参数，其中 %9 指剩下的所有参数]
+
+==============================
+
+goto :标签1
+批处理专用，跳转到“标签1”处执行，不返回，不支持参数。
+
+goto 3
+菜单专用，跳转到指定的菜单项执行。
+
+==============================
+
+set a=123
+设置变量 a 的值为字符串 123
+
+set /a a=123
+设置变量 a 的值为十进制整数 123
+
+set /A a=123
+设置变量 a 的值为十六进制整数 0x7B
+
+set /a a=123+4
+设置变量 a 的值为十进制整数 127（可参考 calc 命令）
+
+set /A a=123+4
+设置变量 a 的值为十六进制整数 0x7F（可参考 calc 命令）
+
+set a
+显示变量 a 的值
+
+set a=
+删除变量 a
+
+set *0x8280=0x80
+设置内存地址 0x8280 处的整数值为 0x80
+
+set
+列出所有变量列表
+
+set a=abcdef
+set len_a=%@retval%
+通过 %@retval% 获取最后一次设置的变量的长度
+
+set a=abcdef && set /a len_a=*0x4cb00
+通过 *0x4cb00 获取最后一次设置的变量的长度
+
+
+[注意：变量名最长为 8 个字符，变量内容最长为 512 字节，变量最多只能设置 60 个]
+
+==============================
+
+setlocal 和 endlocal
+setlocal 与 endlocal 之间的变量为本地变量，见下面的例子：
+
+set a=123
+setlocal
+set a=4
+echo %a%
+endlocal
+echo %a%
+
+在 setlocal 与 endlocal 之间将 a 赋值为 4，但是这不影响 setlocal 之前设置的变量 a，在 endlocal 之后，变量 a 恢复为之前的值 123。
+
+setlocal @ 和 endlocal @
+setlocal 与 endlocal 之间的变量为本地变量，setlocal @ 和 endlocal @ 可以跨脚本文件存在。
+
+[注意：setlocal @ 之前的 setlocal 将失效，setlocal @ 之后的 setlocal 不能跨脚本。]
+
+==============================
+
+if #%a%==#123 echo ok
+如果变量 a 的值等于 123 则输出 ok
+
+if #%a%<=#123 echo ok
+如果变量 a 的值小于等于 123 则输出 ok
+
+if #%a%>=#123 echo ok
+如果变量 a 的值大于等于 123 则输出 ok
+
+if #%a%>=#abc echo ok
+如果变量 a 的值等于字符串 abc 则输出 ok（区分大小写）
+
+if /i #%a%>=#abc echo ok
+如果变量 a 的值等于字符串 abc 则输出 ok（忽略大小写）
+
+if #%a%==# echo ok
+如果变量 a 的值为空则输出 ok
+
+if #%a%==#123 && echo ok
+如果变量 a 的值等于 123 则输出 ok
+
+if #%a%==#123 || echo fail
+如果变量 a 的值不等于 123 则输出 fail
+
+if not #%a%==#123 echo fail
+如果变量 a 的值不等于 123 则输出 fail
+
+if exist a echo ok
+如果存在变量 a 则输出 ok
+
+if not exist a echo fail
+如果不存在变量 a 则输出 fail
+
+if exist /grldr && echo ok ! echo fail
+如果存在文件 /grldr 则输出 ok，否则输出 fail
+
+判断文件或目录是否存在，对驱动器无效，比如 (ud)/：
+if exist /FILE && 文件或目录存在 ! echo 文件或目录不存在
+
+判断文件是否存在：
+cat --length=0 /FILE && echo 文件存在 ! echo 文件不存在
+
+判断目录是否存在，对驱动器无效，比如 (ud)/：
+cat --length=0 /FILE && echo 目录不存在 || if exist /FILE && echo 目录存在 ! echo 目录不存在
+
+==============================
+
+checkrange 范围 命令 && 成功 ! 失败
+如果“命令”的返回值在“范围”内，则执行“成功”，否则执行“失败”。
+
+checkrange 23 calc 20+3 && echo ok ! echo fail
+如果 20+3 的值为 23，则输出 ok，否则输出 fail
+
+checkrange 0x21,0x23,0x80 read 0x8280 && echo ok ! echo fail
+如果从 0x8280 处读出的值为 0x21 或 0x23 或 0x80 则输出 ok，否则输出 fail
+
+checkrange 0:100 calc %a% && echo ok ! echo fail
+如果变量 a 的值在 0-100 之间，则输出 ok，否则输出 fail
+
+==============================
+
+errorcheck on
+打开错误检查，遇到错误将终止执行
+
+errorcheck off
+关闭错误检查，执行中遇到错误将忽略，直至执行完毕
+
+errorechek
+切换错误检查模式
+
+errorcheck status
+显示当前错误检查模式
+
+[注：errorcheck 命令控制着错误是否被处理。默认 errorcheck 是开启的，即在错误发生时命令脚本将停止执行。如果 errorcheck 是关闭的，则脚本将一直执行到 boot 命令（即 off 状态下，fallback 命令等将失效）。一条 boot 命令可以把错误检查转变为开启]
+
+==============================
+
+errnum
+返回上一条命令的错误代码。若上一条命令未出错，则返回错误代码为 0，否则返回相应的错误代码。
+
+==============================
+
+fallback 3
+如果当前菜单项执行出错，则转移到第 3 菜单项继续执行。该命令仅在菜单中使用，用于无人引导模式：如果默认菜单项执行出错，无需等待用户操作，立即跳转到第 3 菜单项继续执行。
+
+==============================
+
+pause press any key to continue
+暂停命令的运行，并给出一段提示信息，按下任意键后继续。
+
+pause --wait=10 press any key to continue
+暂停命令的运行，并给出一段提示信息，按下任意键后继续。如果在 10 秒内没有按下任意键，则自动返回命令行。
+
+pause --test-key
+执行该命令后，按下任意键，将显示该按键的扫描码。
+
+pause && set /a key=*0x4CB00 ! set key=
+暂停命令的运行，按下任意键后继续，并将该按键的 ASCII 码存入变量 key 中。如果按下的是 ESC 键，则删除变量 key
+
+==============================
+
+command
+显示当前指定的外部命令的位置
+
+command --set-path=/boot/grub
+指定外部命令的位置为 /boot/grub
+
+command RUN /pe.iso
+查找外部命令 RUN 并执行，参数为 /pe.iso
+
+command /boot/RUN /pe.iso
+执行外部命令 /boot/RUN，参数为 /pe.iso
+
+[注意：查找外部命令的顺序如下: 如果是以 '(' 或 '/' 开头的文件被认为是一个绝对路径的文件，将直接执行。否则先查找 insmod 加载的命令。再查找当前目录下的同名文件。再查找 --set-path 指定位置的同名文件。]
+
+==============================
+
+insmod RUN
+将外部命令 RUN 加载到内存，使得执行外部命令时直接从内存读取，而不是从源设备读取，加快执行速度。
+
+insmod FILE.MOD
+FILE.MOD 是使用 makemod 程序生成的外部命令合集，免去多次使用 insmod 加载外部命令的麻烦。也可以使用 Fbinsttool 工具来制作 FILE.MOD 文件。
+
+insmod /boot/grub/fat.gz fat
+将外部命令 fat.gz 加载到内存，同时指定新的名字 fat，此时可直接使用 fat 调用本外部命令。
+
+[注意：insmod 载入的文件，其文件名长度不能超过 11 个字符。]
+
+==============================
+
+delmod
+显示已加载的外部命令
+
+delmod RUN
+卸载已加载的外部命令 RUN
+
+delmod *
+卸载所有已加载的外部命令
+
+delmod -l %~nx0 || insmod %0
+判断当前脚本是否已经载入内存，如果没有，则将其载入内存。
+
+==========================================================================================
+
+接下来学习这些命令（8个）：
+
+help、debug、displaymem、geometry、is64bit、serial、tpm、setkey
+
+==============================
+
+help
+显示内部命令列表
+
+help --all
+显示所有命令列表
+
+help root
+显示 root 命令的帮助信息
+
+==============================
+
+debug off 或 debug 0
+开启静默模式
+
+debug normal 或 debug 1
+开启标准模式
+
+debug on
+开启冗余模式，从 debug 2 到 debug 0x7fffffff 都等同于 debug on（调试报告 BUG 时请使用该模式，可以获得更详细的信息）
+
+debug -1
+隐藏倒计时提示
+
+debug 3
+开启批处理脚本调试模式（单步执行），debug 3 模式下按 c 键可以进入命令行，按 Ctrl + c 组合键可以中止脚本的执行。
+
+==============================
+
+displaymem
+显示 GRUB 所判断的当前系统的内存分布，包括所有物理内存区域。
+
+==============================
+
+geometry (hd0)
+输出 (hd0) 的相关信息。
+
+==============================
+
+is64bit
+如果 CPU 支持 64 位的话返回 true，否则返回 false。
+
+==============================
+
+serial
+初始化一个串口设备。串口，不研究。
+
+==============================
+
+tpm --init
+在地址 0000:7C00 处使用 512 字节数据作为初始化 TPM（可信赖平台模块）的缓存。用不上，不研究。
+
+==============================
+
+setkey a b
+将按键 b 映射为按键 a，此时按下 b 键等同于按下 a 键。 
+
+[注：这里的键必须是字母, 数字, 和以下特殊键: escape(转义), exclam(!), at(@), numbersign(#), dollar($), parenright ()) , caret(^), ampersand(&), asterisk(*), plus(+), percent(%), minus(-), underscore(_), equal(=), parenleft[(], backspace(退格), tab(制表), bracketleft([), braceleft({), bracketright(]), braceright(}), enter(回车), control(控制), semicolon(;), colon(:), quote('), doublequote("), slash(/), backquote(`), tilde(~), shift(换档), backslash(\), bar(|), comma(,), less(<) period(.), greater(>), question(?), alt(交互), space(空格), capslock(大写), Fx(功能键) 和 delete(删除)。 
+
+==========================================================================================
+
+
+点评
+
+ lsc1117
+楼主真可谓高能大神！  发表于 2016-7-2 08:57
+ alfredzhou
+http://www.picc-life.com/QuanJi/5xzo2Emf1ZcH/ 煜王爷的俏妃  发表于 2015-3-31 07:59
+评分
+
+参与人数 16	无忧币 +80	收起理由
+ wintoflash	+ 5	
+ a-lao	+ 5	赞一个!
+ lsc1117	+ 5	楼主真可谓高能大神！
+ liangyi	+ 5	赞一个!
+ 2010apei	+ 5	很给力!
+ 有阴也有阳	+ 5	很给力!
+ 2010jct1982	+ 5	赞一个!
+ lbw2007	+ 5	好顶赞，收下！
+ 20090101	+ 5	很给力!
+ 2012wuyuvl	+ 5	赞一个!
+ panet8888	+ 5	很给力!
+ 135956	+ 5	很给力!
+ wjalt8	+ 5	
+ 詹姆斯草	+ 5	赞一个!
+ devilma	+ 5	赞一个!
+ 2011cwj6958	+ 5	赞一个!
+查看全部评分
+收藏收藏139
+ 
+支持支持20
+ 
+反对反对
+回复 举报
+stevenldj
+
+推荐
+  楼主| 发表于 2013-12-18 12:45:43 | 只看该作者
+本帖最后由 stevenldj 于 2014-1-7 19:07 编辑
+
+
+二楼、学习笔记（一楼字数太多，超过最大限制，转到二楼）：
+
+[注：以后如果内容有改动，会用彩色文本标注，以便查阅，如果是改错字或改笔误，则仍使用黑色文本]
+
+==========================================================================================
+
+关于 &&、||、!、;;、&;、|; 的用法：
+
+command1 && command2 ! command3
+如果 command1 执行成功，则执行 command2，否则执行 command3
+
+command1 || command2 ! command3
+如果 command1 执行失败，则执行 command2，否则执行 command3
+
+command1 ;; command2 ;; command3
+三条命令依次执行，;; 之后会刷新环境变量。相当于下面的写法：
+command1
+command2
+command3
+
+command1 &; command2
+如果 command1 执行成功，则执行 command2，&; 之后会刷新环境变量。不能和 ! 同时使用。
+
+command1 |; command2
+如果 command1 执行失败，则执行 command2，|; 之后会刷新环境变量。不能和 ! 同时使用。
+
+command1 && command2 || command3
+如果 command1 执行成功，则执行 command2 || command3，否则什么也不执行。
+
+command1 && command2 || command3 ! coommand4
+如果 command1 执行成功，则执行 command2 || command3，否则执行 command4。（执行 command2 || command3 期间，如果 command2 执行失败，则执行 command3，否则执行 command4）
+总之：如果不能顺利执行到 command3 则执行 command4
+
+command1 &; command2 ! command3
+错误用法，command3 永远不会被执行
+如果 command1 执行成功，则执行 command2 ! command3，否则什么也不执行。
+
+command1 |; command2 ! command3
+错误用法，command3 永远不会被执行
+如果 command1 执行失败，则执行 command2 ! command3，否则什么也不执行。
+
+技巧：
+
+如果在 /FILE 中找到 abc，则设置 Last 为最后找到的位置，否则设置 Last 为 -1：
+set Last=-1 && cat --locate=abc /FILE &; set Last=%?%
+
+如果在 /FILE 中找到 abc，则设置 First 为最先找到的位置，否则设置 First 为 -1：
+set First=-1 && cat --locate=abc --number=1 /FILE &; set First=%?%
+
+==========================================================================================
+
+关于管道操作：
+
+command1 | command2 | command3
+将 command1 输出的数据作为 command2 的输入，将 command2 输出的数据作为 command3 的输入。
+
+command1 > /FILE
+将 command1 输出的数据写入到 /FILE 中，/FILE 中原有的数据将被清空。
+
+command1 >> /FILE
+将 command1 输出的数据追加到 /FILE 的尾部，/FILE 中原有的数据不受影响。
+
+示例：
+
+echo -n 1 | echo -n 2 | echo -n 3
+相当于
+echo -n 21 | echo -n 3
+相当于
+echo -n 321
+
+echo -n abc > /test
+将 /test 中的内容清空，并写入 abc。
+
+echo -n abc >> /test
+将 abc 追加到 /test 的尾部。
+
+>   >>   和   &&   连用：
+echo 1 > /test && echo 2 >> /test && echo 3 >> /test && cat /test
+
+>   >>   和   &&   ||   连用：
+if 1==1 && echo 111 > /test && if 1==2 || echo 222 >> /test && if 3==3 && echo 333 >> /test && cat /test
+
+|   和   &&   连用：
+set /a a=1 | echo -n && set /a b=2 | echo -n && set /a c=3 | echo -n
+
+==========================================================================================
+
+关于批处理脚本：
+
+批处理脚本文件必须以 !BAT 开头。
+
+可以通过 exit 退出批处理脚本或退出一个 call 调用，exit 可以返回一个退出代码，比如 exit 1
+
+批处理脚本或 call 调用都可以接受参数：
+%0 表示命令本身
+%* 代表所有参数（不包括 %0）
+%1 - %8 代表第 1 个到第 8 个参数
+%9 代表所有剩下的参数
+
+可以使用 shift 丢弃参数，默认丢弃第一个参数，可以通过 shift 6 丢弃前 6 个参数。剩下的参数会向前移动。
+
+%~d1 获取第一个参数的磁盘号。
+%~p1 获取第一个参数的路径。
+%~n1 获取第一个参数的文件名。
+%~x1 获取第一个参数的文件扩展名。
+%~f1 获取第一个参数的文件全路径（等同于%~dpnx0）。
+%~z1 获取第一个参数的文件大小。
+
+在批处理脚本中若有连续多个 %，在执行时会先将两个 % 替换为一个（在命令行中不会替换）：
+set /a n=%a%%%b% 执行时会先替换为 set /a n=%a%%b%
+然后才会扩展变量 a 和变量 b 的值，多个变量连用时需要注意。
+
+批处理执行时允许使用Ctrl+C强制中断运行。
+
+==========================================================================================
+
+关于字符串变量的截取：
+
+set a=ABCDabcd1234
+
+
+echo %a:~0%
+从第 0+1 个字符开始截取到最后（ABCDabcd1234），相当于 %a%
+
+echo %a:~0,2%
+从第 0+1 个字符开始截取，只截取随后的 2 个字符（AB），相当于 %a:~,2%
+
+echo %a:~0,-2%
+从第 0+1 个字符开始截取，截取到倒数第 2 个字符之前（ABCDabcd12），相当于 %a:~,-2%
+
+
+echo %a:~4%
+从第 4+1 个字符开始截取到最后（abcd1234）
+
+echo %a:~4,2%
+从第 4+1 个字符开始截取，只截取随后的 2 个字符（ab）
+
+echo %a:~4,-2%
+从第 4+1 个字符开始截取，截取到倒数第 2 个字符之前（abcd12）
+
+
+echo %a:~-4%
+从倒数第 4 个字符开始截取到最后（1234）
+
+echo %a:~-4,2%
+从倒数第 4 个字符开始截取，只截取随后的 2 个字符（12）
+
+echo %a:~-4,-2%
+从倒数第 4 个字符开始截取，截取到倒数第 2 个字符之前（12）
+
+echo %a:~-4,8%
+从倒数第 4 个字符开始截取，只截取随后的 8 个字符（1234），由于没有那么多字符可供截取，所以只截取 4 个。
+
+==========================================================================================
+
+关于内部变量：
+
+
+%@retval%：保存最后一个命令的返回值（即 0x4CB00 处的值）
+
+if 1==1 ;; echo %@retval%
+返回 1 表示 true（非 0 值都表示 true）
+
+if 1==2 ;; echo %@retval%
+返回 0 表示 false
+
+calc 100-1 > nul ;; echo %@retval%
+返回计算结果 99
+
+set a=abcdef ;; echo %@retval%
+返回变量长度 6
+
+
+%?_UUID%：保存 uuid 命令获取的到的 UUID 值
+
+uuid (hd0,0) > nul ;; echo %?_UUID%
+输出 (hd0,0) 的 UUID 值
+
+
+%?_BOOT%：保存初始启动设备的设备号
+
+echo %?_BOOT%
+如果从光盘启动，就输出 (cd)，如果从 ud 启动，就输出 (ud)
+
+
+%@root%：保存当前设备的设备号
+
+root (hd0,0) ;; echo %@root%
+
+
+%@apth%：保存外部命令的查找路径
+
+command --set-path=/BOOT/ ;; echo %@path%
+
+
+%@date%：获取当前日期
+
+echo %@date%
+
+
+%@time%：获取当前时间
+
+echo %@time%
+
+
+%@random%：获取一个随机数
+
+echo %@random%
+
+
+%?%：特殊变量，在不同地方表示不同的含义
+
+cat --locate=abc /FILE
+echo %?%
+输出最后一个找到的 abc 的位置
+
+map /Floppy.img (fd0)
+map --status=0
+echo %?%
+输出 (fd0) 的起始扇区 0x3D88A7
+map --status=0
+echo %@retval%
+输出 (fd0) 的大小 2880（扇区）
+
+
+一些固定内存地址的含义（前面的 set 是我自己加的，方便调用）：
+
+set G_NBOOTP=0x8208  4字节（即双字） 启动分区号 install_partition (the boot partition)
+set G_NBOOTD=0x8280  4字节（即双字） 启动驱动器号(boot_drive)
+set G_NROOTP=0x829C  4字节（即双字） 当前根分区号(current root partition)
+set G_NROOTD=0x82A0  4字节（即双字） 当前根所在的驱动器(current root drive)
+set G_NCD=0x82C8     4字节（即双字） CDROM驱动器号
+set G_NRD=0x82CC     4字节（即双字） rd 设备驱动器号
+set G_RDBASE=0x82D0  8字节（即四字） rd 设备物理基地址 
+set G_RDSIZE=0x82D8  8字节（即四字） rd 设备大小（以字节数表示）
+
+set G_LFSIZE=0x8290  8字节（即四字） 最后访问的文件的大小（是执行"cat --length=0"后的文件大小）
+set G_LPSS=0x82A8    8字节（即四字） 最后访问的分区的起始扇区号
+set G_LPSC=0x82B0    8字节（即四字） 最后访问的分区的扇区总数
+
+set G_VER=0x8278     4字节（即双字） GRUB4DOS编译的日期十进制数.
+set G_IS64=0x82BC    4字节（即双字） 检测CPU是否支持64位
+set G_ISFB=0x82B8    4字节（即双字） 判断是否为fb启动
+set G_FREEM=0x8298   4字节（即双字） 可用的扩展内存大小（以 KB 为单位）
+
+set G_PXECIP=0x8284  4字节（即双字） pxe 客户端 ip （即本地ip）
+set G_PXESIP=0x8288  4字节（即双字） pxe 服务器 ip
+set G_PXEGW=0x828C   4字节（即双字） pxe 网关 ip
+
+set G_AUTOM=0x8274   4字节（即双字） 菜单自动编号（适用于动态菜单）
+set G_AUTOMS=0x8275  4字节（即双字） 启用菜单自动编号时，菜单和自动编号之间采用的分隔符
+set G_GZIP=0x82A4    4字节（即双字） 解压标志 （gzip非自动解压）,非0时不自动解压
+set G_SMH=0x82C0     4字节（即双字） saved_mem_higher
+
+一些固定内存地址的含义（去掉后面的说明部分）：
+
+set G_NBOOTP=0x8208
+set G_NBOOTD=0x8280
+set G_NROOTP=0x829C
+set G_NROOTD=0x82A0
+set G_NCD=0x82C8
+set G_NRD=0x82CC
+set G_RDBASE=0x82D0
+set G_RDSIZE=0x82D8
+
+set G_LFSIZE=0x8290
+set G_LPSS=0x82A8
+set G_LPSC=0x82B0
+
+set G_VER=0x8278
+set G_IS64=0x82BC
+set G_ISFB=0x82B8
+set G_FREEM=0x8298
+
+set G_PXECIP=0x8284
+set G_PXESIP=0x8288
+set G_PXEGW=0x828C
+
+set G_AUTOM=0x8274
+set G_AUTOMS=0x8275
+set G_GZIP=0x82A4
+set G_SMH=0x82C0
+
+==========================================================================================
+
+更多关于 Grub4Dos 的知识，请访问下面的链接（英文）：
+http://www.rmprepusb.com/tutorials/grub4dos
+
+
+评分
+
+参与人数 6	无忧币 +30	收起理由
+ lsc1117	+ 5	楼主真可谓高能大神！
+ fukystone	+ 5	很给力!
+ yang77	+ 5	十分受用，加分以示鼓励
+ wintoflash	+ 5	很给力!
+ amwwc	+ 5	很直观的教程
+ fh123456	+ 5	赞一个!
+查看全部评分
+回复 支持 8 反对 0 举报
+stevenldj
+
+推荐
+  楼主| 发表于 2013-12-18 12:46:19 | 只看该作者
+本帖最后由 stevenldj 于 2013-12-26 16:46 编辑
+
+
+三楼、注意事项：
+
+==============================
+
+建议不要使用的命令：
+
+cdrom：由于 cdrom 的成功率太低，同时市场上的光驱设备几乎全被U盘代替，所以 cdrom 命令可能面临淘汰。
+setvbe：用处不大，可能面临淘汰。
+background、foreground：只在 vga 模式下有效，而 Grub4Dos 不建议使用 vga 模式，而推荐使用 vbe 模式。
+partnew：用不好会损坏分区表，建议用专业的分区软件。
+fstest：开发人员测试用，一般人用不上
+gfxmenu：不受 Grub4Dos 管理，与 Grub4Dos 兼容性不好，建议不要使用，而使用 Grub4Dos 推荐的 vbe 模式。
+serial：串口，早淘汰了。
+
+==============================
+
+内存的使用规则：
+
+目前 0x50000 - 0x7FFFF 处的内存是给用户预留的。
+
+==============================
+
+提高启动成功率的方法：
+
+用 fbinst 制作 ud 启动盘，fbinst 可以保证较高的启动成功率。
+格式化 fbinst 的时候，让 grldr 和 menu.lst 最先放进 ud 区，其它的文件放在后面
+
+下面引用“不点”的话：
+读盘失败的原因有：
+
+1、如果没有采用 grldr.mbr 而是直接采用分区引导代码，那么，由于分区引导代码没有自动适应 CHS 的能力，因此，出现 BPB 中的 CHS 不能够匹配主板 BIOS 的 CHS 的情况，这样可能导致 int13 读盘失败或死机。如果一个 PBR 的引导代码不采用 “几何参数探测和自适应” 的方法，那么它必须在 BPB 中放置完全正确的 H 和 S 值，保证与这个主板 BIOS 所认定的 H、S 值完全相同，这才行，否则就出现 disk error （或干脆死机）。 
+
+2、如果使用了 grldr.mbr，仍然有可能出现 CHS 不匹配的情况，这是因为，grub4dos 的 “自动探测 CHS” 的功能并不保证 100% 成功。真正可以保证 100% 成功的是 fbinst。既然 CHS 有可能不准确，那么这就会出现因执行 INT13 指令而导致的 disk error （或干脆死机）。
+
+3、在 CHS 保证能够完全正确匹配主板 BIOS 的情况下，如果把 GRLDR 放置在靠后的位置，超出主板 BIOS int13 的访问能力，此时也会出现 disk error（或干脆死机）。
+
+4、在主板 BIOS 支持 LBA 模式的情况下，这与上述第 3 条是类似的。即，如果把 GRLDR 放置在靠后的位置，超出主板 BIOS int13 的访问能力，此时也会出现 disk error（或干脆死机）。
+
+
+如果我没搞错的话，以上这 4 条，好像就是与启动失败有关的全部的可能性。
+
+因此，如果你想让你的 U 盘通用，（目前）你唯一可以使用的软件是 fbinst。如果你不考虑通用的问题，那么你可以自己设定 BPB 中的 H 和 S（匹配你的主板 BIOS） 来让你的这台机器成功启动。
+
+==============================
+
+评分
+
+参与人数 1	无忧币 +5	收起理由
+ lsc1117	+ 5	楼主真可谓高能大神！
+查看全部评分
+回复 支持 2 反对 1 举报
+stevenldj
+
+推荐
+  楼主| 发表于 2013-12-18 12:46:58 | 只看该作者
+本帖最后由 stevenldj 于 2013-12-29 12:12 编辑
+
+
+四楼、代码解析：
+
+1、解析“文件管理器”批处理脚本
+
+本示例参考了 smine 网友的代码：
+http://bbs.wuyou.net/forum.php?mod=viewthread&tid=203607
+
+smine 用了 2 个脚本文件 FileList 和 OpenFile，我这里合并成了一个脚本文件 FileList。
+
+用法：将以下脚本（+++++之间的内容）保存为 FileList 文件（UTF-8 格式，存放到外部命令的默认路径中），然后在命令行执行 FileList 或者 FileList /DirPath/ 即可。
+
+修复了一些 BUG，增加了一些用法：
+FileList (ud)/
+FileList (ud)
+FileList /grldr
+FileList grldr
+FileList g
+FileList /Boot/
+FileList B
+FileList /
+FileList
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+!BAT
+
+# 开启冗余模式，能够及时捕获出错信息
+debug on
+
+# 检测 Grub4Dos 版本
+checkrange 20110918:-1 read 0x8278 > nul || echo Please use grub4dos-0.4.5b-2011-09-18 or above! && exit 1
+
+# 载入本模块，方便调用
+delmod -l FileList > nul || insmod %0 FileList > nul
+
+# 用于保存“文件列表”的配置文件
+set CfgList=(md)0x60000+0x100
+# 用于保存“打开方式”的配置文件
+set CfgOpen=(md)0x60100+0x100
+# 用于保存临时数据
+set TmpFile=(md)0x60500+0x100
+# 要列表的路径
+set FL_Param=%~f1
+# 分离目录和文件名
+set FL_Path=%~dp1
+set FL_File=%~nx1
+
+# 开启分页显示模式（debug 3 调试用）
+pager on
+
+# 搜索文件和目录需要时间，这里给出提示信息
+clear
+echo -e 正在进入目录：%FL_Path% ...
+
+# 调用子过程：创建“文件列表”的配置文件
+call :GreateCfgList
+# 调用子过程：创建“打开方式”的配置文件
+call :GreateCfgOpen
+# 执行配置文件
+configfile %CfgList%
+# 脚本结束
+exit
+
+# ============================================================
+
+# 创建“文件列表”的配置文件
+:GreateCfgList
+        # 调用子过程：初始化配置文件
+        call :InitCfgList
+        # 调用子过程：创建“标题”菜单项
+        call :TitleMenu
+        # 调用子过程：创建“返回上一级”菜单项
+        call :UpMenu
+        # 调用子过程：创建“驱动器或文件列表”菜单项
+        if exist FL_Path && call :ListFile ! call :ListDrive
+exit
+
+# 初始化配置文件
+:InitCfgList
+        echo debug off > %CfgList%
+        echo default 1 >> %CfgList%
+        echo timeout 60 >> %CfgList%
+        # 添加一个空行
+        echo >> %CfgList%
+exit
+
+# 创建“标题”菜单项
+:TitleMenu
+        # 向配置文件中写入一个菜单项（标题）（FL_Path 中可能存在转义字符）
+        if exist FL_Path && echo -e title 当前目录：%FL_Path% >> %CfgList% ! echo title 驱动器列表： >> %CfgList%
+        # 菜单命令：重新进入当前目录
+        echo command FileList %FL_Param% >> %CfgList%
+        # 加一个空行
+        echo >> %CfgList%
+exit
+
+# 创建“返回上一级”菜单项
+:UpMenu
+        # 向配置文件中写入一个菜单项（返回上一级）
+        echo title   [ . . ] >> %CfgList%
+        # 对于磁盘列表来说，返回上一级就是返回主菜单（configfile 要单独一行，否则菜单中没有启动敏感的命令，不能上下选择）
+        if not exist FL_Path echo -e write 0x307FF8 1\r\nconfigfile >> %CfgList% && exit
+        # 对文件或目录来说，要获取上级目录名称
+        call :GetUpDir %FL_Path%
+        # 生成菜单命令（返回上一级）
+        echo command FileList %FL_UpDir% >> %CfgList%
+exit
+
+# 根据参数获取上级目录，结果存入 FL_UpDir 变量中
+:GetUpDir
+        # 如果路径只有一个反斜线，则直接处理
+        if '%1'=='/' && set FL_UpDir= && goto GU_Clear
+        # 将要处理的路径存入 %TmpFile%，以便处理
+        echo -n %1 > %TmpFile%
+        # 获取路径中最后一个斜线的位置（LastS：LastSlash）
+        set LastS=-1 && cat --locate=/ %TmpFile% > nul &; set /a LastS=%?% > nul
+        # 如果路径中没有斜线，则直接处理
+        if %LastS%==-1 && set FL_UpDir= && goto GU_Clear
+        # 获取路径中最后一个字符的位置（LastC：LastChar）
+        set LastC=-1 && cat --locate=\x0 --number=1 %TmpFile% > nul &; set /a LastC=%?%-1 > nul
+        # 如果斜线在最后，则删除最后的斜线
+        if %LastS%==%LastC% && cat --length=%LastS% %TmpFile% > %TmpFile%
+        # 获取路径中最后一个斜线的位置
+        set LastS=-1 && cat --locate=/ %TmpFile% > nul &; set /a LastS=%?% > nul
+        # 删除最后一个斜线之后的内容，获取上级目录的路径
+        if not %LastS%==-1 set /a LastS=%LastS%+1 > nul
+        if %LastS%==-1 && set FL_UpDir= ! cat --length=%LastS% %TmpFile% | set FL_UpDir=
+                # 清理临时数据
+                :GU_Clear
+        set LastC=
+        set LastS=
+exit
+
+# 创建磁盘列表
+:ListDrive
+        # 列出磁盘列表（debug off 的状态下，find 命令无法列出磁盘列表）
+        debug on
+        find --ignore-floppies > %TmpFile%
+        # 用空格分隔磁盘列表
+        cat --locate=\r --replace=\x20 %TmpFile% > nul
+        cat --locate=\n --replace=\x20 %TmpFile% > nul
+        # 根据磁盘列表生成菜单（由命令行解析功能去处理多余的空格）
+        cat %TmpFile% | call :ProcessDrive
+exit
+
+# 生成一个磁盘菜单
+:ProcessDrive
+        # 获取要生成菜单的磁盘名称
+        set CurDrv=%1
+        # 丢弃第一个参数，以便在下次循环时处理下一个参数
+        shift
+        # 参数处理完毕，退出循环
+        if not exist CurDrv goto :PDR_Clear
+        # 判断磁盘名称是否在括号内
+        if not '%CurDrv:~,1%'=='(' && goto :ProcessDrives
+        if not '%CurDrv:~-1%'==')' && goto :ProcessDrives
+        # 写入菜单标题
+        echo title   %CurDrv% >> %CfgList%
+        # 写入菜单命令
+        echo command FileList %CurDrv%/ >> %CfgList%
+        # 写入一个空行
+        echo >> %CfgList%
+        # 继续循环
+        goto :ProcessDrive
+                # 清理临时数据
+                :PDR_Clear
+        set CurDrv=
+exit
+
+# 创建目录和文件列表（目录列在前，文件列在后）
+:ListFile
+        # 清空 %TmpFile%，准备循环写入文件名
+        echo -n > %TmpFile%
+        # 列出当前目录下的文件和目录，并处理其中的目录部分，文件部分将保存在 %TmpFile% 中
+        ls %FL_Param% > nul && ls %FL_Param% | call :ProcessDir
+        # 处理文件部分
+        cat %TmpFile% | call :ProcessFile
+exit
+
+# 生成一个目录菜单
+:ProcessDir
+        # 获取当前文件名
+        set CurFile=%1
+        # 丢弃第一个参数，以便在下次循环时处理下一个参数
+        shift
+        # 参数处理完毕，退出循环
+        if not exist CurFile goto :PD_Clear
+        # 获取文件的绝对路径
+        set FullPath=%FL_Path%%%CurFile%
+        # 如果文件类型是文件，而不是目录，则转到 :PD_MarkFile 处执行
+        cat --length=0 %FullPath% > nul && goto :PD_MarkFile
+        # 写入菜单标题
+        echo title   [%CurFile%] >> %CfgList%
+        # 写入菜单命令
+        echo command FileList %FullPath%/ >> %CfgList%
+        # 写入一个空行
+        echo >> %CfgList%
+        # 继续循环
+        goto :ProcessDir
+                # 记下文件名，以便后面的代码继续处理
+                :PD_MarkFile
+        # 将文件名写入 %TmpFile% 中
+        echo -e \x20 >> %TmpFile%
+        echo %CurFile% >> %TmpFile%
+        # 继续循环
+        goto :ProcessDir
+                # 清理临时数据
+                :PD_Clear
+        set CurFile=
+        set FullPath=
+exit
+
+# 生成一个文件菜单
+:ProcessFile
+        # 获取当前文件名
+        set CurFile=%1
+        # 丢弃第一个参数，以便在下次循环时处理下一个参数
+        shift
+        # 参数处理完毕，退出循环
+        if not exist CurFile goto :PF_Clear
+        # 获取文件的绝对路径
+        set FullPath=%FL_Path%%%CurFile%
+        # 写入菜单标题
+        echo title   %CurFile% >> %CfgList%
+        # 写入菜单命令
+        echo set FL_Open=%FullPath% >> %CfgList%
+        echo configfile %CfgOpen% >> %CfgList%
+        # 写入一个空行
+        echo >> %CfgList%
+        # 继续循环
+        goto :ProcessFile
+                # 清理临时数据
+                :PF_Clear
+        set CurFile=
+        set FullPath=
+exit
+
+# ============================================================
+
+# 创建“打开方式”的配置文件
+:GreateCfgOpen
+        # 调用子过程：初始化配置文件
+        call :InitCfgOpen
+        # 调用子过程：创建“打开”菜单项
+        call :CreateOpenMenu
+exit
+
+# 初始化“打开方式”的配置文件
+:InitCfgOpen
+        echo debug off > %CfgOpen%
+        echo default 0 >> %CfgOpen%
+        echo timeout 60 >> %CfgOpen%
+        # 添加一个空行
+        echo >> %CfgOpen%
+exit
+
+# 生成“打开方式”菜单项
+:CreateOpenMenu
+        echo title   加载光盘镜像并启动 >> %CfgOpen%
+        echo echo -e 正在加载：%FL_Open^% ... >> %CfgOpen%
+        echo map %FL_Open^% (0xff) >> %CfgOpen%
+        echo map --hook >> %CfgOpen%
+        echo chainloader (0xff) >> %CfgOpen%
+        echo >> %CfgOpen%
+
+        echo title   加载光盘镜像到内存并启动 >> %CfgOpen%
+        echo echo -e 正在加载：%FL_Open^% ... >> %CfgOpen%
+        echo map --mem %FL_Open^% (0xff) >> %CfgOpen%
+        echo map --hook >> %CfgOpen%
+        echo chainloader (0xff) >> %CfgOpen%
+        echo >> %CfgOpen%
+
+        # 空一行
+        echo -e title \x20 >> %CfgOpen%
+        echo clear >> %CfgOpen%
+        echo >> %CfgOpen%
+
+        # 软盘加载必须用 (fd0)，否则可能启动失败
+        echo title   加载软盘镜像并启动 >> %CfgOpen%
+        echo echo -e 正在加载：%FL_Open^% ... >> %CfgOpen%
+        echo map %FL_Open^% (fd0) >> %CfgOpen%
+        echo map --hook >> %CfgOpen%
+        echo rootnoverify (fd0) >> %CfgOpen%
+        echo chainloader (fd0)+1 >> %CfgOpen%
+        echo >> %CfgOpen%
+
+        # 软盘加载必须用 (fd0)，否则可能启动失败
+        echo title   加载软盘镜像到内存并启动 >> %CfgOpen%
+        echo echo -e 正在加载：%FL_Open^% ... >> %CfgOpen%
+        echo map --mem %FL_Open^% (fd0) >> %CfgOpen%
+        echo map --hook >> %CfgOpen%
+        echo rootnoverify (fd0) >> %CfgOpen%
+        echo chainloader (fd0)+1 >> %CfgOpen%
+        echo >> %CfgOpen%
+
+        # 空一行
+        echo -e title \x20 >> %CfgOpen%
+        echo clear >> %CfgOpen%
+        echo >> %CfgOpen%
+
+        echo title   加载硬盘镜像并启动 >> %CfgOpen%
+        echo echo -e 正在加载：%FL_Open^% ... >> %CfgOpen%
+        echo map %FL_Open^% (hd0) >> %CfgOpen%
+        echo map --hook >> %CfgOpen%
+        echo rootnoverify (hd0) >> %CfgOpen%
+        echo chainloader (hd0)+1 >> %CfgOpen%
+        echo >> %CfgOpen%
+
+        echo title   加载硬盘镜像到内存并启动 >> %CfgOpen%
+        echo echo -e 正在加载：%FL_Open^% ... >> %CfgOpen%
+        echo map --mem %FL_Open^% (hd0) >> %CfgOpen%
+        echo map --hook >> %CfgOpen%
+        echo rootnoverify (hd0) >> %CfgOpen%
+        echo chainloader (hd0)+1 >> %CfgOpen%
+        echo >> %CfgOpen%
+
+        # 空一行
+        echo -e title \x20 >> %CfgOpen%
+        echo clear >> %CfgOpen%
+        echo >> %CfgOpen%
+
+        echo title   作为引导文件启动 >> %CfgOpen%
+        echo chainloader %FL_Open^% >> %CfgOpen%
+        echo >> %CfgOpen%
+
+        echo title   作为菜单文件启动 >> %CfgOpen%
+        echo configfile %FL_Open^% >> %CfgOpen%
+        echo >> %CfgOpen%
+
+        echo title   作为外部命令启动 >> %CfgOpen%
+        echo command %FL_Open^% >> %CfgOpen%
+        echo >> %CfgOpen%
+
+        # 空一行
+        echo -e title \x20 >> %CfgOpen%
+        echo clear >> %CfgOpen%
+        echo >> %CfgOpen%
+
+        echo title   查看文件内容(文本) >> %CfgOpen%
+        echo pager on >> %CfgOpen%
+        echo cat %FL_Open^% >> %CfgOpen%
+        echo pause >> %CfgOpen%
+        echo command FileList %FL_Param^% >> %CfgOpen%
+        echo >> %CfgOpen%
+
+        echo title   查看文件内容(Hex) >> %CfgOpen%
+        echo pager on >> %CfgOpen%
+        echo cat --hex %FL_Open^% >> %CfgOpen%
+        echo pause >> %CfgOpen%
+        echo command FileList %FL_Param^% >> %CfgOpen%
+        echo >> %CfgOpen%
+
+        # 空一行
+        echo -e title \x20 >> %CfgOpen%
+        echo clear >> %CfgOpen%
+        echo >> %CfgOpen%
+
+        echo title   作为字体文件加载(UniFont) >> %CfgOpen%
+        echo echo -e 正在加载字体文件：%FL_Open^% ... >> %CfgOpen%
+        echo font %FL_Open^% >> %CfgOpen%
+        echo command FileList %FL_Param^% >> %CfgOpen%
+        echo >> %CfgOpen%
+
+        # 空一行
+        echo -e title \x20 >> %CfgOpen%
+        echo clear >> %CfgOpen%
+        echo >> %CfgOpen%
+
+        echo title   返回 >> %CfgOpen%
+        echo command FileList %FL_Param^% >> %CfgOpen%
+        echo >> %CfgOpen%
+exit
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
