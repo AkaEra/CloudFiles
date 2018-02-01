@@ -56,7 +56,7 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp",
+      "network": "ws",
       "security": "",
       "tcpSettings": null,
       "kcpSettings": null,
