@@ -22,7 +22,7 @@
       "vnext": [
         {
           "address": "hk.ohmyss.win",
-          "port": 82,
+          "port": 80,
           "users": [
             {
               "id": "03042ad7-6316-46a0-8473-65768b0f1fb2",
@@ -33,7 +33,7 @@
         },
         {
           "address": "jp.ohmyss.win",
-          "port": 82,
+          "port": 80,
           "users": [
             {
               "id": "03042ad7-6316-46a0-8473-65768b0f1fb2",
@@ -44,7 +44,7 @@
         },
         {
           "address": "us.ohmyss.win",
-          "port": 82,
+          "port": 80,
           "users": [
             {
               "id": "03042ad7-6316-46a0-8473-65768b0f1fb2",
