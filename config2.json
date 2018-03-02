@@ -52,6 +52,17 @@
               "security": "aes-128-gcm"
             }
           ]
+        },
+        {
+          "address": "vus.ohmyss.win",
+          "port": 82,
+          "users": [
+            {
+              "id": "03042ad7-6316-46a0-8473-65768b0f1fb2",
+              "alterId": 64,
+              "security": "aes-128-gcm"
+            }
+          ]
         }
       ]
     },
