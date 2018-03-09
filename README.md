@@ -1,4 +1,4 @@
-[![Analytics](https://myproj8-371318.appspot.com/UA-90998288-1/insert/any/path?pixel)](https://github.com/AkaEra/ga-beacon)
+[![Analytics](https://ga-beacon.appspot.com/UA-XXXXX-X/welcome-page)](https://github.com/igrigorik/ga-beacon)
 
 # CloudFiles
 Files in the Cloud
