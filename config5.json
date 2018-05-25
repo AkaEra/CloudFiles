@@ -1,0 +1,147 @@
+{
+  "log": {
+    "access": "Vaccess.log",
+    "error": "Verror.log",
+    "loglevel": "debug"
+  },
+  "inbound": {
+    "port": 1080,
+    "listen": "0.0.0.0",
+    "protocol": "socks",
+    "settings": {
+      "auth": "noauth",
+      "udp": true,
+      "ip": "127.0.0.1"
+    }
+  },
+  "outbound": {
+    "tag": "agentout",
+    "protocol": "shadowsocks",
+    "settings": {
+      "servers": [
+        {
+          "address": "hk.ohmyss.win",
+          "port": 81,
+          "password": "namaho.org+LNVTU",
+          "method": "chacha20-ietf-poly1305",
+          "ota": false,
+          "email": "v2rayn@v2ray.com",
+          "level": 1
+        },
+        {
+          "address": "jp.ohmyss.win",
+          "port": 81,
+          "password": "namaho.org+LNVTU",
+          "method": "chacha20-ietf-poly1305",
+          "ota": false,
+          "email": "v2rayn@v2ray.com",
+          "level": 1
+        },
+        {
+          "address": "us.ohmyss.win",
+          "port": 81,
+          "password": "namaho.org+LNVTU",
+          "method": "chacha20-ietf-poly1305",
+          "ota": false,
+          "email": "v2rayn@v2ray.com",
+          "level": 1
+        },
+        {
+          "address": "hk.ohmyss.win",
+          "port": 19680,
+          "password": "namaho.org+A2018",
+          "method": "chacha20-ietf-poly1305",
+          "ota": false,
+          "email": "v2rayn@v2ray.com",
+          "level": 1
+        },
+        {
+          "address": "jp.ohmyss.win",
+          "port": 19680,
+          "password": "namaho.org+A2018",
+          "method": "chacha20-ietf-poly1305",
+          "ota": false,
+          "email": "v2rayn@v2ray.com",
+          "level": 1
+        },
+        {
+          "address": "us.ohmyss.win",
+          "port": 19680,
+          "password": "namaho.org+A2018",
+          "method": "chacha20-ietf-poly1305",
+          "ota": false,
+          "email": "v2rayn@v2ray.com",
+          "level": 1
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": null,
+      "tcpSettings": null,
+      "kcpSettings": null,
+      "wsSettings": null
+    },
+    "mux": {
+      "enabled": false
+    }
+  },
+  "inboundDetour": null,
+  "outboundDetour": [
+    {
+      "protocol": "freedom",
+      "settings": null,
+      "tag": "direct"
+    },
+    {
+      "protocol": "blackhole",
+      "settings": {
+        "response": {
+          "type": "http"
+        }
+      },
+      "tag": "blockout"
+    }
+  ],
+  "dns": {
+    "servers": [
+      "8.8.8.8",
+      "8.8.4.4",
+      "localhost"
+    ]
+  },
+  "routing": {
+    "strategy": "rules",
+    "settings": {
+      "domainStrategy": "IPIfNonMatch",
+      "rules": [
+        {
+          "type": "field",
+          "port": null,
+          "outboundTag": "direct",
+          "ip": [
+            "0.0.0.0/8",
+            "10.0.0.0/8",
+            "100.64.0.0/10",
+            "127.0.0.0/8",
+            "169.254.0.0/16",
+            "172.16.0.0/12",
+            "192.0.0.0/24",
+            "192.0.2.0/24",
+            "192.168.0.0/16",
+            "198.18.0.0/15",
+            "198.51.100.0/24",
+            "203.0.113.0/24",
+            "::1/128",
+            "fc00::/7",
+            "fe80::/10",
+            "geoip:cn"
+          ],
+          "domain": [
+            "geosite:cn"
+          ]
+        }
+      ]
+    }
+  }
+}
