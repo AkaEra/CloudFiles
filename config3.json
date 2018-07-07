@@ -12,8 +12,7 @@
       "auth": "noauth",
       "udp": true,
       "ip": "127.0.0.1"
-    },
-    "streamSettings": null
+    }
   },
   "outbound": {
     "tag": "agentout",
@@ -21,7 +20,7 @@
     "settings": {
       "vnext": [
         {
-          "address": "hk.ohmyss.win",
+          "address": "jp.ohmyv2.win",
           "port": 80,
           "users": [
             {
@@ -32,7 +31,7 @@
           ]
         },
         {
-          "address": "jp.ohmyss.win",
+          "address": "us.ohmyv2.win",
           "port": 80,
           "users": [
             {
@@ -43,18 +42,7 @@
           ]
         },
         {
-          "address": "us.ohmyss.win",
-          "port": 80,
-          "users": [
-            {
-              "id": "03042ad7-6316-46a0-8473-65768b0f1fb2",
-              "alterId": 64,
-              "security": "aes-128-gcm"
-            }
-          ]
-        },
-        {
-          "address": "vus.ohmyss.win",
+          "address": "vus.ohmyv2.win",
           "port": 80,
           "users": [
             {
@@ -84,9 +72,7 @@
   "outboundDetour": [
     {
       "protocol": "freedom",
-      "settings": {
-        "response": null
-      },
+      "settings": null,
       "tag": "direct"
     },
     {

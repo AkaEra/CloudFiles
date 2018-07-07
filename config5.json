@@ -20,7 +20,7 @@
     "settings": {
       "servers": [
         {
-          "address": "hk.ohmyss.win",
+          "address": "jp.ohmyv2.win",
           "port": 81,
           "password": "namaho.org+LNVTU",
           "method": "chacha20-ietf-poly1305",
@@ -29,7 +29,7 @@
           "level": 1
         },
         {
-          "address": "jp.ohmyss.win",
+          "address": "us.ohmyv2.win",
           "port": 81,
           "password": "namaho.org+LNVTU",
           "method": "chacha20-ietf-poly1305",
@@ -38,16 +38,7 @@
           "level": 1
         },
         {
-          "address": "us.ohmyss.win",
-          "port": 81,
-          "password": "namaho.org+LNVTU",
-          "method": "chacha20-ietf-poly1305",
-          "ota": false,
-          "email": "v2rayn@v2ray.com",
-          "level": 1
-        },
-        {
-          "address": "hk.ohmyss.win",
+          "address": "jp.ohmyv2.win",
           "port": 19680,
           "password": "namaho.org+A2018",
           "method": "chacha20-ietf-poly1305",
@@ -56,16 +47,7 @@
           "level": 1
         },
         {
-          "address": "jp.ohmyss.win",
-          "port": 19680,
-          "password": "namaho.org+A2018",
-          "method": "chacha20-ietf-poly1305",
-          "ota": false,
-          "email": "v2rayn@v2ray.com",
-          "level": 1
-        },
-        {
-          "address": "us.ohmyss.win",
+          "address": "us.ohmyv2.win",
           "port": 19680,
           "password": "namaho.org+A2018",
           "method": "chacha20-ietf-poly1305",
