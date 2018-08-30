@@ -3,7 +3,7 @@
 <!-- Generated on Fri, 31 Aug 2018 06:32:00 +0800 -->
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <atom:link href="http://www.ftchinese.com/ft/rss/feed" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.ftchinese.com/rss/feed" rel="self" type="application/rss+xml" />
     <title>FT中文网_英国《金融时报》(Financial Times)</title>
     <link>http://www.ftchinese.com/</link>
     <description><![CDATA[ FT中文网每日新闻 ]]></description>
