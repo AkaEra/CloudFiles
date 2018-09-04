@@ -1,9 +1,8 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated on Fri, 31 Aug 2018 06:32:00 +0800 -->
+<!-- Generated on Wed, 05 Sep 2018 07:34:16 +0800 -->
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <atom:link href="http://www.ftchinese.com/rss/feed" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.ftchinese.com/ft/rss/feed" rel="self" type="application/rss+xml" />
     <title>FT中文网_英国《金融时报》(Financial Times)</title>
     <link>http://www.ftchinese.com/</link>
     <description><![CDATA[ FT中文网每日新闻 ]]></description>
@@ -13,13 +12,583 @@
     <generator>ftchinese.com</generator>
     <ttl>600</ttl>
     <item>
-      <title><![CDATA[特朗普指责中国对朝鲜弃核“没有帮助”]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/9/000080119_piclink.jpg"/><br>卡特里娜•曼森华盛顿报道
- <br><p>唐纳德•特朗普(Donald Trump )指责中国向朝鲜提供大量支持，称中国采取的行动“没有帮助”。目前美国迫使平壤方面弃核的努力陷入僵局。</p>
-<p>美国总统似乎也与他的国防部长吉姆•马蒂斯(Jim Mattis)的表态抵触，宣称没有理由在美韩军事演习上大笔支出，而马蒂斯在前一天表示，联合军事演练在继续进行中。</p>
-<p>“唐纳德•J•特朗普总统强烈感觉到，朝鲜正受到中国的巨大压... ]]></description>
-      <link>http://www.ftchinese.com/story/001079206</link>
-      <pubDate>Thu, 30 Aug 2018 21:59:24 GMT</pubDate>
+      <title><![CDATA[“丑闻暴露欧盟反洗钱漏洞”]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/3/000080293_piclink.jpg"/><br>吉姆•布伦斯登,卡罗琳•宾哈姆,克莱尔•琼斯布鲁塞尔,伦敦,法兰克福报道
+ <br><p>欧盟监管者警告，欧盟对洗钱的控制存在严重缺陷。此前席卷丹麦银行(Danske Bank，<i>见文首照片</i>)等银行的丑闻令人更加担忧欧盟未能阻止非法资金进入银行体系。</p>
+<p>欧盟金融监管者编写的一份机密文件称，就阻止脏钱流动而言，近期的事件暴露了不同成员国和欧盟有关部门在合作上的“缺陷”和“漏洞”。</p>
+<p>英国《金融时报》看到的这份报告出炉之前，过去一年不断有破坏性的指... ]]></description>
+      <link>http://www.ftchinese.com/story/001079276</link>
+      <pubDate>Tue, 04 Sep 2018 21:51:10 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[亚马逊市值突破万亿美元]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/7/000077807_piclink.jpg"/><br>蒂姆•布拉德肖,香农•邦德洛杉矶,旧金山报道
+ <br><p>亚马逊(Amazon)市值触及1万亿美元，为这家电商企业股价在过去12个月上涨逾一倍的超常表现画上句号。</p>
+<p>虽然苹果(Apple)的市值已于上月首次突破1万亿美元，但亚马逊市值创纪录仍是可圈可点的。iPhone制造商的市值是以相对稳定的步伐上涨，这与亚马逊近期令人眩晕的上涨形成鲜明对比。仅过去一年，亚马逊的股权价值就增加了约5200亿美元，相当于伯克希尔-哈撒韦公司(Berksh... ]]></description>
+      <link>http://www.ftchinese.com/story/001079275</link>
+      <pubDate>Tue, 04 Sep 2018 21:41:03 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[中美贸易战：双方知己不知彼？]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/1/000080291_piclink.jpg"/><br>米强
+ <br><p>在唐纳德•特朗普(Donald Trump)和习近平准备带领他们的国家投入20世纪30年代以来世界上最严重的贸易战之际，他们似乎忘记了中国古代军事家孙子的名言“知己知彼”的后半部分，也就是说，美国总统和他的中国对手似乎都不太了解自己的对手。</p>
+<p>按照目前的发展轨迹，到本月底，世界上两个最大的经济体可能对价值3600亿美元的制成品和大宗商品加征惩罚性关税——相当于美中去年双边贸易额的... ]]></description>
+      <link>http://www.ftchinese.com/story/001079274</link>
+      <pubDate>Tue, 04 Sep 2018 21:26:46 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[安倍拟将日本退休年龄提高至65岁以上]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/0/000080290_piclink.jpg"/><br>罗宾•哈丁东京报道
+ <br><p>在安倍晋三(Shinzo Abe)誓言要改革日本的社会保障体系后，这个快速老龄化国家的劳动者预计将比世界上任何地方的工人都要更晚退休。</p>
+<p>日本首相向《日本经济新闻》(Nikkei newspaper)表示，他希望把日本的退休年龄提高至65岁以上，并允许人们把领取退休金的时间推迟到70岁以后。</p>
+<p>安倍称：“未来三年，我想推行一项社保大改革，让所有年龄段的人都能安心。”<... ]]></description>
+      <link>http://www.ftchinese.com/story/001079273</link>
+      <pubDate>Tue, 04 Sep 2018 21:06:48 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[资本在中国社会转型中的角色]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/8/000080268_piclink.jpg"/><br>刘远举
+ <br><p>最近一段时间，很多社会新闻背后，都能看到资本的影子。房屋中介公司通过融资大举进入租赁，引起房租大涨；社会资本涌入学前教育领域，为了快速扩张规模支撑股价，就会压低人工成本，影响到幼儿教育的安全与质量；在P2P领域，资本钻法律空子，隐瞒投资者，爆雷之后，引发大规模的维权行动；再往前溯，持续时间更长久的话题是，互联网新经济中资本摧枯拉朽式的对传统产业的改造，导致的残酷淘汰。</p>
+<p>于是人们... ]]></description>
+      <link>http://www.ftchinese.com/story/001079259</link>
+      <pubDate>Tue, 04 Sep 2018 20:50:11 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[中美贸易战改变供应链格局]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/9/000080289_piclink.jpg"/><br>白杰明香港报道
+ <br><p>史蒂夫•马登公司(Steve Madden)正在将手袋生产转移到柬埔寨；越南正在吸走Hoover吸尘器制造商创科实业(TechTronic Industries)的部分生产；谷歌(Google)的硬件制造商Flex正在从墨西哥到马来西亚等地寻找新的生产中心。</p>
+<p>中美贸易战日益升级，迫使在中国生产的制造商及其美国客户重新思考将世界两大经济体紧密联系在一起的复杂而广泛的供应链。</p... ]]></description>
+      <link>http://www.ftchinese.com/story/001079266</link>
+      <pubDate>Tue, 04 Sep 2018 20:49:11 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[西方国家应理性应对中国的非洲战略]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/8/000080288_piclink.jpg"/><br>寿慧生为FT中文网撰稿
+ <br><p>中非合作虽然意义深远，前景广阔，但横亘在这个宏大历史任务面前的挑战依然多重而艰巨，其中最为不幸的是来自西方社会一些人对中国在非洲的战略意图的猜忌和误解，由此带来诸多不必要的资源损耗和纠纷，甚至潜在的冲突。考虑到中非合作可以被视为“一带一路”的缩影和试验场，如何在非洲问题上化解一些西方人的这些猜忌和误解，使其理性地认识和应对中国的非洲战略，不仅有利于中非自身的发展，也有利于让中国在更大范围内与... ]]></description>
+      <link>http://www.ftchinese.com/story/001079272</link>
+      <pubDate>Tue, 04 Sep 2018 20:06:17 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[非洲希望中国投资非洲制造业]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/5/000080285_piclink.jpg"/><br>韩碧如,戴维•皮林北京,伦敦报道
+ <br><p>非洲国家领导人本周齐聚北京，寻求从中国获得更多制造业投资。在此次峰会上，中非双方都将寻求使他们的关系摆脱有关债务和依赖问题的指控。</p>
+<p>每三年举行一次的中非合作论坛(Forum on China Africa Cooperation)，过去一直是深化中非关系的一项催化剂。10年前，中非关系的深化有赖于中国政府获取石油和铜等大宗商品，并以投资非洲国家基础设施为回报的努力。</p>
+<... ]]></description>
+      <link>http://www.ftchinese.com/story/001079268</link>
+      <pubDate>Tue, 04 Sep 2018 20:01:29 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[普京的烦恼：民众支持与西方修好]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/9/000069039_piclink.jpg"/><br>莉利亚•舍夫佐娃
+ <br><p>当今俄罗斯最引人入胜的动态并不是关于该国总统弗拉基米尔•普京(Vladimir Putin)与美国总统唐纳德•特朗普(Donald Trump)，而是俄罗斯老百姓不想再生活在“围城”后，与西方斗个没完。</p>
+<p>去年6月，独立研究机构列瓦达中心(Levada-Center)进行的一项民意调查显示，59%的俄罗斯人认为，俄罗斯外交政策的首要任务应该是保障本国“和平与安全的存在”。仅有19... ]]></description>
+      <link>http://www.ftchinese.com/story/001079269</link>
+      <pubDate>Tue, 04 Sep 2018 20:00:45 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[FT社评：缅甸必须为暴行付出代价]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/3/000080253_piclink.jpg"/><br>社评
+ <br><p>瓦隆(Wa Lone)和觉梭(Kyaw Soe Oo)去年进行了细致入微的调查，试图查清缅甸若开邦(Rakhine)因丁村(Inn Din) 10名罗兴亚人遭屠杀的先因后果。这是在军队封锁该邦并启动系统性恐吓行动后发生的多场屠杀之一，军队的系统性恐吓行动已把大多数穆斯林人口赶到孟加拉国。路透社(Reuters)在其两名记者被捕后发表的这份报告是史无前例的。该报告详细记录了军方是如何蓄谋策划、... ]]></description>
+      <link>http://www.ftchinese.com/story/001079264</link>
+      <pubDate>Tue, 04 Sep 2018 20:00:01 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[FT社评：警惕特朗普对互联网的危险要求]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/7/000080287_piclink.jpg"/><br>社评
+ <br><p>西奥多•罗斯福(Theodore Roosevelt)曾说过，美国总统职位是“天字第一号讲坛”(Bully Pulpit)，意思是它是一个影响公众舆论的绝佳平台。唐纳德•特朗普(Donald Trump)也热衷搞公共关系，但他是在现代意义上使用自己的“霸王讲坛”：恐吓与他意见不一致或被他视为敌手的人。</p>
+<p>新闻媒体是他经常炮轰的目标，上周，特朗普将怒火烧向谷歌(Google)，尤其... ]]></description>
+      <link>http://www.ftchinese.com/story/001079270</link>
+      <pubDate>Tue, 04 Sep 2018 19:53:16 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[机器人能懂笑话吗？]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/6/000080286_piclink.jpg"/><br>约翰•桑希尔
+ <br><p>我至今仍记得许多年前，喜剧演员鲍博•蒙克豪斯(Bob Monkhouse，<i>见文首照片</i>)讲完一个黑色笑话后，现场观众们的震惊反应。</p>
+<p>“我父亲生前是公交车司机。他在睡梦中安详地告别了人世。当时又喊又叫的是他车上的那些乘客。”</p>
+<p>如果笑话的必备要素是情绪操纵，那么这个笑话堪称经典。短短三句话，让观众的情绪反应从同情转为恐惧、然后转为好笑。当人们“领会”笑点时... ]]></description>
+      <link>http://www.ftchinese.com/story/001079271</link>
+      <pubDate>Tue, 04 Sep 2018 18:29:34 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[华尔街牛市还能持续多久？]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/3/000080283_piclink.jpg"/><br>迈克尔•麦肯齐
+ <br><p>从市场交易量减少和交易活动降温判断，投资者享受了夏季休假。然而，全球市场频频闪现的警告信号意味着假期带来的容光焕发将很快消逝。</p>
+<p>创纪录的华尔街股市与中国、欧洲和很多新兴市场国家的负回报率之间的分化，应该会让最热情的看涨美国人士感到担忧。在全球化的金融体系中，孤立从不完美，尤其是以美联储(Fed)为首的各国央行正在退出危机时期的刺激举措。</p>
+<p>华尔街暂时忘却贸易争端以及... ]]></description>
+      <link>http://www.ftchinese.com/story/001079267</link>
+      <pubDate>Tue, 04 Sep 2018 18:03:13 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[美中贸易纠纷将考验你的投资组合]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/2/000080282_piclink.jpg"/><br>马修•文森特
+ <br><p>你抹剃须泡沫的时候，用的是獾毛刷吗？你的紧身胸衣是传统的鲸须制成的吗？你的越野滑雪手套是真皮做的还是——恕我直言——合成皮革做的？你家地下避难所的核反应堆用的是铀矿石还是浓缩铀？</p>
+<p>如果是的话，而你又生活在美国，那么我有些坏消息。这些原材料通通都在美国总统唐纳德•特朗普(Donald Trump)200页的中国商品新关税清单上。此外还有牛的精液；“vegetable hair”（... ]]></description>
+      <link>http://www.ftchinese.com/story/001079265</link>
+      <pubDate>Tue, 04 Sep 2018 17:58:18 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[阅读怎样带给孩子成长的力量？]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/7/000078937_piclink.jpg"/><br>徐海娜为FT中文网撰稿
+ <br><p>现在的孩子们，学业压力大已经是不争的事实。越是发达的城市，学业上的压力似乎就越大。家长们见面聊不了几句，就都会转到对孩子目前学业状态的吐槽上来。说起学习和考试，家长和孩子们都很容易显出“痛不欲生”的样子。那么，在现行的学业制度之下，如何才能减轻痛苦？</p>
+<p>回想我的中学时代，升高中之前，老师天天都在说，“你们再这样下去，没有人能考上高中”。到高考的时候，老师则是什么都不说，空气也还是... ]]></description>
+      <link>http://www.ftchinese.com/story/001079262</link>
+      <pubDate>Tue, 04 Sep 2018 16:43:50 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[如何看待稳定跨境金融？]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/0/000078790_piclink.jpg"/><br>乔依德为FT中文网撰稿
+ <br><p>前不久中共政治局会议提出在当前要做到六个稳，其中包括了“稳金融”。“稳金融”包含了很多方面的内容，既包括了国内金融也包括跨境/国际金融。提出稳金融、包括稳定跨境金融的外部原因是什么？能否隔绝外部的金融冲击？人民币国际化现在是否应乘势而上？如何做到稳定跨境金融？针对市场关心问题，笔者作出解析。</p>
+<p><b>Q1. 当前提出“稳金融”的外部原因有哪些？</b></p>
+<p>A：我认为主... ]]></description>
+      <link>http://www.ftchinese.com/story/001079236</link>
+      <pubDate>Tue, 04 Sep 2018 16:23:01 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[麦凯恩：美国最后的诚实政治家？]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/7/000080077_piclink.jpg"/><br>刘裘蒂
+ <br><p>9月1日正值美国劳动节长周末，这是惯例中夏天结束之前美国最重要的一个适合远游的假日，然而美国政要和民众，包括习惯在国会大厅喧嚷的共和党和民主党员，却齐聚在华府国家大教堂追思一周前因脑癌病逝的共和党人约翰•麦凯恩参议员。明显缺席的是特朗普，因为麦凯恩生前明确遗言不让特朗普出席，这让他的丧礼带着对于美国两党政治寄望的象征意义。</p>
+<p>许多以“成者为王、败者为寇”的思维来看世界的人，可能很... ]]></description>
+      <link>http://www.ftchinese.com/story/001079229</link>
+      <pubDate>Tue, 04 Sep 2018 16:04:10 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[中国股权质押现状与风险]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/9/000079759_piclink.jpg"/><br>欧阳辉，刘一楠为FT中文网撰稿
+ <br><p>股权质押的本质是一种抵押融资方式，在目前A股市场中有超过70%的企业存在股权质押，随着市场行情的波动，高比例股权质押的企业将面临平仓甚至爆仓的风险，给市场带来下行压力。</p>
+<p>在目前高比例股权质押的背景下，本文首先分析股权质押的本质与主要影响因素，分别从整体层面与个股层面分析A股市场股权质押的风险，并进行压力测试，发现目前A股市场股权质押风险基本可控，但随着股价进一步下跌，需要警惕股... ]]></description>
+      <link>http://www.ftchinese.com/story/001079258</link>
+      <pubDate>Tue, 04 Sep 2018 15:35:05 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[《延禧攻略》让观众热议“服化道”]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/7/000080247_piclink.jpg"/><br>郑静
+ <br><p>从网站到朋友圈，《延禧攻略》成就了一个夏天的话题。</p>
+<p>据不完全统计，在大结局上线之前，《延禧攻略》的总播放量已经突破了118亿次，而且这个数字还在不断攀升中。</p>
+<p>我本来对宫斗剧没什么兴趣，一直没有跟风追剧。直到有一天看到朋友圈里铺天盖地的是《延禧攻略》的配色贴，我终于坐不住了。导演于正的剧集作品，常态是高饱和色，外加刺眼的亮度，有人将这种配色归纳为“阿宝色”。</p>... ]]></description>
+      <link>http://www.ftchinese.com/story/001079241</link>
+      <pubDate>Tue, 04 Sep 2018 14:59:45 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[中国发展租房市场的努力受挫]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/8/000080268_piclink.jpg"/><br>吴佳柏,贾一真,上海报道
+ <br><p>中国试图通过发展运转良好的租房市场，来应对高企的房价。但这项努力正遭遇挫折，因为住房租赁中介机构因盈利能力薄弱而寻求依靠举债来驱动扩张。</p>
+<p>中国国家主席习近平多次说过“房子是用来住的，不是用来炒的”。外界认为，这句话的含义是呼吁扩大租赁房屋的供应，同时不鼓励投资者空置所持房产。</p>
+<p>以房价相对收入中值的比率衡量，北京、上海和深圳位居全球房价最昂贵城市之列。</p>
+<p... ]]></description>
+      <link>http://www.ftchinese.com/story/001079261</link>
+      <pubDate>Tue, 04 Sep 2018 09:29:49 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[中国国有大银行干预离岸人民币远期市场]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/0/000078610_piclink.jpg"/><br>吴佳柏报道
+ <br><p>中国国有大银行近日对离岸人民币远期市场进行了干预，通过抬高投资者押注人民币贬值的成本来缓解人民币贬值压力。</p>
+<p>一名交易员告诉英国《金融时报》，周一以来，中国国有银行已买入离岸人民币远期合约，这似乎是一次协调一致的行动，尽管力度不大。此举的效果是收紧离岸人民币流动性，抬高借入而后做空人民币的成本。</p>
+<p>国有大银行的共同行动通常被视为代表央行行动。中国央行此前已通过明确的政... ]]></description>
+      <link>http://www.ftchinese.com/story/001079260</link>
+      <pubDate>Tue, 04 Sep 2018 08:50:25 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[剑桥科学家组建科技基金]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/5/000080255_piclink.jpg"/><br>克莱夫•库克森伦敦报道
+ <br><p>剑桥的8位超级明星科学家同意共同建立一支合伙制基金，投资从人工智能、太空到大脑研究、遗传学等各种技术。</p>
+<p>他们的Ahren基金已经从外部投资者处筹集了逾1亿英镑资金，预计将在今年秋天筹集更多的资金。</p>
+<p>艾丽斯•纽科姆-埃利斯(Alice Newcombe-Ellis)是Ahren基金的创始人兼管理合伙人，她是剑桥大学(Cambridge University)数学和物... ]]></description>
+      <link>http://www.ftchinese.com/story/001079257</link>
+      <pubDate>Tue, 04 Sep 2018 04:59:37 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[刘强东获释返回中国]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/7/000080257_piclink.jpg"/><br>俱菲,杨缘,北京报道
+ <br><p>中国电子商务集团京东(JD.com)的创始人和首席执行官刘强东在美国明尼苏达州因涉嫌性侵被拘留一夜后，已于本周一回到中国。</p>
+<p>周一，京东发言人在声明中表示：“我们获悉刘强东先生2018年8月31日被明尼阿波利斯警方带走调查，不久后刘先生即被释放，在此期间他没有受到任何指控，也没有被要求缴纳任何保释金。目前他已经回到中国正常开展工作。”</p>
+<p>刘强东在被当地警察逮捕后，于上...<hr/> <a href="http://www.ftchinese.com/comments/index/001079256" target="_blank">总共有 12 条读者评论</a> ]]></description>
+      <link>http://www.ftchinese.com/story/001079256</link>
+      <pubDate>Tue, 04 Sep 2018 03:50:11 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[个税社保调整并举，新财政平衡术？]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/4/000079304_piclink.jpg"/><br>徐瑾
+ <br><p>个税新一轮调整方案落下帷幕。</p>
+<p>8月末，新个税法通过，最大亮点在于综合基本减除费用标准提高到5000元/月（6万元/年），新个税法于2019年1月1日起施行，2018年10月1日起施行最新起征点和税率。</p>
+<p>如何评价这一次税改？</p>
+<p>整理而言，本次个税修改有进步。个税事关升斗小民，政策基调是向中低收入者倾斜，首先，扩大3%、10%、20%三档低税率的级距，缩小...<hr/> <a href="http://www.ftchinese.com/comments/index/001079220" target="_blank">总共有 68 条读者评论</a> ]]></description>
+      <link>http://www.ftchinese.com/story/001079220</link>
+      <pubDate>Tue, 04 Sep 2018 03:24:44 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[新闻人物：加拿大外交部长弗里兰]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/6/000080246_piclink.jpg"/><br>詹姆斯•波利提
+ <br><p>6月七国集团首脑会议后，美国和加拿大的紧张关系趋于白热化，加拿大外交部长克里斯蒂娅•弗里兰(Chrystia Freeland，中文名“方慧兰”)曾在华盛顿一家豪华酒店发出直言不讳的警告：威权主义正在上升；自由民主受到威胁，而美国会走上哪条道路，目前尚不清楚。</p>
+<p>她谴责唐纳德•特朗普(Donald Trump)政府道：“你今天可能觉得，你的块头让你可以跟你的传统对手一争高下，而且... ]]></description>
+      <link>http://www.ftchinese.com/story/001079245</link>
+      <pubDate>Tue, 04 Sep 2018 02:53:51 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[丹麦银行爱沙尼亚分行涉大规模洗钱]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/6/000080256_piclink.jpg"/><br>卡罗琳•宾哈姆,理查德•米尔恩伦敦,哥本哈根报道
+ <br><p>对丹麦最大银行——丹麦银行(Danske Bank)洗钱丑闻进行的一项独立调查发现，该行爱沙尼亚分行在一年内经手的俄罗斯和前苏联资金曾多达300亿美元。</p>
+<p>调查结果包含在丹麦银行委托第三方撰写的一份报告草稿中，英国《金融时报》记者看到了该文件。这样的结果让外界对丹麦银行领导层提出了质疑：这家小分行经手了如此大规模的外国资金，该行有谁知道，何时知道的？</p>
+<p>咨询公司鹏睿金... ]]></description>
+      <link>http://www.ftchinese.com/story/001079255</link>
+      <pubDate>Tue, 04 Sep 2018 02:48:04 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[亚太军备竞赛加剧]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/1/000080251_piclink.jpg"/><br>杰米•史密斯悉尼报道
+ <br><p>堪培拉机场位于澳大利亚寂静首都的边缘，是一栋气派的现代建筑，在这里，随处都能看到澳大利亚提升军力的证据。几乎每块广告牌上都贴着一家国际防务公司的名字，如雷神公司(Raytheon)、BAE系统(BAE Systems)、洛克希德•马丁(Lockheed Martin)以及蒂森克虏伯(ThyssenKrupp)。这番推销大战甚至激起了一场“禁止机场军火广告”运动，要求该机场把这类广告换成“这座... ]]></description>
+      <link>http://www.ftchinese.com/story/001079248</link>
+      <pubDate>Tue, 04 Sep 2018 01:19:31 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[欧盟愿就激素牛肉与美国重开谈判]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/4/000080254_piclink.jpg"/><br>吉姆•布伦斯登布鲁塞尔报道
+ <br><p>布鲁塞尔方面将重新尝试结束与华盛顿就欧盟限制美国激素牛肉问题长达数十年的争端。欧盟正寻求维持跨大西洋贸易紧张解冻的势头。</p>
+<p>欧盟委员会(European Commission)昨日表示，已准备好与美国官员举行会谈，以解决美方的一项抱怨：双方在世界贸易组织(WTO)达成的一个妥协方案，未能给美国养牛户带来承诺的利益。</p>
+<p>欧盟农业专员菲尔•霍根(Phil Hogan)表示... ]]></description>
+      <link>http://www.ftchinese.com/story/001079253</link>
+      <pubDate>Mon, 03 Sep 2018 21:38:40 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[两名路透社记者在缅甸被判7年监禁]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/3/000080253_piclink.jpg"/><br>约翰•里德(John Reed)曼谷报道
+ <br><p>缅甸一家法院周一判决两名路透社(Reuters)记者违反殖民时代《官方机密法》的罪名成立，此案令人担忧该国是否会恪守推动新闻自由和法治的承诺。</p>
+<p>法院判处32岁的瓦隆(Wa Lone)和28岁的觉梭(Kyaw Soe Oo) 7年有期徒刑——两人都是缅甸公民，在路透社担任记者——罪名是非法拥有官方文件，这项罪名的最高刑期为14年。</p>
+<p>两人于去年12月被捕，当时他们正在... ]]></description>
+      <link>http://www.ftchinese.com/story/001079252</link>
+      <pubDate>Mon, 03 Sep 2018 21:36:07 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[习近平：未来3年为非洲发展提供600亿美元]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/3/000057303_piclink.jpg"/><br>戴维•皮林,韩碧如伦敦,北京报道
+ <br><p>中国国家主席习近平已承诺在未来三年期间为非洲发展提供600亿美元，同时反驳北京方面试图让非洲国家政府陷入债务陷阱的批评。</p>
+<p>在为期两天的三年一度的中非合作论坛(Forum on China-Africa Co-operation)峰会开幕式上，习近平表示，中国不会资助“花架子”项目，而将专注于商业上可行、可持续和绿色的投资项目。</p>
+<p>他在人民大会堂向54个非洲国家的代表...<hr/> <a href="http://www.ftchinese.com/comments/index/001079251" target="_blank">总共有 18 条读者评论</a> ]]></description>
+      <link>http://www.ftchinese.com/story/001079251</link>
+      <pubDate>Mon, 03 Sep 2018 21:21:56 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[巴西国家博物馆大火 2000万件藏品恐已不保]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/2/000080252_piclink.jpg"/><br>李若瑟,安德雷斯•斯奇巴尼圣保罗报道
+ <br><p>周日晚，一场大火席卷了巴西最具历史意义的博物馆，摧毁了大量无价之宝，令这个原本已经面临一系列政治和经济危机的国家深感震惊。</p>
+<p>这场大火烧毁了位于里约热内卢、巴西/葡萄牙皇室故居的巴西国家博物馆，现场电视直播报道显示的图像让人联想起二战时的轰炸，火光照亮了这座庞大的新古典主义建筑的窗户。</p>
+<p>这座拥有200年历史的博物馆拥有2000万件藏品，包括大量具有国内和国际意义的文... ]]></description>
+      <link>http://www.ftchinese.com/story/001079250</link>
+      <pubDate>Mon, 03 Sep 2018 21:13:28 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[韩国派特使前往朝鲜挽救无核化谈判]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/4/000072484_piclink.jpg"/><br>布赖恩•哈里斯首尔报道
+ <br><p>韩国扮演的美朝调停者角色再次成为关注焦点。目前首尔方面正忙于挽救朝鲜半岛无核化谈判。</p>
+<p>韩国总统府青瓦台宣布，本周将派遣5名高级官员前往平壤，其中包括今年早些时候牵头推动韩朝关系取得突破的国家安保室室长郑义溶(Chung Eui-yong)。</p>
+<p>此举的背景是，各方越来越担心，自6月举行了里程碑式的峰会以来，推动美朝关系的势头和善意正在消退。</p>
+<p>两国在如何推... ]]></description>
+      <link>http://www.ftchinese.com/story/001079249</link>
+      <pubDate>Mon, 03 Sep 2018 21:12:34 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[央行的黄昏与黎明]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/5/000060275_piclink.jpg"/><br>程实，钱智俊为FT中文网撰稿
+ <br><p>“这是最好的时代，这是最坏的时代。”危机十年落幕之际，发轫于其间的新趋势，正在重塑一个新时代。伴随金融科技发展、新经济巨头崛起、民粹政治生态扩张等长期趋势，央行的三大权力支柱，即货币权力、信息权力、政策权力，正在受到多维冲击。</p>
+<p>短期来看，受此压力，全球央行将步入黄昏时光，央行权力将从垄断性转向竞争性。这意味着，央行不再被天然地赋权，只有通过不断创新，在与其他政治经济力量的竞争中... ]]></description>
+      <link>http://www.ftchinese.com/story/001079239</link>
+      <pubDate>Mon, 03 Sep 2018 20:47:08 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[公有还是私有？全球水管理面临抉择]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/1/000076161_piclink.jpg"/><br>赫蒂•奥布莱恩
+ <br><p>水似乎是取之不尽用之不竭的：它覆盖了地球表面的70%，在江河中奔流，从天空中落下。但气候变化让世界水资源供给变得不再可靠。随着水资源短缺日益严重，全球各地正在掀起一场要求终止法人所有权、挑战水资源私有化的地方运动。</p>
+<p>安全的淡水资源仅占世界水资源总量的2.5%，而且往往藏在荒僻的冰川或深深的地下，很难获取。气候变化使不同地方旱的旱涝的涝，增加了淡水供应管理的难度。热浪已经逼得一些... ]]></description>
+      <link>http://www.ftchinese.com/story/001079247</link>
+      <pubDate>Mon, 03 Sep 2018 20:31:44 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[消费升级与教育公平：中国民办教育改革要平衡“两条腿”]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/9/000074909_piclink.jpg"/><br>吴宇光为FT中文网撰稿
+ <br><p>中国内地最新发布《民办教育促进法实施条例修订草案（送审稿）》，令海外上市的不少民办教育股遭受重创。对于送审稿目前各方解读不一，有舆论指官方对民办教育态度阴晴不定，新修订案限制过于严厉，为行业发展带来不确定性。对此笔者认为，要解读教育行业政策的变动和导向，乃至市场的投资方向，都应当把视角放到更高层，从这个行业“两条腿走路”的整体发展需求来审视。</p>
+<p>这里所说的“两条腿”，其一是消费升... ]]></description>
+      <link>http://www.ftchinese.com/story/001079219</link>
+      <pubDate>Mon, 03 Sep 2018 20:29:33 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[大陆“炒币大军”空袭台湾]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/8/000079628_piclink.jpg"/><br>杨卓翰
+ <br><p>中国近日大幅加强对ICO（Initial Coin Offering，首次代币发行）的打击力道。八月中，8家中国主要虚拟货币媒体的微信账号被停权，微信支付及支付宝也开始禁止和虚拟货币有关的交易。北京及广州，都分别在8月23日及29日宣布禁止承办虚拟货币的推广活动。</p>
+<p>中国人民银行副行长潘功胜更公开表示，中国所有交易所和ICO活动，“露头就打”。</p>
+<p>“中国线上与线下严格...<hr/> <a href="http://www.ftchinese.com/comments/index/001079242" target="_blank">总共有 11 条读者评论</a> ]]></description>
+      <link>http://www.ftchinese.com/story/001079242</link>
+      <pubDate>Mon, 03 Sep 2018 20:29:26 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[中国巨额IPO将考验市场热度]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/9/000072329_piclink.jpg"/><br>路易丝•卢卡斯香港报道
+ <br><p>市场对中国科技股的胃口将在不久后接受考验，届时银行家们将为科技行业两宗具有轰动效应的首次公开发行(IPO)定价。</p>
+<p>得到腾讯(Tencent)出资的外卖集团美团点评(Meituan Dianping)和电动汽车制造商蔚来汽车(Nio)，将在行业处境艰难之际进行路演。</p>
+<p>美国对华贸易战和中国经济放缓等宏观层面的担忧，加上监管风险的不断上升，打击了股市。投资者对科技行业的... ]]></description>
+      <link>http://www.ftchinese.com/story/001079244</link>
+      <pubDate>Mon, 03 Sep 2018 20:28:49 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[从共识到契约]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/9/000073839_piclink.jpg"/><br>张千帆为FT中文网撰稿
+ <br><p>五年前，自由派、左派、新儒家等谱系的中国学者发起了“牛津共识”，旨在弥合中国的左右分歧。前不久，组织者又召集不同立场的学者探讨“牛津共识”的意义。对于左右割裂愈加严重的中国而言，这些活动无疑意义重大。至于共识本身，几位与会者也说到，一是未必有意义。譬如你说秦晖到底是右还是左？周濂到底是左还是右？这些都是说不太清楚的事情。二是未必可能或有必要达成什么共识。譬如说你到底是喜欢《甜蜜蜜》，还是喜欢... ]]></description>
+      <link>http://www.ftchinese.com/story/001079230</link>
+      <pubDate>Mon, 03 Sep 2018 20:27:32 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[度假体验不如出差]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/2/000072162_piclink.jpg"/><br>迈克尔•斯卡平克
+ <br><p>现在是北半球的度假高峰。假期很重要。在假期里，人们可以放松，与家人共享天伦之乐，思索过去和未来。但在假期中，你是一位消费者，而不是参与者。你在接受服务。</p>
+<p>你可能有一本旅游指南或一款旅行APP，但你只是在看。你可能会与出租车司机或酒店老板或服务员聊聊天，但他们还有其他顾客要服务，他们需要继续他们的工作，尤其是在旺季。</p>
+<p>积极的度假：远足、骑车、航海要好一些。至少你在参... ]]></description>
+      <link>http://www.ftchinese.com/story/001079246</link>
+      <pubDate>Mon, 03 Sep 2018 20:16:55 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[中美摩擦难以避免，中国如何应对？]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/2/000076132_piclink.jpg"/><br>张明为FT中文网撰稿
+ <br><p>2017年，全球经济迎来自2008年美国次贷危机爆发以来最好的一年。在2017年，经济复苏终于从少数国家扩散到大多数国家，全球经济呈现协同复苏局面，这带来了全球贸易与短期资本流动的回暖。在2017年，除美联储之外，中国央行、英格兰银行也开始收紧货币政策，欧洲央行、日本央行相继释放会在未来收紧货币政策的信号，全球央行的货币政策由分化转为集体收紧，这也是美元指数显著回落的原因。在2017年，欧元...<hr/> <a href="http://www.ftchinese.com/comments/index/001079218" target="_blank">总共有 20 条读者评论</a> ]]></description>
+      <link>http://www.ftchinese.com/story/001079218</link>
+      <pubDate>Mon, 03 Sep 2018 20:16:22 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[中美经贸关系面临重构]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/5/000053685_piclink.jpg"/><br>廖峥嵘为FT中文网撰稿
+ <br><p>中美贸易摩擦是两国关系大调整的一部分，也是中美建交以来最为严峻的一场全面较量。历次中美冲突，均以妥协收场。中国形成一种看法，即中美关系好也好不到哪里去，坏也坏不到哪里去。中美关系会在遏制与接触、冲突与合作的两个端点间来回钟摆，在曲折中向前。这一次或有所不同，中美关系很可能无法在走向某个极点后再往回调，坏的可能更坏，好却再也好不过从前。中美关系将迎来艰难调整，冲突面将显著压倒合作面，不排除发生...<hr/> <a href="http://www.ftchinese.com/comments/index/001079216" target="_blank">总共有 34 条读者评论</a> ]]></description>
+      <link>http://www.ftchinese.com/story/001079216</link>
+      <pubDate>Mon, 03 Sep 2018 20:15:59 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[荷兰医生抗击药企提价]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/7/000080217_piclink.jpg"/><br>安德鲁•杰克报道
+ <br><p>一群荷兰医生和医药业活动人士正对一家意大利制药公司采取行动，后者将一种救命药的价格提至原来的500倍。</p>
+<p>荷兰制药业责任感基金会(Dutch Pharmaceutical Accountability Foundation)将于本周向荷兰消费者和市场监督管理局(ACM)提出申诉，请求该局就Leadiant Biosciences制药公司涉嫌在药品鹅去氧胆酸(CDCA)上滥用市场权... ]]></description>
+      <link>http://www.ftchinese.com/story/001079243</link>
+      <pubDate>Mon, 03 Sep 2018 08:09:27 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[在中国租房如何变成一件难事？]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/0/000079920_piclink.jpg"/><br>段妍为英国《金融时报》中文网撰稿
+ <br><p>为了抑制房屋投资投机，并让大城市里打拼的年轻人有安身之处，中国政府鼓励国内银行和保险公司帮助加快房屋租赁市场的发展，包括房地产开发商、房屋中介、互联网公司在内的大型机构，也纷纷在近两年涉足房屋租赁市场。然而，英国《金融时报》旗下研究业务“投资参考”(FT Confidential Research）的研究认为：资本的积极涌入，并不见得能像政府期待的那样，解决居者有其屋的问题，反而会加剧在大城...<hr/> <a href="http://www.ftchinese.com/comments/index/001079088" target="_blank">总共有 67 条读者评论</a> ]]></description>
+      <link>http://www.ftchinese.com/story/001079088</link>
+      <pubDate>Mon, 03 Sep 2018 06:54:27 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[海航高息P2P引发不安]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/9/000069439_piclink.jpg"/><br>韩碧如,张祺,俱菲,,北京报道
+ <br><p>曾是中国企业海外扩张典范的综合性企业海航集团（HNA，以下简称“海航”）在国内面临一个新挑战：中国担心自己借给海航的钱可能打水漂的中年投资者，正通过社交媒体表达焦虑。</p>
+<p>尽管海航今年通过出售资产筹集了180亿美元资金，但流动性紧张的苗头再次出现。这在海航发行的P2P融资产品的投资者中引发了担忧，他们担心自己可能血本无归，一些人抱怨称，他们之前没有看到海航处于危险状态的任何预警信号...<hr/> <a href="http://www.ftchinese.com/comments/index/001079238" target="_blank">总共有 17 条读者评论</a> ]]></description>
+      <link>http://www.ftchinese.com/story/001079238</link>
+      <pubDate>Mon, 03 Sep 2018 05:31:09 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[海航偿还上周五到期债券的10亿元人民币本金]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/0/000080080_piclink.jpg"/><br>韩碧如,张祺,北京报道
+ <br><p>业务范围从航空到金融的中国综合企业海航集团(HNA)，于本周一偿还了一笔债券10亿元人民币（合1.47亿美元）的本金。这笔债券本应在上周五偿付，海航称未能如期偿付的原因是银行间转账系统问题。</p>
+<p>偿还本金让海航在千钧一发之际过关，这可能是海航迄今最惊险的一刻。在2017年第四季度的一场流动性危机中，海航曾推迟偿债、或是将债务展期。根据海航的企业声明和汤森路透(Thomson Reu... ]]></description>
+      <link>http://www.ftchinese.com/story/001079132</link>
+      <pubDate>Mon, 03 Sep 2018 05:08:56 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[美取消对巴基斯坦的3亿美元军事援助]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/6/000080216_piclink.jpg"/><br>法尔汉•博哈里,卡特里娜•曼森伊斯兰堡,华盛顿报道
+ <br><p>美国政府取消了对巴基斯坦总值3亿美元的军事援助，此举恰逢美国国务卿迈克•蓬佩奥(Mike Pompeo)即将访问该地区，预计他将深化美国与印度——巴基斯坦的主要对手——之间的军事关系。</p>
+<p>本周，蓬佩奥预计将在参加印度一个峰会的途中，于伊斯兰堡与巴基斯坦新总理伊姆兰•汗(Imran Khan)会面。巴基斯坦官员称，美方在上周末这个时间节点宣布该消息，为此次会面定下了艰难的基调。</... ]]></description>
+      <link>http://www.ftchinese.com/story/001079237</link>
+      <pubDate>Mon, 03 Sep 2018 02:44:17 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[“子弹短信”叫板微信]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/3/000080213_piclink.jpg"/><br>路易丝•卢卡斯,俱菲香港,北京报道
+ <br><p>腾讯(Tencent)和阿里巴巴(Alibaba)在中国日益壮大的挑战者队伍中增添了一名新成员：一款瞄准微信主宰的即时通讯市场的应用。</p>
+<p>据市场数据公司App Annie的统计，子弹短信发布仅两周，就已成为苹果(Apple)中国应用商店下载次数最多的免费应用。分析师表示，这促使腾讯旗下拥有10亿用户账户的微信平台着手改善其语音到文本翻译功能。</p>
+<p>根据在线数据服务提供商...<hr/> <a href="http://www.ftchinese.com/comments/index/001079232" target="_blank">总共有 18 条读者评论</a> ]]></description>
+      <link>http://www.ftchinese.com/story/001079232</link>
+      <pubDate>Mon, 03 Sep 2018 01:41:34 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[特朗普威胁要把加拿大踢出NAFTA]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/9/000080119_piclink.jpg"/><br>詹姆斯•波利提华盛顿报道
+ <br><p>美国和加拿大贸易谈判代表上周五下午尽了最大努力坚称，围绕《北美自由贸易协定》(NAFTA)仍有可能达成协议，即便他们宣布谈判休息五天。</p>
+<p>接着，在上周六，在华盛顿全城关注约翰•麦凯恩(John McCain)的葬礼之际，没有被邀请参加葬礼的美国总统唐纳德•特朗普(Donald Trump)在Twitter上猛轰北方邻国。</p>
+<p>“我们不应该用糟糕的贸易协议和免费军事保护来... ]]></description>
+      <link>http://www.ftchinese.com/story/001079234</link>
+      <pubDate>Sun, 02 Sep 2018 21:53:51 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[美国警方：刘强东性侵案仍在调查中]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/5/000080215_piclink.jpg"/><br>俱菲,卡齐姆•舒伯北京,华盛顿报道
+ <br><p>中国互联网和电子商务集团京东(JD.com)的创始人和首席执行官刘强东在美国明尼苏达州因涉嫌性侵被捕。</p>
+<p>这位45岁的中国企业家英文名是理查德，他创办了中国最大电子商务平台之一，该平台在规模上仅次于阿里巴巴(Alibaba)的淘宝网(Taobao)。京东于2014年在纽约上市，目前拥有460亿美元的市值。</p>
+<p>根据《胡润百富榜》，刘强东是中国最富有的商人之一，身价估计达...<hr/> <a href="http://www.ftchinese.com/comments/index/001079235" target="_blank">总共有 37 条读者评论</a> ]]></description>
+      <link>http://www.ftchinese.com/story/001079235</link>
+      <pubDate>Sun, 02 Sep 2018 21:47:06 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[阿里巴巴接近在俄罗斯组建合资企业]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/7/000079077_piclink.jpg"/><br>金奇,亨利•福伊伦敦,莫斯科报道
+ <br><p>阿里巴巴(Alibaba)与俄罗斯合作伙伴正就组建一家电子商务合资企业进行“深入阶段的谈判”。中国构建一条横跨欧亚大陆的“数字丝绸之路”的愿景逐渐成形。</p>
+<p>俄罗斯官员和其他参与此项交易的人士表示，阿里巴巴接近与俄罗斯互联网公司Mail.ru和主权财富基金——俄罗斯直接投资基金(Russian Direct Investment Fund, RDIF)达成合作协议。RDIF的参与显... ]]></description>
+      <link>http://www.ftchinese.com/story/001079233</link>
+      <pubDate>Sun, 02 Sep 2018 21:07:15 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[ofo被指拖欠账款遭起诉]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/2/000080212_piclink.jpg"/><br>
+ <br><p>阿里巴巴(Alibaba)支持的共享单车初创公司ofo因拖欠1000万美元的账款而遭到一家在上海上市的自行车制造商起诉，这一最新迹象表明，巨额支出和激烈竞争使这家曾经雄心勃勃的公司受到重创。</p>
+<p>ofo及其主要竞争对手摩拜单车(Mobike)大举支出以扩大其单车数量，并以低于成本的用车价格来抢占市场份额。</p>
+<p>由阿里巴巴的竞争对手腾讯(Tencent)支持的外卖配送和服务... ]]></description>
+      <link>http://www.ftchinese.com/story/001079231</link>
+      <pubDate>Sun, 02 Sep 2018 21:05:49 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[全球金融危机导致了民粹主义的兴起]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/4/000080214_piclink.jpg"/><br>菲利普•斯蒂芬斯
+ <br><p>全球金融危机的遗产可能是对市场经济的重新思考。肆无忌惮本可能让位于更接近让所有人获益的做法。在危机发生后的雄辩演讲和大胆承诺——想想巴拉克•奥巴马(Barack Obama)、戈登•布朗(Gordon Brown)、安格拉•默克尔(Angela Merkel)以及其他人吧——支持了这样的前景。结果是，唐纳德•特朗普(Donald Trump)当选为美国总统、英国退欧以及以邻为壑的民族主义兴起... ]]></description>
+      <link>http://www.ftchinese.com/story/001079221</link>
+      <pubDate>Sun, 02 Sep 2018 21:04:11 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[世界温控器龙头企业寻求征服更大市场]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/7/000080207_piclink.jpg"/><br>安迪•邦兹报道
+ <br><p>几乎所有英国人都使用过思瑞克斯集团(Strix)的产品，虽然有些人可能不知道这个牌子。该公司生产电热水壶的温控器，这种配件的功能是在水烧开时，使电热水壶能够自动断电。该公司在发达国家占据61%的市场份额；在爱喝茶的英国，平均每户人家拥有1.2台电热水壶，总数超过3200万台。</p>
+<p>投资者不满足于现状，还想得到更多：该公司去年8月在伦敦Aim市场上市，发行价为每股100便士，目前股价... ]]></description>
+      <link>http://www.ftchinese.com/story/001079228</link>
+      <pubDate>Sun, 02 Sep 2018 20:54:31 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[人工智能能否让凯恩斯的预言变成现实？]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/4/000078934_piclink.jpg"/><br>Lex专栏
+ <br><p>英国央行(BoE)首席经济学家安迪•霍尔丹(Andy Haldane)日前警告称，人工智能(AI)可能造成大量失业。他告诉英国广播公司(BBC)，我们即将面临的这种破坏性影响可能超过以蒸汽动力为标志的第一次工业革命时期。</p>
+<p>对于自动化可能造成的影响，反乌托邦式的设想已经够多了。乌托邦式的想法是，自动化将让每个人都能减少工作，有更多的时间玩乐。比如，另一位经济学家约翰•梅纳德•凯恩... ]]></description>
+      <link>http://www.ftchinese.com/story/001079227</link>
+      <pubDate>Sun, 02 Sep 2018 20:54:08 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[杰米•戴蒙的“倾听巴士”值得效仿]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/8/000080208_piclink.jpg"/><br>吉莲•邰蒂
+ <br><p>今年夏天，摩根大通(JPMorgan Chase)首席执行官杰米•戴蒙(Jamie Dimon)乘坐巴士在美国的腹地转了一圈。是的，你没看错：虽然戴蒙通常是乘公司的专机出行，但今年7月，他抽出一段时间和公司的高管们一起乘坐一辆巴士，走访了西海岸和落基山的部分地区，倾听现实生活中客户和员工们的心声。</p>
+<p>“我们希望去一些比较偏远的地区——去拜访呼叫中心、运营中心，举行地方员工集会，与... ]]></description>
+      <link>http://www.ftchinese.com/story/001079226</link>
+      <pubDate>Sun, 02 Sep 2018 20:53:58 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[德国“退煤”意义重大]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/8/000070508_piclink.jpg"/><br>尼克•巴特勒为英国《金融时报》撰稿
+ <br><p>各方的期望值已被提高，他们认为：德国乃至欧洲的能源政策可能走到了一个决定性的关口，对低碳未来的口头承诺将被转化为现实。</p>
+<p>就在今年夏天到来之前，德国政府成立一个工作组，委托其制定一项从德国能源结构中消除煤炭的计划，并最迟于今年底报告。</p>
+<p>在实际和象征意义两方面，德国淘汰煤炭将转变整个欧洲的能源前景。戏剧性减排的目标将开始受到重视。欧盟能源专员米格尔•阿里亚斯•卡涅特(... ]]></description>
+      <link>http://www.ftchinese.com/story/001079225</link>
+      <pubDate>Sun, 02 Sep 2018 20:53:15 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[新左翼可以从北欧模式中学到什么？]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/9/000080209_piclink.jpg"/><br>马丁•桑德布
+ <br><p>最可预测的现象也可以是最令人惊讶的。只要看看“社会主义”在美国和英国重新获得了政治生命力，你就会明白这一点。</p>
+<p>十年前，全球危机暴露了金融资本主义的失败。这为政治左翼赢得人们对自己议程的支持提供了一个机会。然而，发达国家中几乎每一个老牌的中左翼政党都搞砸了这个获得政治主导权的机会。</p>
+<p>我们似乎是在倒退，而不是回归了。如今唯一红火的那些左翼政客，就是拒绝接受上世纪90年... ]]></description>
+      <link>http://www.ftchinese.com/story/001079224</link>
+      <pubDate>Sun, 02 Sep 2018 20:52:57 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[超级明星CEO可能自我毁灭]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/0/000080210_piclink.jpg"/><br>约翰•加普
+ <br><p>硅谷企业家和风投人士上周赶往美国内华达州沙漠，参加一年一度的Burning Man活动，这个活动是为了颂扬“彻底自立”、礼物馈赠以及合作。活动的高潮是在周六点燃假人雕像。</p>
+<p>Burning Man是一项好玩的实验，考察社区如何能够在远离私人融资和竞争公司的情况下繁荣。今年的艺术主题是“我，机器人”。具有讽刺意味的是，特斯拉(Tesla)创始人、经常参加此次活动的埃隆•马斯克(El... ]]></description>
+      <link>http://www.ftchinese.com/story/001079223</link>
+      <pubDate>Sun, 02 Sep 2018 20:52:34 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[全球金融危机并非民粹主义崛起的根源]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/1/000080211_piclink.jpg"/><br>嘉南•加内什
+ <br><p>有关佛罗里达州出现大规模抵押贷款违约的新闻给2006年蒙上了一层阴影。美国在2007年进入技术性衰退。在2009年失业率达到了两位数。</p>
+<p>因为日期容易让人记住，原本由一系列支离破碎的事件组成的金融危机如今在记忆里却成了一个单一事件：10年前的9月，雷曼兄弟(Lehman Brothers)破产。</p>
+<p>人们拿金融危机十周年说事有情可原。但说金融危机是之后发生的一切的罪魁祸... ]]></description>
+      <link>http://www.ftchinese.com/story/001079222</link>
+      <pubDate>Sun, 02 Sep 2018 20:52:06 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[GDPR将如何影响金融科技行业？]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/1/000059431_piclink.jpg"/><br>李燕为FT中文网撰稿
+ <br><p><b>【编者按】被称为史上最严的个人信息保护法——欧盟《一般数据保护条例》（GDPR）已经开始正式实施。欧盟发布GDPR是出于什么样的考虑？GDPR对积极在欧洲开展业务的中国科技企业有什么启示？GDPR对算法和数据的要求，对极度依赖数据的新兴产业造成什么影响？FT中文网近期组织“解读GDPR”专题，编辑事宜，联系闫曼 man.yan@ftchinese.com</b></p>
+<p>金融科技... ]]></description>
+      <link>http://www.ftchinese.com/story/001079175</link>
+      <pubDate>Sun, 02 Sep 2018 20:50:59 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[英国家长愿付多少钱购买优质学区房？]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/4/000080204_piclink.jpg"/><br>露西•沃里克
+ <br><p>一份新的分析报告显示，决定送孩子去英国顶尖公立学校念书的父母们通常会多花数万英磅在学区房上。</p>
+<p>桑坦德抵押贷款银行(Santander Mortgages)关于英国100所顶尖中小学附近房价的报告发现，让子女入读一所顶尖学校的需求不断上升，导致一些家长支付极高溢价去他们相中的学区买房。</p>
+<p>桑坦德银行英国分行抵押贷款部董事总经理米格尔•萨尔德(Miguel Sard)说... ]]></description>
+      <link>http://www.ftchinese.com/story/001079215</link>
+      <pubDate>Sun, 02 Sep 2018 20:50:43 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[创业投资需要什么样的税负政策？]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/4/000057514_piclink.jpg"/><br>钟鸿钧为FT中文网撰稿
+ <br><p>8月30日，中国国税总局表示，“按照现行个人所得税法规定，合伙企业的合伙人为其纳税人；合伙企业转让股权所得，应按照‘先分后税’原则，根据合伙企业的全部生产经营所得和合伙协议约定的分配比例确定合伙企业各合伙人的应纳税所得额，其自然人合伙人的分配所得，应按照‘个体工商户的生产、经营所得’项目缴纳个人所得税”。按照这一说法，有限合伙制的创投企业，其LP（有限合伙人）需要按照“个体工商户的生产、经营... ]]></description>
+      <link>http://www.ftchinese.com/story/001079217</link>
+      <pubDate>Sun, 02 Sep 2018 20:50:16 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[中国需要一场亲子关系的革命（上）]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/0/000067100_piclink.jpg"/><br>彭小华
+ <br><p><i>“为了孩子的成功，我们的确竭尽全力。孩子能否成功尚在未定之天，当下的痛苦却是实实在在！”</i></p>
+<p><b>把爱变成绳索，把期待变成鞭子</b></p>
+<p>思思是我所在城市一所名校的初三学生，还有两个月就要中考了，她却精神萎靡，要么不去上学，在家睡觉、玩游戏、看玄幻小说，父母好说歹说好不容易去了学校，整个上午基本上处于迷糊状态，根本听不进课。</p>
+<p>她不想再为考试...<hr/> <a href="http://www.ftchinese.com/comments/index/001079171" target="_blank">总共有 56 条读者评论</a> ]]></description>
+      <link>http://www.ftchinese.com/story/001079171</link>
+      <pubDate>Sun, 02 Sep 2018 12:11:13 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[特朗普威胁要让美国退出WTO]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/6/000074526_piclink.jpg"/><br>詹姆斯•波利提华盛顿报道
+ <br><p>美国总统唐纳德•特朗普(Donald Trump)周四威胁称要让美国退出世界贸易组织(WTO)，这是对全球经济治理支柱之一发起的新一轮攻击。目前，就修订《北美自由贸易协定》(NAFTA)达成一致的截止期正在逼近，而特朗普还需要就扩大对中国进口产品加征关税作出决定。</p>
+<p>特朗普在接受彭博新闻社(Bloomberg News)采访时警告称：“ 如果它们进展得不顺利，我就会退出WTO。”...<hr/> <a href="http://www.ftchinese.com/comments/index/001079214" target="_blank">总共有 33 条读者评论</a> ]]></description>
+      <link>http://www.ftchinese.com/story/001079214</link>
+      <pubDate>Fri, 31 Aug 2018 07:13:43 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[FT社评：特朗普关税促使中日关系回暖]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/8/000070498_piclink.jpg"/><br>社评
+ <br><p>唐纳德•特朗普(Donald Trump)的贸易保护主义政策正在全球各地引发经济关系重组。最大的变化发生在世界第二和第三大经济体——中国和日本——之间。日本财务大臣与中国财长周五在北京举行会谈，是两国关系经历多年紧张后解冻的最新迹象。中日友好关系的恢复将受到欢迎，但这种恢复注定有限。</p>
+<p>中日两国2017年的双边贸易额超过3000亿美元，两国间每周有1000多个航班。但2011年还...<hr/> <a href="http://www.ftchinese.com/comments/index/001079213" target="_blank">总共有 11 条读者评论</a> ]]></description>
+      <link>http://www.ftchinese.com/story/001079213</link>
+      <pubDate>Fri, 31 Aug 2018 04:35:17 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[美国司法部称哈佛招生程序“不利于”亚裔美国人]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/3/000063833_piclink.jpg"/><br>卡齐姆•舒伯纽约报道
+ <br><p>美国司法部周四表示哈佛大学(Harvard University)招生程序对亚裔美国人“明显不利”，该部已介入一起就平权法案对哈佛大学提出的长期诉讼。</p>
+<p>美国司法部在一份提交法庭的文件中称，哈佛在招生中使用“个人评级”，损害了亚裔美国人相较其他种族群体的入学机会，并表示其“模糊”的标准“可能会受到种族偏见的影响”。</p>
+<p>美国司法部长杰夫•塞申斯(Jeff Session... ]]></description>
+      <link>http://www.ftchinese.com/story/001079212</link>
+      <pubDate>Fri, 31 Aug 2018 04:20:58 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[中国AI政策引发失业担忧]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/7/000074707_piclink.jpg"/><br>杨缘,刘心宁北京报道
+ <br><p>在过去三年中，自动化取代了一些中国工业企业高达40%的工人岗位，突显出北京推动技术基础升级，成为世界人工智能超级大国的影响。</p>
+<p>政府智库——中国发展研究基金会(China Development Research Foundation)和风险投资基金红杉中国(Sequoia China)的报告显示，中国出口制造业省份浙江、江苏和广东的几家公司在这三年内因自动化削减了30%至40%...<hr/> <a href="http://www.ftchinese.com/comments/index/001079211" target="_blank">总共有 11 条读者评论</a> ]]></description>
+      <link>http://www.ftchinese.com/story/001079211</link>
+      <pubDate>Fri, 31 Aug 2018 03:40:05 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[网络游戏监管，政府不可再唱独角戏]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/4/000080184_piclink.jpg"/><br>翁一为FT中文网撰稿
+ <br><p>8月30日，根据中国教育部等八部门关于印发《综合防控儿童青少年近视实施方案》的通知，中国国家新闻出版署将对网络游戏实施总量调控，控制新增网络游戏上网运营数量，探索符合国情的适龄提示制度，采取措施限制未成年人使用时间。</p>
+<p>就在本月中旬，彭博社曾报道，由于中国国家机构改革，相关监管机构已冻结网络游戏版号的备案与审批，冻结时间不少于五个月。从国家新闻出版署昨日发布的网络游戏总量调控公告...<hr/> <a href="http://www.ftchinese.com/comments/index/001079210" target="_blank">总共有 25 条读者评论</a> ]]></description>
+      <link>http://www.ftchinese.com/story/001079210</link>
+      <pubDate>Fri, 31 Aug 2018 03:25:22 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[滴滴面临严峻挑战]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/6/000062686_piclink.jpg"/><br>杨缘,刘心宁北京报道
+ <br><p>作为中国叫车服务巨擘，滴滴出行(Didi Chuxing)在本土市场占据着主导地位。</p>
+<p>该公司去年的估值为560亿美元，并表示拥有4.5亿注册用户——是中国移动互联网用户的一半多——有2100万司机，每天提供2500万次出行服务。</p>
+<p>两年前，滴滴在与美国竞争对手优步(Uber)激烈且代价高昂的竞争中胜出，收购了这家硅谷公司在中国的全部资产，优步则持有滴滴17.7%的股...<hr/> <a href="http://www.ftchinese.com/comments/index/001079209" target="_blank">总共有 14 条读者评论</a> ]]></description>
+      <link>http://www.ftchinese.com/story/001079209</link>
+      <pubDate>Fri, 31 Aug 2018 02:55:10 GMT</pubDate>
     </item>
     <item>
       <title><![CDATA[私募资本搅局中国快餐业巨头大战]]></title>
@@ -27,7 +596,16 @@
  <br><p>如果成功的话，这将是中国有史以来规模最大的私募股权交易。由高瓴资本(Hillhouse Capital)和KKR等组成的财团出价近180亿美元，想要收购百胜餐饮(Yum Brands)的中国业务，这家快餐集团旗下有肯德基(KFC)、必胜客(Pizza Hut)等品牌。</p>
 <p>周二，百胜中国(Yum China)拒绝了——结果其股价却上涨了。百胜中国是2016年从美国母公司分拆出来的，... ]]></description>
       <link>http://www.ftchinese.com/story/001079201</link>
-      <pubDate>Thu, 30 Aug 2018 21:45:48 GMT</pubDate>
+      <pubDate>Fri, 31 Aug 2018 01:21:35 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[特朗普指责中国对朝鲜弃核“没有帮助”]]></title>
+      <description><![CDATA[ <img src="http://i.ftimg.net/picture/9/000080119_piclink.jpg"/><br>卡特里娜•曼森华盛顿报道
+ <br><p>唐纳德•特朗普(Donald Trump )指责中国向朝鲜提供大量支持，称中国采取的行动“没有帮助”。目前美国迫使平壤方面弃核的努力陷入僵局。</p>
+<p>美国总统似乎也与他的国防部长吉姆•马蒂斯(Jim Mattis)的表态抵触，宣称没有理由在美韩军事演习上大笔支出，而马蒂斯在前一天表示，联合军事演练在继续进行中。</p>
+<p>“唐纳德•J•特朗普总统强烈感觉到，朝鲜正受到中国的巨大压... ]]></description>
+      <link>http://www.ftchinese.com/story/001079206</link>
+      <pubDate>Thu, 30 Aug 2018 21:59:24 GMT</pubDate>
     </item>
     <item>
       <title><![CDATA[报道称特朗普计划升级对华贸易战 美股由升转跌]]></title>
@@ -87,7 +665,7 @@
       <description><![CDATA[ <img src="http://i.ftimg.net/picture/3/000065373_piclink.jpg"/><br>彭小华
  <br><p><b><a href="http://www.ftchinese.com/story/001079171" target=_blank>点此阅读本文上篇</a></b></p>
 <p><i></p>
-<p>“父母就是拿来愚弄和蔑视的……即使是最受尊敬的传统也是用来突破的；创造力理所当然存在于个体而不是群体，在于青年而不是老人……在象征意义上和其它方面，个人权利的伸张不可避免地始于孩子最初对家... ]]></description>
+<p>“父母就是拿来愚弄和蔑视的……即使是最受尊敬的传统也是用来突破的；创造力理所当然存在于个体而不是群体，在于青年而不是老人……在象征意义上和其它方面，个人权利的伸张不可避免地始于孩子最初对家...<hr/> <a href="http://www.ftchinese.com/comments/index/001079172" target="_blank">总共有 22 条读者评论</a> ]]></description>
       <link>http://www.ftchinese.com/story/001079172</link>
       <pubDate>Thu, 30 Aug 2018 21:00:52 GMT</pubDate>
     </item>
@@ -120,7 +698,7 @@
       <title><![CDATA[澳大利亚为何禁止华为参与5G网络？]]></title>
       <description><![CDATA[ <img src="http://i.ftimg.net/picture/9/000078079_piclink.jpg"/><br>丹尼尔•凯夫,汤姆•尤伦为英国《金融时报》撰稿
  <br><p>澳大利亚首都堪培拉，一座寂静的丛林之都，本月又陷入一场政治领导危机，前总理马尔科姆•特恩布尔(Malcolm Turnbull)因此下台，其间，慌乱失措的堪培拉媒体迎来了一条意外消息。</p>
-<p>在一片混乱中，关于是否允许中国电信巨头华为(Huawei)参与建设澳大利亚下一个关键的国家基础设施——5G网络——澳大利亚政府最终作出了一个备受瞩目的决定。根据此前进行的一项国家安全审查，时任代... ]]></description>
+<p>在一片混乱中，关于是否允许中国电信巨头华为(Huawei)参与建设澳大利亚下一个关键的国家基础设施——5G网络——澳大利亚政府最终作出了一个备受瞩目的决定。根据此前进行的一项国家安全审查，时任代...<hr/> <a href="http://www.ftchinese.com/comments/index/001079202" target="_blank">总共有 14 条读者评论</a> ]]></description>
       <link>http://www.ftchinese.com/story/001079202</link>
       <pubDate>Thu, 30 Aug 2018 20:31:27 GMT</pubDate>
     </item>
@@ -128,7 +706,7 @@
       <title><![CDATA[“补短板”为何要补在基础设施领域？]]></title>
       <description><![CDATA[ <img src="http://i.ftimg.net/picture/7/000077977_piclink.jpg"/><br>胡月晓
  <br><p><b>外部冲击和供给侧改革</b></p>
-<p>按照纯粹的市场经济理念，持续性的经济“萧条”，是不当投资迟迟得不到修正的缘故，正是政府的财政和货币扩张政策，阻碍了市场的“出清”，从而使得周期性“衰退”变成了持续性“萧条”。从全球经济的运行态势看，虽然美国自2015年开始逐渐开启了货币退出步伐，但世界经济整体仍然处在低迷阶段，从2008年欧美国家爆发金融危机算起，世界经济已延续了十年的低迷状... ]]></description>
+<p>按照纯粹的市场经济理念，持续性的经济“萧条”，是不当投资迟迟得不到修正的缘故，正是政府的财政和货币扩张政策，阻碍了市场的“出清”，从而使得周期性“衰退”变成了持续性“萧条”。从全球经济的运行态势看，虽然美国自2015年开始逐渐开启了货币退出步伐，但世界经济整体仍然处在低迷阶段，从2008年欧美国家爆发金融危机算起，世界经济已延续了十年的低迷状...<hr/> <a href="http://www.ftchinese.com/comments/index/001079126" target="_blank">总共有 15 条读者评论</a> ]]></description>
       <link>http://www.ftchinese.com/story/001079126</link>
       <pubDate>Thu, 30 Aug 2018 20:30:31 GMT</pubDate>
     </item>
@@ -153,7 +731,7 @@
       <description><![CDATA[ <img src="http://i.ftimg.net/picture/6/000080036_piclink.jpg"/><br>白天为FT中文网撰稿
  <br><p>最近，一种新的化学品“异烟肼”出现在中国媒体中。</p>
 <p>几乎每一次认识一种不常见的化学品，都伴随着热点新闻事件，这次是狗。在最近的几则社会新闻中，有家养犬因误食含有异烟肼的食物而致死。</p>
-<p>这个夏天，因为狗引发的新闻数不胜数，从小区物业对居民打死流浪狗，一条奖励一千元，到各种遛狗不栓绳咬伤老人孩子和孕妇。这边业主贴告示扬言要对不拴绳的狗乱棍打死，那边养狗业主讥讽对方应该住别... ]]></description>
+<p>这个夏天，因为狗引发的新闻数不胜数，从小区物业对居民打死流浪狗，一条奖励一千元，到各种遛狗不栓绳咬伤老人孩子和孕妇。这边业主贴告示扬言要对不拴绳的狗乱棍打死，那边养狗业主讥讽对方应该住别...<hr/> <a href="http://www.ftchinese.com/comments/index/001079159" target="_blank">总共有 24 条读者评论</a> ]]></description>
       <link>http://www.ftchinese.com/story/001079159</link>
       <pubDate>Thu, 30 Aug 2018 16:11:27 GMT</pubDate>
     </item>
@@ -189,7 +767,7 @@
       <description><![CDATA[ <img src="http://i.ftimg.net/picture/2/000077682_piclink.jpg"/><br>金奇报道
  <br><p>考虑到中国科技巨头腾讯(Tencent)在新兴市场基准指数中的权重比俄罗斯、墨西哥、马来西亚、泰国、印度尼西亚等国都要高，或许有必要对这家公司最近的困境进行更深入的探究。</p>
 <p>这家互联网和游戏集团在MSCI新兴市场指数(MSCI Emerging Markets Index)中占4.84%的权重，使其成为合计管理着全球约1.9万亿美元资产的基金在新兴市场的首选。</p>
-<p>因此... ]]></description>
+<p>因此...<hr/> <a href="http://www.ftchinese.com/comments/index/001079191" target="_blank">总共有 18 条读者评论</a> ]]></description>
       <link>http://www.ftchinese.com/story/001079191</link>
       <pubDate>Thu, 30 Aug 2018 05:43:42 GMT</pubDate>
     </item>
@@ -205,7 +783,7 @@
       <title><![CDATA[经济转型需要慢牛行情]]></title>
       <description><![CDATA[ <img src="http://i.ftimg.net/picture/3/000078093_piclink.jpg"/><br>沈凌为FT中文网撰稿
  <br><p>最近一段时间，美国咄咄逼人的贸易威胁，其矛头直指中国2025科技强国战略。其时间点的选择相当精准，因为这段时间美国的经济形势很好，而中国依旧处在经济转型的艰难时期。所以，我们更加需要认清形势，调整策略，从中国长期发展战略出发，选择合适的中短期改革策略，从而理性应对外部环境的变化。</p>
-<p>首先，降杠杆的本质意义在于减少经济增长中的债权比例，从而减少经济衰退中的风险。过去四十年中国的经济...<hr/> <a href="http://www.ftchinese.com/comments/index/001079156" target="_blank">总共有 25 条读者评论</a> ]]></description>
+<p>首先，降杠杆的本质意义在于减少经济增长中的债权比例，从而减少经济衰退中的风险。过去四十年中国的经济...<hr/> <a href="http://www.ftchinese.com/comments/index/001079156" target="_blank">总共有 33 条读者评论</a> ]]></description>
       <link>http://www.ftchinese.com/story/001079156</link>
       <pubDate>Thu, 30 Aug 2018 02:02:38 GMT</pubDate>
     </item>
@@ -223,7 +801,7 @@
  <br><p>日本和中国将于本周商讨重启货币互换安排和可能举行的领导人峰会，这是东京和北京关系回暖的最新迹象。</p>
 <p>日本财务大臣麻生太郎(Taro Aso)将赴北京与中国财政部长刘昆举行会谈。眼下，这两个东亚最大国家之间的外交接触正在加速。</p>
 <p>麻生太郎表示：“我们将就经济、金融以及各领域的合作交换意见。”</p>
-<p>在谈到尚未确认的高层访问时，他表示：“希望此访也将有助于推动安倍... ]]></description>
+<p>在谈到尚未确认的高层访问时，他表示：“希望此访也将有助于推动安倍...<hr/> <a href="http://www.ftchinese.com/comments/index/001079187" target="_blank">总共有 14 条读者评论</a> ]]></description>
       <link>http://www.ftchinese.com/story/001079187</link>
       <pubDate>Wed, 29 Aug 2018 21:47:03 GMT</pubDate>
     </item>
@@ -277,581 +855,6 @@
 <p>这是一个错误，因为它限制了美国政策制定者在与处于不同发展阶段的日益多元化的国家打交道时可用的工具。进展神速且获得两党支持的《更好利用投资引导发展法案》（Better ... ]]></description>
       <link>http://www.ftchinese.com/story/001079185</link>
       <pubDate>Wed, 29 Aug 2018 21:06:07 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[伊朗以退为进的机会]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/2/000075012_piclink.jpg"/><br>Y•J•费希尔为英国《金融时报》撰稿
- <br><p>伊朗与美国之间的紧张局势持续升级。美国国家安全顾问约翰•博尔顿(John Bolton)警告说，唐纳德•特朗普(Donald Trump)政府计划对伊朗施加“最大压力”。就连以愿意跟西方周旋而出名的伊朗总统哈桑•鲁哈尼(Hassan Rouhani)也强调，他的国家将提高战备状态，并公开了一款新型战斗机。</p>
-<p>尽管没有证据表明伊朗耍滑，美国总统依然退出了2015年签订的核协议，德黑... ]]></description>
-      <link>http://www.ftchinese.com/story/001079181</link>
-      <pubDate>Wed, 29 Aug 2018 21:00:40 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[平台类商业模式的致命破绽]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/9/000061639_piclink.jpg"/><br>陈歆磊，李嘉怡为FT中文网撰稿
- <br><p>距离“空姐遇害”刚刚过去100余天，滴滴又出事了。舆论掀起了又一轮风暴，从各个角度分析滴滴的问题。很多观点侧重于滴滴的管理和文化，也有指出共享经济的问题，这些都非常中肯。但是，从更宏观的角度，滴滴事件反映的恰恰是整个平台类互联网模式的致命破绽。</p>
-<p>平台类商业模式有很多，电商领域有淘宝、拼多多，旅行领域有Airbnb，社交有Facebook，出行领域是滴滴、Uber。平台的特点是连... ]]></description>
-      <link>http://www.ftchinese.com/story/001079173</link>
-      <pubDate>Wed, 29 Aug 2018 18:27:01 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[多邻国：落户匹兹堡的科技公司]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/0/000080140_piclink.jpg"/><br>艾丽斯•汉考克(Alice Hancock)报道
- <br><p>在竞争激烈的技术人才市场上，路易斯•冯•安(Luis von Ahn)面临着一个额外的挑战：如何说服未来的员工搬迁到匹兹堡，这是宾夕法尼亚州的一个工业城市，距离硅谷2500多英里。</p>
-<p>现年40岁的冯•安是全球最受欢迎的语言学习应用多邻国(Duolingo)的首席执行官，该应用拥有2亿用户。7年前，他和与他一起研发翻译应用的博士生塞弗林•海克(Severin Hacker)共同创办... ]]></description>
-      <link>http://www.ftchinese.com/story/001079180</link>
-      <pubDate>Wed, 29 Aug 2018 18:26:19 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[三角关系与朝鲜半岛新棋局]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/0/000078430_piclink.jpg"/><br>孙兴杰为FT中文网撰稿
- <br><p>隔了两个月，朝鲜官方媒体开始用比较严厉的话语来抨击美国，而美国特种部队的演习悄悄地在日本、韩国、菲律宾举行，美国最大的核潜艇“密歇根号”进驻横须贺海军基地。本来在8月份设立的南北共同联络事务所，也出现了新情况，韩国可能要推迟这一计划。特朗普总统在推特上发了个文，之后就取消了蓬佩奥第四次平壤之行，特朗普式的博弈外交再次重现。</p>
-<p>半岛的事情，总是牵一发而动全身，很难用双边关系来理解半... ]]></description>
-      <link>http://www.ftchinese.com/story/001079179</link>
-      <pubDate>Wed, 29 Aug 2018 18:24:12 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[雄心勃勃的蔚来]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/1/000080141_piclink.jpg"/><br>彼得•坎贝尔
- <br><p>在中国的电动汽车大角逐中，蔚来(Nio)正押注于利用股市帮助其脱颖而出。</p>
-<p>蔚来是一家初创企业，得到中国互联网巨头腾讯(Tencent)和百度(Baidu)的支持。今年6月，蔚来首款量产车正式对外交付，现在正寻求在纽约证交所(New York Stock Exchange)启动18亿美元的首次公开发行(IPO)，这将帮助其扩大规模并开发一系列新款电动汽车。</p>
-<p>该公司正... ]]></description>
-      <link>http://www.ftchinese.com/story/001079182</link>
-      <pubDate>Wed, 29 Aug 2018 16:56:29 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[中国需要一场亲子关系的革命（上）]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/0/000067100_piclink.jpg"/><br>彭小华
- <br><p><i>“为了孩子的成功，我们的确竭尽全力。孩子能否成功尚在未定之天，当下的痛苦却是实实在在！”</i></p>
-<p><b>把爱变成绳索，把期待变成鞭子</b></p>
-<p>思思是我所在城市一所名校的初三学生，还有两个月就要中考了，她却精神萎靡，要么不去上学，在家睡觉、玩游戏、看玄幻小说，父母好说歹说好不容易去了学校，整个上午基本上处于迷糊状态，根本听不进课。</p>
-<p>她不想再为考试...<hr/> <a href="http://www.ftchinese.com/comments/index/001079171" target="_blank">总共有 25 条读者评论</a> ]]></description>
-      <link>http://www.ftchinese.com/story/001079171</link>
-      <pubDate>Wed, 29 Aug 2018 16:30:18 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[中国官场的“9999”症结]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/2/000074062_piclink.jpg"/><br>老愚
- <br><p>这可不是洋葱新闻：山东寿光泄洪造成水灾，倒塌房间正好停在了“9999”上。人们之所以对这个数字敏感，仅仅因为再加一间，便是上万。</p>
-<p>那为何不上万呢？2016年3月10日，中国国务院发布了修订后的《国家自然灾害救助应急预案》，启动该预案的条件之一便是“因灾倒塌房屋一万间以上”。受灾数字在红线面前戛然而止，难道还不顺理成章么？</p>
-<p>在中国，所有数字游戏的背后都有一个紧箍咒。... ]]></description>
-      <link>http://www.ftchinese.com/story/001079177</link>
-      <pubDate>Wed, 29 Aug 2018 16:23:46 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[特朗普称中国侵入了希拉里的电子邮件]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/7/000080127_piclink.jpg"/><br>康河信香港报道
- <br><p>美国总统唐纳德•特朗普(Donald Trump)周三早些时候宣称，中国通过黑客手段侵入了希拉里•克林顿(Hillary Clinton)的电子邮件。但他没有给出任何证据来支持他的论断。</p>
-<p>特朗普在当地时间周三午夜过后不久在Twitter上发帖称，“希拉里•克林顿的电子邮件，其中很多是机密信息，被中国侵入了”。他还呼吁美国联邦调查局(FBI)和司法部(Department of ...<hr/> <a href="http://www.ftchinese.com/comments/index/001079176" target="_blank">总共有 11 条读者评论</a> ]]></description>
-      <link>http://www.ftchinese.com/story/001079176</link>
-      <pubDate>Wed, 29 Aug 2018 09:19:57 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[FT社评：美墨新协定弊大于利]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/9/000080119_piclink.jpg"/><br>社评
- <br><p>美国总统唐纳德•特朗普(Donald Trump)说，一项协定达成了。他表示他将用一项美墨双边协定取代《北美自由贸易协定》(NAFTA)。加拿大将要么加入新协定，要么面临关税惩罚。制造业工作机会将流回美国，一切都会很好。正如特朗普的一贯风格，他在周一公布的这项协定以及他做成这件事的能力都被严重夸大了。新协定绝非《北美自由贸易协定》的全面升级。新协议中最实质的部分，即有关汽车的内容，充其量只能...<hr/> <a href="http://www.ftchinese.com/comments/index/001079174" target="_blank">总共有 19 条读者评论</a> ]]></description>
-      <link>http://www.ftchinese.com/story/001079174</link>
-      <pubDate>Wed, 29 Aug 2018 08:09:29 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[皇明创始人黄鸣：向政府讨债的中国企业家]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/6/000080116_piclink.jpg"/><br>汤姆•汉考克,俱菲山东德州报道
- <br><p>10年前，中国的皇明集团(Himin Group)作为全球最大太阳能热水器公司一路高歌猛进，在高盛(Goldman Sachs)参与的一轮投资中获得了1亿美元注资。</p>
-<p>但今年，随着消费者偏好转变导致销量直线下降，皇明集团创始人黄鸣罕见地走上了与政府官员对峙的道路。</p>
-<p>皇明的境遇形象地说明了中国大型企业集团适应快速变化的国内市场多么艰难。随着财务压力加大，皇明创始人黄鸣...<hr/> <a href="http://www.ftchinese.com/comments/index/001079170" target="_blank">总共有 25 条读者评论</a> ]]></description>
-      <link>http://www.ftchinese.com/story/001079170</link>
-      <pubDate>Wed, 29 Aug 2018 05:42:57 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[百胜中国拒绝170亿美元收购报价]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/0/000080120_piclink.jpg"/><br>杰西卡•戴伊,詹姆斯•丰塔内拉汗,阿尔什•马苏迪,纽约,伦敦报道
- <br><p>据知情人士透露，在亚洲最大经济体经营必胜客(Pizza Hut)、塔可钟(Taco Bell)和肯德基(KFC)快餐连锁店的百胜中国(Yum China)，拒绝了私募股权财团提出的170亿美元收购要约。</p>
-<p>由香港投资公司高瓴资本(Hillhouse Capital)牵头的财团提出，以每股46美元的价格收购这家总部位于上海、在美国上市的公司。这比周一百胜中国的收盘价溢价近30%。<... ]]></description>
-      <link>http://www.ftchinese.com/story/001079169</link>
-      <pubDate>Wed, 29 Aug 2018 02:51:55 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[美国称将继续举行美韩军事演习]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/8/000080118_piclink.jpg"/><br>卡特里娜•曼森华盛顿报道
- <br><p>特朗普(Trump)政府表示将继续与韩国进行军事演习。外界日益担心，华盛顿与朝鲜的无核化谈判陷入了僵局。</p>
-<p>美国国防部长吉姆•马蒂斯(Jim Mattis)周二向记者们表示：“我们目前没有计划暂停更多的军事演习。”</p>
-<p>美国总统唐纳德•特朗普(Donald Trump)在今年6月与朝鲜领导人金正恩(Kim Jong Un)会晤后表示，“我们将停止（与韩国的）战争游戏”。... ]]></description>
-      <link>http://www.ftchinese.com/story/001079168</link>
-      <pubDate>Wed, 29 Aug 2018 02:43:45 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[非洲暴露“跨越式发展”局限性]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/9/000080109_piclink.jpg"/><br>戴维•皮林开普敦报道
- <br><p>Kotiogo Ng’usilo仍然清楚地记得他第一次看见汽车时的情景。那是在上世纪50年代，身为肯尼亚茅森林(Mau Forest) Ogiek部落的狩猎采集者的他，还以为那是一栋“移动的房子”。</p>
-<p>如今Ng’usilo已经86岁了，尽管他仍然试图保持狩猎采集者的生活方式（采食蜂蜜、偷偷猎捕偶尔现身的蹄兔），但他已经与时俱进了。他穿着西方人的衣服，在市场上购买食物，而且像他年轻... ]]></description>
-      <link>http://www.ftchinese.com/story/001079161</link>
-      <pubDate>Tue, 28 Aug 2018 22:21:48 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[美股继续保持上涨势头]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/0/000065530_piclink.jpg"/><br>马姆塔•巴德卡报道
- <br><p>虽然美国股市周二午盘失去了早先的一些动力，但在美墨贸易谈判周一取得突破后继续停留在创纪录区间。</p>
-<p>周二早盘首次开于2900点上方的标准普尔500指数(S&P 500)，略涨0.03%，至2897.52点的新纪录，延续了历史上最长的牛市。</p>
-<p>房地产业是唯一上涨的主要板块，医疗和科技板块则持平。原材料和电信板块领跌标普500指数，分别下跌约0.4%和0.3%。</p>
-<... ]]></description>
-      <link>http://www.ftchinese.com/story/001079167</link>
-      <pubDate>Tue, 28 Aug 2018 22:13:54 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[特朗普抨击谷歌“左翼媒体偏见”]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/0/000075350_piclink.jpg"/><br>卡齐姆•舒伯,纳奥米•罗夫尼克华盛顿,伦敦报道
- <br><p>美国总统唐纳德•特朗普(Donald Trump)周二上午对谷歌(Google)进行了猛烈抨击，指责这家搜索引擎公司在其颇具影响力的新闻聚合服务上压制有关他的正面新闻。</p>
-<p>美国总统呼应了保守派和另类右翼的长期抱怨，即硅谷科技集团抱有政治偏见。他声称，在关于他的新闻搜索中，96%的结果来自“左翼全国媒体”。</p>
-<p>“谷歌和其他一些网站正在压制保守派的声音，屏蔽正面的信息和新... ]]></description>
-      <link>http://www.ftchinese.com/story/001079166</link>
-      <pubDate>Tue, 28 Aug 2018 21:38:16 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[顺风车事件后，网约车市场该向何处走？]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/6/000062686_piclink.jpg"/><br>陈永伟为FT中文网撰稿
- <br><p>滴滴顺风车女乘客被害事件引来了舆论的撕裂，在得知一条鲜活的生命在一再拖延中绝望逝去后，我有一种出离愤怒的感觉，于是在几个群里表达了对滴滴的不满。几位朋友很奇怪，为什么我这个一贯来支持平台、在各种场合呼吁包容平台，甚至被一些网友批“为平台洗地”的人，这次竟公然加入了声讨滴滴的行列。一位“市场派”的朋友则气愤地私信我：“怎么这次你也糊涂，走上了平台和市场的对立面？”</p>
-<p><b>滴滴的不...<hr/> <a href="http://www.ftchinese.com/comments/index/001079154" target="_blank">总共有 13 条读者评论</a> ]]></description>
-      <link>http://www.ftchinese.com/story/001079154</link>
-      <pubDate>Tue, 28 Aug 2018 21:26:16 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[金砖国家向世界特别是美国指明经济全球化的好处]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/8/000080108_piclink.jpg"/><br>刘晓明为英国《金融时报》撰稿
- <br><p>当前，经济全球化遭遇逆风，民粹排外思潮沉渣泛起，单边主义、保护主义愈演愈烈，世界正站在何去何从的十字路口。不久前，金砖国家领导人齐聚南非约翰内斯堡，以第四次工业革命为着眼点，审时谋势，鉴往知来，以金砖精神促合作、谋发展，以实际行动为世界指明了前行的方向。</p>
-<p>首先，以合作共赢推动经济全球化进程。经济全球化已成为不可逆转的时代潮流，人类已经成为你中有我、我中有你的命运共同体。面对人工...<hr/> <a href="http://www.ftchinese.com/comments/index/001079162" target="_blank">总共有 17 条读者评论</a> ]]></description>
-      <link>http://www.ftchinese.com/story/001079162</link>
-      <pubDate>Tue, 28 Aug 2018 21:13:01 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[复星在继续收购之际保持利润增长]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/3/000066483_piclink.jpg"/><br>唐•温兰香港报道
- <br><p>收购意识较强的中国投资集团复星国际(Fosun International)在2018年上半年实现净利润68.6亿元人民币（合10亿美元），同比增长17%。在此期间该公司继续在中国和海外收购资产，与同行形成对比。</p>
-<p>在地中海俱乐部(Club Med)和太阳马戏团(Cirque du Soleil)持有股份的该集团，利润增长与往年相比明显减速。去年同期其利润飙升33.6%。</p>... ]]></description>
-      <link>http://www.ftchinese.com/story/001079165</link>
-      <pubDate>Tue, 28 Aug 2018 21:08:36 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[滴滴：将把安全置于增长之上]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/4/000077044_piclink.jpg"/><br>杰西卡•戴伊纽约报道
- <br><p>中国叫车巨头滴滴出行(Didi Chuxing)表示，将不再以规模和增长作为公司发展的衡量尺度，而是以安全作为核心的考核指标。此前，4个月内两名女乘客被杀害引发了政府机构和用户的强烈反弹。</p>
-<p>无论按估值还是按注册司机人数计算，滴滴都是全球最大叫车平台，该公司周二发布了一份痛悔声明，写道：“我们知道，归根结底是我们的好胜心盖过了初心。在短短几年里，我们靠着激进的业务策略和资本的力量... ]]></description>
-      <link>http://www.ftchinese.com/story/001079164</link>
-      <pubDate>Tue, 28 Aug 2018 20:57:34 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[中国开始解除赴韩旅游团禁令]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/5/000068915_piclink.jpg"/><br>汤姆•汉考克,Wang Xueqiao,布赖恩•哈里斯,Kang Buseong上海,首尔报道
- <br><p>中国旅游公司正在恢复组织前往韩国的旅游团。这类旅游去年暂停，当时北京和首尔之间因为后者决定安装美国弹道导弹防御系统而发生争执。</p>
-<p>此举是首尔与北京关系解冻的最新迹象，这一趋势已提振韩国对华出口和韩国汽车在华销量。</p>
-<p>为抗议首尔方面安装美国制造的“末段高空区域防御系统”（THAAD，中文简称：萨德），去年北京方面命令旅游公司停止销售热门的赴韩旅游团。这一禁令导致中国人对... ]]></description>
-      <link>http://www.ftchinese.com/story/001079163</link>
-      <pubDate>Tue, 28 Aug 2018 20:51:36 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[中国模式不适合非洲]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/0/000069800_piclink.jpg"/><br>卢克•佩蒂为英国《金融时报》撰稿
- <br><p>非洲领导人下周将齐聚北京，参加中非合作论坛(Forum on China Africa Co-operation)。在这个三年一届的峰会上，中国会做出登上新闻头条的援助和融资承诺，这些承诺巩固了中国作为非洲最重要经济合作伙伴的地位，同时在这个经常被西方政府忽视的地区促进了新的政治和军事合作。</p>
-<p>近10年前，中国超越美国，成为非洲最大贸易伙伴国。去年，中国与非洲的双向贸易达到170...<hr/> <a href="http://www.ftchinese.com/comments/index/001079143" target="_blank">总共有 15 条读者评论</a> ]]></description>
-      <link>http://www.ftchinese.com/story/001079143</link>
-      <pubDate>Tue, 28 Aug 2018 17:08:04 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[抖腾大战不可避免]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/6/000076556_piclink.jpg"/><br>刘旷为FT中文网撰稿
- <br><p>长江后浪推前浪，一代新人胜旧人。短视频行业的发展，俨然是一部新旧势力快速更迭史。秒拍的上半场神话终结于快手，快手缔造的神话也正逐渐被抖音打破。</p>
-<p><b>难敌头条系短视频崛起速度，快手慢慢掉队</b></p>
-<p>今年运营圈有一个很火的词叫“增长黑客”，常被用来形容抖音的爆发性增长，抖音上半年的日活复合增长率达到29.7%，为全网最高。在抖音迅猛攻势下，昔日的王者快手正迅速被赶超... ]]></description>
-      <link>http://www.ftchinese.com/story/001079134</link>
-      <pubDate>Tue, 28 Aug 2018 16:18:12 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[中国消费之谜：升级还是降级？]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/6/000076126_piclink.jpg"/><br>沈建光
- <br><p>当前中国经济的讨论中，有关消费升级还是降级的辩论十分激烈。支持消费升级的提出，中国消费对GDP贡献持续加大，上半年接近八成；教育、医疗、旅游等服务类消费持续提升；高端消费品、海外购物十分旺盛等证据支持消费升级。持有消费降级的则表示，年初以来，社会消费品零售增速大幅回落；互联网二手转让平台，低价消费品销售平台火爆；大量P2P爆雷的同时居民收入增速下降等现象均说明消费行为出现明显的降级趋势。</...<hr/> <a href="http://www.ftchinese.com/comments/index/001079150" target="_blank">总共有 42 条读者评论</a> ]]></description>
-      <link>http://www.ftchinese.com/story/001079150</link>
-      <pubDate>Tue, 28 Aug 2018 16:15:35 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[地方债风险权重调整的政策意义]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/5/000051635_piclink.jpg"/><br>蔡浩为FT中文网撰稿
- <br><p><b>【编者按】近两年债市的调整深度已经超过2013年去杠杆（6月开始）所引发的债市调整，未来中国债市将走向何方？为此，FT中文网推出“<a href="http://www.ftchinese.com/search/?keys=%E8%94%A1%E6%B5%A9&type=default&category=" target=_blank>去杠杆下债市观察</a>”系列文章，也欢迎广大读者... ]]></description>
-      <link>http://www.ftchinese.com/story/001079155</link>
-      <pubDate>Tue, 28 Aug 2018 16:11:31 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[课外教育的亚当•斯密模式和凯恩斯模式：从“最严禁补令”谈起]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/5/000077195_piclink.jpg"/><br>李静为FT中文网撰稿
- <br><p>不久前，国务院发布了《关于规范校外培训机构发展的意见》，其中包括“坚决禁止应试、超标、超前培训及与招生入学挂钩的行为”，“不得一次性收取时间跨度超过3个月的费用”等等。该意见被有关媒体称为最严“禁补令”，不光很多上市的教育机构股价很“受伤”，很多老师和家长朋友也不知所措。笔者认为，孩子教育问题有如社会经济发展，也存在着两种发展模式之辩：亚当•斯密模式和凯恩斯模式。</p>
-<p>经济学家许小... ]]></description>
-      <link>http://www.ftchinese.com/story/001079157</link>
-      <pubDate>Tue, 28 Aug 2018 16:09:20 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[中国在非洲的成功在于尊重市场逻辑]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/4/000074084_piclink.jpg"/><br>寿慧生为FT中文网撰稿
- <br><p>随着非洲市场的不断扩大，中西方国家在非洲的投资和援助不断增长，双方对投资和援助方式的冲突日益明显，成为阻碍合作、推进非洲发展的巨大障碍。西方舆论对中国在非洲的疑虑是多层面的。一方面源于中国在非洲的利益本身具有复杂多样性，但更重要的是双方的视角和逻辑有根本不同。中国的实践遵循市场逻辑，而西方的评价更多基于价值观和意识形态。有必要梳理这两种不同视角和逻辑，求同存异，为中国与西方国家在非洲的合作提...<hr/> <a href="http://www.ftchinese.com/comments/index/001079158" target="_blank">总共有 15 条读者评论</a> ]]></description>
-      <link>http://www.ftchinese.com/story/001079158</link>
-      <pubDate>Tue, 28 Aug 2018 16:07:14 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[FT社评：南非为何需要“土改”？]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/4/000044504_piclink.jpg"/><br>社评
- <br><p>南非进行涉及种族问题的土地重新分配时最不需要的，就是美国总统唐纳德•特朗普(Donald Trump)和各种白人至上主义者以极其歪曲的言辞干预。遗憾的是，这正是特朗普上周发推文要求他的国务卿调查“农场没收和征用以及大规模杀害农民”时所做的事情。</p>
-<p>一个直接后果是兰特贬值。另一个是进一步激起由土地分配不均唤醒的种族紧张局势，土地分配不均是种族隔离留下的最具爆炸性的遗产之一。</p>... ]]></description>
-      <link>http://www.ftchinese.com/story/001079160</link>
-      <pubDate>Tue, 28 Aug 2018 16:05:06 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[滴滴之弊：被扭曲的共享经济]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/6/000080096_piclink.jpg"/><br>周健为FT中文网撰稿
- <br><p>最近，俞敏洪在一个企业家论坛上讲，“在解决一个痛点的同时，带来了无数其他的痛点，这样的商业模式自然不会受到大家欢迎。”</p>
-<p>现在，共享经济概念下的滴滴顺风车、P2P金融、众筹平台、共享单车等诸多商业模式，都在中国经历着“解决一个问题，带来更多问题”的尴尬局面。</p>
-<p>共享经济建立在移动互联网快速的信息传递与协同能力之上，一个层面是将过去分布式的社会资源，以点对点的方式组织起...<hr/> <a href="http://www.ftchinese.com/comments/index/001079152" target="_blank">总共有 18 条读者评论</a> ]]></description>
-      <link>http://www.ftchinese.com/story/001079152</link>
-      <pubDate>Tue, 28 Aug 2018 07:15:54 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[土耳其警告美国对土制裁将助长恐怖主义]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/2/000080092_piclink.jpg"/><br>劳拉•皮特尔,哈丽雅特•阿格纽安卡拉,巴黎报道
- <br><p>土耳其财政部长贝拉特•阿尔巴伊拉克（Berat Albayrak，文首图右）周一对唐纳德•特朗普(Donald Trump)发出了严正警告，称美国对土耳其的制裁可能会助长恐怖主义、加剧难民危机。</p>
-<p>阿尔巴伊拉克在访问巴黎期间表示，美国为迫使土耳其释放一名被拘留的美国牧师而对土耳其采取的惩罚措施可能会产生负面影响，从而破坏全球安全和安保。</p>
-<p>他表示，对土耳其采取的这些措... ]]></description>
-      <link>http://www.ftchinese.com/story/001079153</link>
-      <pubDate>Tue, 28 Aug 2018 05:26:11 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[Lex专栏：中国约束房企海外融资的背后]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/3/000080093_piclink.jpg"/><br>Lex专栏
- <br><p>中国房地产开发商正受到约束。今夏早些时候，监管机构宣布，正在商议是否堵上一个让开发商和地方政府能够利用的海外融资漏洞。</p>
-<p>开发商对信贷的巨大渴求，与他们“预售”未建成楼盘的习惯有关。销售和现金流滞后于相应的开发成本，有时好几年才能收回成本，而信贷弥合了这一缺口。在某个特定年份，合同销售量增长越快，销售收入与开发支出之间的缺口就越大。例如，在之前的两个自然年中，广州富力地产(R&F... ]]></description>
-      <link>http://www.ftchinese.com/story/001079151</link>
-      <pubDate>Tue, 28 Aug 2018 04:16:51 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[延禧攻略击中软阶层社会痒点]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/8/000079118_piclink.jpg"/><br>徐瑾
- <br><p>你看《延禧攻略》大结局了么？</p>
-<p>且慢，别以为走错了《徐瑾经济人》专栏页面，这的确是我最近在思考的一件事，为什么《延禧攻略》那么火？流行剧火爆背后，其实可以一窥软阶层社会的时代变迁。</p>
-<p>老段子说，多尔衮入关，从此为中国电视剧产业立下汗马功劳。说起来，宫廷政治是东方专制的特产，宫斗戏更是特异变种。十多年前，香港无线TVB《金枝欲孽》播出，引领了新一代宫斗戏的热潮，随后20...<hr/> <a href="http://www.ftchinese.com/comments/index/001079109" target="_blank">总共有 52 条读者评论</a> ]]></description>
-      <link>http://www.ftchinese.com/story/001079109</link>
-      <pubDate>Tue, 28 Aug 2018 02:36:29 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[新技术如何影响工业机器人的未来？]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/7/000066707_piclink.jpg"/><br>王璟瑜为FT中文网撰稿
- <br><p>在2017年意大利的一场歌剧演出中，著名男高音歌唱家安德烈•波切利并不是全场关注的焦点，因为演出中出现了另一位明星：担任演出指挥的工业机器人公司ABB制造的双臂机器人YuMi。除了担任指挥，这款在人机协作方面有突破性表现的机器人还曾展示过DJ表演、泡咖啡等等复杂的动作。设计这款机器人的初始目的，是为了满足消费电子行业对柔性生产和灵活制造的需求。</p>
-<p>ABB如何看待工业互联网、人工智... ]]></description>
-      <link>http://www.ftchinese.com/story/001079065</link>
-      <pubDate>Mon, 27 Aug 2018 22:04:46 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[乐高的数字化尝试]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/7/000075307_piclink.jpg"/><br>理查德•米尔恩比隆报道
- <br><p>新款的红色得宝(Duplo)火车看起来并不像是一款革命性的产品。这款为2岁及以上的幼童设计的火车可以在轨道上来回推动。</p>
-<p>但对世界上最赚钱的玩具制造商、丹麦家族企业乐高(Lego)而言，这是一款很关键的产品。乐高试图通过这款售价60欧元的乐高积木套装，在其所属的传统实体游戏世界与iPad和智能手机的数字游戏世界之间架起一座桥梁。这款火车可以用手推的方式启动，也可以通过在手机应用中... ]]></description>
-      <link>http://www.ftchinese.com/story/001079031</link>
-      <pubDate>Mon, 27 Aug 2018 21:37:48 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[诺基亚获5亿欧元贷款用于5G研发]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/4/000067194_piclink.jpg"/><br>驻北欧记者理查德•米尔恩报道
- <br><p>诺基亚(Nokia)已经与欧洲投资银行（European Investment Bank，简称“EIB”）签署了5亿欧元的贷款协议。目前欧洲当局正寻求为境内一些大型科技公司提供支持，帮助他们与中国竞争对手争夺5G移动网络的主导地位。</p>
-<p>欧洲投资银行向诺基亚提供了一笔为期5年的贷款，帮助其研发5G技术。几个月前，EIB向瑞典爱立信(Ericsson)提供了一笔贷款，在同一技术领域向... ]]></description>
-      <link>http://www.ftchinese.com/story/001079149</link>
-      <pubDate>Mon, 27 Aug 2018 21:34:03 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[特朗普“马戏表演”的背后]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/5/000079585_piclink.jpg"/><br>爱德华•卢斯
- <br><p>孩子们最爱的马戏是那些转移他们注意力的表演。当小丑出来时，孩子们眼里别无他物。他们很少注意到背景中的场景变化。大象可能会被空中飞人取代。吞火者者取代了狮子。但孩子们的眼里仍然只有聚光灯下的小丑。</p>
-<p>唐纳德•特朗普(Donald Trump)是我们这个时代的马戏大师。自这位美国总统上台以来，他推翻了美国的监管文化。他的前首席策略师史蒂夫•班农(Steve Bannon)将此描述为“... ]]></description>
-      <link>http://www.ftchinese.com/story/001079142</link>
-      <pubDate>Mon, 27 Aug 2018 21:28:45 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[联合国呼吁以种族灭绝罪起诉缅甸军方指挥官]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/1/000080091_piclink.jpg"/><br>记者报道
- <br><p>联合国(UN)旗下机构在一份措辞严厉的报告中呼吁以种族灭绝罪起诉攻击少数民族罗兴亚人的缅甸武装部队领导层，报告还谴责缅甸文职领导人昂山素季(Aung San Suu Kyi)未能制止暴力行动。</p>
-<p>联合国人权理事会(UN Human Rights Council)任命的调查团周一得出结论称，缅甸多名高级将领必须为他们在若开邦(Rakhine)以及这个东南亚国家的其他邦犯下的屠杀、酷... ]]></description>
-      <link>http://www.ftchinese.com/story/001079147</link>
-      <pubDate>Mon, 27 Aug 2018 21:25:52 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[好莱坞一中资制片公司被债权人接管]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/3/000069473_piclink.jpg"/><br>桑晓霓香港报道
- <br><p>以结合好莱坞魔力与中国市场力量为目标的投资集团Tang Media Partners旗下一个部门在违反贷款协议条件后，已由银行家接管。</p>
-<p>在洛杉矶和上海两地办公的Tang Media，由商人、前贝尔斯登(Bear Stearns)银行家唐伟(Donald Tang)在2015年成立。该投资集团得到初期筹款活动的提振，筹资活动吸引了中国一些领先投资者，包括黎瑞刚的华人文化产业投资基...<hr/> <a href="http://www.ftchinese.com/comments/index/001079148" target="_blank">总共有 12 条读者评论</a> ]]></description>
-      <link>http://www.ftchinese.com/story/001079148</link>
-      <pubDate>Mon, 27 Aug 2018 21:19:21 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[美国无法阻止中国攀登科技阶梯]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/0/000080090_piclink.jpg"/><br>金奇
- <br><p>某一天，这一幕也许会出现在美化的宣传图中。长江上水气氤氲，习近平登上象征着中国工程实力的宜昌三峡(Three Gorges)水电站坝顶，宣布中国将通过自力更生成为一个科技超级大国。</p>
-<p>今年4月，这位中国国家主席面对一群身着蓝色工作服、面带微笑的工人发表讲话。但其言论直指白宫，后者正吹响对华贸易战的号角。</p>
-<p>“过去我们勒紧裤腰带，咬紧牙关，还创造了两弹（原子弹和氢弹）一... ]]></description>
-      <link>http://www.ftchinese.com/story/001079144</link>
-      <pubDate>Mon, 27 Aug 2018 21:14:48 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[美墨NAFTA谈判取得突破]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/5/000079835_piclink.jpg"/><br>詹姆斯•波利提华盛顿报道
- <br><p>美国和墨西哥更新《北美自由贸易协定》(NAFTA)的努力取得突破，自唐纳德•特朗普(Donald Trump)上台以来两国关系陷入的不和僵局有望结束。</p>
-<p>美国总统特朗普昨日表示，美墨两国官员已就修订后的协定初步达成一致，该协定将更名为《美墨贸易协定》(United States-Mexico trade agreement)。</p>
-<p>尚不清楚NAFTA的第三个合作伙伴加拿... ]]></description>
-      <link>http://www.ftchinese.com/story/001079146</link>
-      <pubDate>Mon, 27 Aug 2018 21:14:27 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[用华为打败华为（上）]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/1/000075201_piclink.jpg"/><br>周掌柜
- <br><p>访谈华为消费者业务大中华区的过去两年里，很多场景挥之不去。智能手机，也许是当今中国竞争最为激烈的创新赛道，从城市到乡村，从线上到线下，从跨国巨头到互联网新贵，没有弱者，却遍地是失败者的骸骨，没有胆小鬼，但一次胜利往往短暂的浮现即被时间淹没。本文我们聚焦华为手机在中国的崛起，力求呈现更多不为人知的往事，讲述就从三位山西“老江湖”开始。</p>
-<p>老王，太原梦幻手机城的骨灰级老板，一位拥有2...<hr/> <a href="http://www.ftchinese.com/comments/index/001079133" target="_blank">总共有 21 条读者评论</a> ]]></description>
-      <link>http://www.ftchinese.com/story/001079133</link>
-      <pubDate>Mon, 27 Aug 2018 21:14:26 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[如何理解顺风车争议中的“社交原罪”？]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/5/000061715_piclink.jpg"/><br>寇竹卿为FT中文网撰稿
- <br><p>今年五月郑州空姐李明珠被顺风车司机杀害，滴滴信誓旦旦地宣布要整改，并且关闭了深夜至凌晨时段的接单系统，还描绘出一键报警、视频报警等在途安全报障的蓝图。8月24日，温州赵姓女孩遭到顺风车司机杀害，多数人这才幡然警醒：原来这些承诺全是未兑付的空头支票。</p>
-<p>比较三个月内滴滴卷入的两次舆论风波，可以明显看出温州女孩的被害激起了更加强烈的质疑。原因很简单，滴滴在这起悲剧的发展过程中，更突出...<hr/> <a href="http://www.ftchinese.com/comments/index/001079137" target="_blank">总共有 29 条读者评论</a> ]]></description>
-      <link>http://www.ftchinese.com/story/001079137</link>
-      <pubDate>Mon, 27 Aug 2018 21:13:50 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[中美贸易谈判低调重启：如何探寻和解之道？]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/2/000077352_piclink.jpg"/><br>梁国勇为FT中文网撰稿
- <br><p>自2018年7月中美贸易战爆发以来， 500亿美元的关税措施已经生效，后续2000亿美元的清单也已走完听证程序。数月以来，两国间的正式谈判陷于停滞。最新消息显示，中国商务部副部长兼国际贸易谈判副代表王受文应邀于8月22至23日率团访美，与美方代表团就双方关注的经贸问题进行了“建设性、坦诚的交流”。值得注意的是，中方的新闻稿显示“中美双方将就下一步安排保持接触”，而美方则表示“将向更高级别官员...<hr/> <a href="http://www.ftchinese.com/comments/index/001079125" target="_blank">总共有 17 条读者评论</a> ]]></description>
-      <link>http://www.ftchinese.com/story/001079125</link>
-      <pubDate>Mon, 27 Aug 2018 21:13:20 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[软银将向众安保险科技业务投资1亿美元]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/4/000078124_piclink.jpg"/><br>唐•温兰香港报道
- <br><p>软银(SoftBank)的愿景基金(Vision Fund)将投资1亿美元扩大中国在线保险公司众安(ZhongAn)的科技业务。</p>
-<p>这只1000亿美元的投资基金在过去三年撼动了科技投资世界，它将拥有该业务的多数股权，并计划将众安的技术用于其在全球的多项投资，如优步(Uber)和它的中国竞争对手滴滴出行(Didi Chuxing)。众安也将对合资企业投资1亿美元。</p>
-<p>众... ]]></description>
-      <link>http://www.ftchinese.com/story/001079145</link>
-      <pubDate>Mon, 27 Aug 2018 21:04:13 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[私有化风波之后，特斯拉面对烂摊子]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/0/000079670_piclink.jpg"/><br>香农•邦德,詹姆斯•丰塔内拉汗,彼得•坎贝尔旧金山,纽约,伦敦报道
- <br><p>埃隆•马斯克(Elon Musk)将特斯拉私有化的梦只持续了17天，但这短暂的17天可能会永远改变这家汽车制造商。</p>
-<p>8月7日，马斯克在Twitter上表示，他正在考虑让公司从公开市场退市并且已经“拿到了”资金，这条推文令市场大吃一惊。</p>
-<p>该公司股价上涨高达10%，但随后又回落，同时到处都在议论这样一项交易到底如何以及能否达成。据知情人士透露，美国证交会(SEC)启动... ]]></description>
-      <link>http://www.ftchinese.com/story/001079140</link>
-      <pubDate>Mon, 27 Aug 2018 17:33:46 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[香港马会的慈善捐赠之道]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/9/000080089_piclink.jpg"/><br>康河信香港报道
- <br><p>赛马在香港人的生活中占有重要地位，当年英国准备将香港主权移交给中国时，邓小平特意向人们保证，以后“马照跑”。对于自1997年以来每个比赛之夜挤进跑马地(Happy Valley)体育场的人来说，这位已故的中国领导人兑现了承诺。</p>
-<p>拥挤而嘈杂，成千上万的投注者挤在泛光灯照明的跑道周围，跑马地的赛马是香港岛的盛事。它也是香港赛马会（Jockey Club，简称马会）的核心业务。香港马... ]]></description>
-      <link>http://www.ftchinese.com/story/001079141</link>
-      <pubDate>Mon, 27 Aug 2018 17:05:43 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[澳大利亚融入亚洲的虚与实]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/2/000064522_piclink.jpg"/><br>许善品为FT中文网撰稿
- <br><p>20世纪80-90年代，澳大利亚曾经热情提倡融入亚洲，热切希望获得亚洲国家身份，而并不满足于仅仅提升与亚洲国家经贸联系、获得亚洲市场。1989年，在澳大利亚的大力倡导下，亚太经合组织在堪培拉正式成立，澳大利亚融入亚洲达到新高度。1993年，时任总理基廷宣布：澳大利亚不再作为“（大英）帝国的一个分部”，需要“全面融入亚洲”。</p>
-<p>进入新世纪后，澳大利亚融入亚洲的热情有所消褪，甚至引起... ]]></description>
-      <link>http://www.ftchinese.com/story/001079139</link>
-      <pubDate>Mon, 27 Aug 2018 16:34:33 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[Brandless是美版拼多多吗？]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/2/000079192_piclink.jpg"/><br>陈歆磊，李嘉怡为FT中文网撰稿
- <br><p>依靠拼水果起家的拼多多，在迅速扩张的三年里一直深处争议之中。虽然在7月底成功以19美元发行价上市，但是截至2018年8月24日，其收盘价格为17.22美元，已经破发。在其上市次日，国内外媒体轮番曝光拼多多销售山寨、假冒产品； 8月1日，上海工商局对拼多多约谈。不仅如此，包括Bronstein, Gewirtz & Grossman等在内的六家美国律所宣布将对拼多多进行集体诉讼，以追回投资者们... ]]></description>
-      <link>http://www.ftchinese.com/story/001079131</link>
-      <pubDate>Mon, 27 Aug 2018 16:21:09 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[中美贸易战：警惕“修昔底德陷阱”视角陷阱]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/5/000079685_piclink.jpg"/><br>樊磊
- <br><p>8月24日，中国商务部就备受瞩目的中美贸易谈判发布公告，虽然公告宣称“（中美）双方就双方关注的经贸问题进行了建设性、坦诚的交流”，并就“下一步安排保持接触”，但是很显然会谈并没有取得实质性的进展。</p>
-<p>笔者以为，推进中美贸易谈判乃至双边关系的一个潜在障碍在于过度的从修昔底德陷阱的角度解读双方矛盾。例如一些中国媒体强调在美国国际交往逻辑里，存在一个“60%定律”：“当另一个国家经济规...<hr/> <a href="http://www.ftchinese.com/comments/index/001079136" target="_blank">总共有 29 条读者评论</a> ]]></description>
-      <link>http://www.ftchinese.com/story/001079136</link>
-      <pubDate>Mon, 27 Aug 2018 16:08:57 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[高温退下后，气候传播该做些什么？]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/0/000078070_piclink.jpg"/><br>武毅秀
- <br><p>“北极冻土融化，封存的巨型病毒或将复苏”，“或许在我们有生之年，再也看不到北极熊了” ，“44.4度！乾隆爷遭遇史上最高温”（编辑注：两部清宫主题网剧正在中国热播）……这个夏天，围绕着高温现象产生的热帖、甚至“段子”出现了井喷。</p>
-<p>于是，我们这些气候传播人的认知也在受到挑战。一直以来，气候变化不好“卖”恐怕是全世界传播工作者的共识。这不难理解：气候科学艰涩难懂，气候谈判理解起来也... ]]></description>
-      <link>http://www.ftchinese.com/story/001079138</link>
-      <pubDate>Mon, 27 Aug 2018 16:03:20 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[人工智能的C端风口上有多少个“李鬼”？]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/4/000072994_piclink.jpg"/><br>苏娅
- <br><p>自2017年人工智能成为国家级支持产业以来，关于人工智能的产品 “忽如一夜春风来，千树万树梨花开”；从小冰、贤二机器僧到机场商店里的智能音箱、陪伴机器人，似乎《机器人总动员》里贴心的瓦力正在向我们招手，名目繁多人工智能产品让消费者目不暇接。然而，这是否是一个真正的风口？在这个风口上有多少打着人工智能旗号的“李鬼“？笔者认为，中国的人工智能消费者类产品还处在初级的系统集成阶段，仍然需要进一步加... ]]></description>
-      <link>http://www.ftchinese.com/story/001079127</link>
-      <pubDate>Mon, 27 Aug 2018 12:00:12 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[马来西亚禁止外国人购买“森林城市”公寓]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/9/000080079_piclink.jpg"/><br>斯特凡尼娅•帕尔马新加坡报道
- <br><p>马来西亚总理马哈蒂尔•穆罕默德(Mahathir Mohamad)周一表示，该国柔佛州一处中资地产项目的公寓不得出售给外国人。</p>
-<p>近来，马哈蒂尔加大了对马来西亚国内中资项目的打压力度，他称这些项目的合同为“不平等条约”。马来西亚的执政联盟已暂停价值约240亿美元的中资基建项目，包括东海岸铁路(East Coast Rail Link)和三条油气管道。</p>
-<p>这并不是马哈蒂...<hr/> <a href="http://www.ftchinese.com/comments/index/001079135" target="_blank">总共有 42 条读者评论</a> ]]></description>
-      <link>http://www.ftchinese.com/story/001079135</link>
-      <pubDate>Mon, 27 Aug 2018 09:21:45 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[亚洲约会软件背后的复杂文化]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/5/000080065_piclink.jpg"/><br>路易丝•卢卡斯
- <br><p>18世纪的保守思想家约瑟夫•德•迈斯特(Joseph de Maistre)说，每个国家都得到了其应得的政府。也许，在现代世界，每个社会都得到了其应得的技术——尤其是约会时。</p>
-<p>以马来西亚为例，那里的社会风气非常保守，当地政府去年取消了一个啤酒节，而当局也异常腐败，在对其前总理纳吉布•拉扎克(Najib Razak)的家宅进行突击搜查时，搜出了价值2.75亿美元的名牌手袋、手表和... ]]></description>
-      <link>http://www.ftchinese.com/story/001079116</link>
-      <pubDate>Mon, 27 Aug 2018 08:24:56 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[海航偿还上周五到期债券的10亿元人民币本金]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/0/000080080_piclink.jpg"/><br>韩碧如,张祺,北京报道
- <br><p>业务范围从航空到金融的中国综合企业海航集团(HNA)，于本周一偿还了一笔债券10亿元人民币（合1.47亿美元）的本金。这笔债券本应在上周五偿付，海航称未能如期偿付的原因是银行间转账系统问题。</p>
-<p>偿还本金让海航在千钧一发之际过关，这可能是海航迄今最惊险的一刻。在2017年第四季度的一场流动性危机中，海航曾推迟偿债、或是将债务展期。根据海航的企业声明和汤森路透(Thomson Reu... ]]></description>
-      <link>http://www.ftchinese.com/story/001079132</link>
-      <pubDate>Mon, 27 Aug 2018 07:47:12 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[中国工业企业利润增长放缓]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/5/000080075_piclink.jpg"/><br>白艾德台北报道
- <br><p>今年7月，中国规模以上工业企业利润增长连续第3个月放缓，这是世界第二大经济体所承受压力日渐增大的最新迹象。</p>
-<p>根据中国国家统计局的数据，7月份，中国规模以上工业企业的利润同比增长16.2%，而6月份利润同比增长20%。</p>
-<p>中国国家统计局的数据显示，今年头7个月，包括钢铁制造商在内，黑色金属生产商的利润增长97.8%。但同期汽车制造商的利润仅增长1.6%，电子设备制造商... ]]></description>
-      <link>http://www.ftchinese.com/story/001079130</link>
-      <pubDate>Mon, 27 Aug 2018 05:14:39 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[俄罗斯钻石巨头埃罗莎寻求中国市场增长]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/0/000080070_piclink.jpg"/><br>汤姆•汉考克上海报道
- <br><p>全球最大钻石矿商埃罗莎(Alrosa)正加大对华营销投入，随着中国市场恢复强劲增长，埃罗莎试图在该市场赶上竞争对手戴比尔斯(De Beers)。</p>
-<p>这家俄罗斯国有企业去年在中国卖出了价值1.8亿美元的钻石。</p>
-<p>该公司首席执行官谢尔盖•伊万诺夫(Sergey Ivanov)表示：“这还不到埃罗莎全球销售额的5%，不过这仅仅是个开始。”</p>
-<p>去年担当此任的伊万诺... ]]></description>
-      <link>http://www.ftchinese.com/story/001079129</link>
-      <pubDate>Mon, 27 Aug 2018 04:20:20 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[二手房东惹的祸，金融资本不背锅]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/2/000068952_piclink.jpg"/><br>徐薇为FT中文网撰稿
- <br><p>中国房价未落房租又涨。先是长租公寓运营商被指“抢房”垄断市场引发房租急涨，后杭州住宅租赁企业“鼎家”又曝资金链断裂跑路。舆论沸腾了， “崩盘”、“爆仓”这类投资术语不绝于耳，把长租公寓项目跟P2P非法资金池联系起来，吵成一锅粥。</p>
-<p>情绪宣泄过度容易混淆是非，总结经验教训还是要从厘清黑白开始。最基本的，先从法律关系分析，看看法律保护什么、约束什么。</p>
-<p>虽然合法的关系不见... ]]></description>
-      <link>http://www.ftchinese.com/story/001079110</link>
-      <pubDate>Mon, 27 Aug 2018 04:20:20 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[中国医改提振跨国药企在华销售额]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/1/000080071_piclink.jpg"/><br>汤姆•汉考克,Wang Xueqiao,上海报道
- <br><p>虽然中国政府迫使全球最大制药公司下调畅销药品价格，但它们对在华业务感到乐观，原因是扩大的国家医保和加快的审批提振了它们在中国这个全球第二大药品市场的销售。</p>
-<p>在华销售额最大的两家海外制药公司——阿斯利康(AstraZeneca)和辉瑞(Pfizer)均表示，上季度在华销售额同比增长24%。</p>
-<p>与去年分别为15%和16%的增幅相比，这是一次大幅提高。阿斯利康首席执行官帕... ]]></description>
-      <link>http://www.ftchinese.com/story/001079128</link>
-      <pubDate>Mon, 27 Aug 2018 04:11:08 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[中国网购兴旺带火物流行业]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/7/000077927_piclink.jpg"/><br>Emily Feng北京报道
- <br><p>中国电商巨头在方方面面都展开了竞争，从客户数据到与零售商签订的独家合同。</p>
-<p>现在，这种竞争正在传导到线下的物流网络和仓储领域，主要运营商花费数百万美元获取优越的仓库位置，以减少宝贵的商品交付时间。</p>
-<p>仲量联行(JLL)中国工业部门负责人斯图尔特•罗斯(Stuart Ross)表示：“仓储和物流行业真的在追随消费的增长态势。中国消费者的网上消费达到了世界最高水平。”</... ]]></description>
-      <link>http://www.ftchinese.com/story/001079117</link>
-      <pubDate>Mon, 27 Aug 2018 01:47:14 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[优步将把短途出行重点转向自行车]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/5/000076325_piclink.jpg"/><br>香农•邦德旧金山报道
- <br><p>据叫车应用优步(Uber)的首席执行官介绍，作为其长期战略的一部分，该公司正计划将短途出行的重点从汽车转向电动自行车和滑板车。</p>
-<p>达拉•霍斯劳沙希(Dara Khosrowshahi)表示，更为个人化的交通方式更适合市内出行，尽管这么做会抢走优步司机的收入。他承认，短期而言，此举将意味着这家去年亏损45亿美元的公司遭受进一步的财务打击。</p>
-<p>在优步备受期待的上市之前，霍... ]]></description>
-      <link>http://www.ftchinese.com/story/001079119</link>
-      <pubDate>Mon, 27 Aug 2018 01:42:46 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[滴滴下线“顺风车”业务]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/9/000061639_piclink.jpg"/><br>韩碧如北京报道
- <br><p>中国叫车服务公司滴滴出行(Didi Chuxing)在今年第二次发生女乘客被谋杀的案件后，暂停了其“顺风车”服务。</p>
-<p>温州的一名20岁女子上周五在搭顺风车期间遭到强奸和杀害。此前，5月份一名空姐在使用这项服务时被杀。</p>
-<p>最新案件的背景是，随着更多服务在线签约，中国国内围绕企业和政府对个人数据的处理展开一场更广泛的辩论。</p>
-<p>该公司在周日发布的一份声明中表示：...<hr/> <a href="http://www.ftchinese.com/comments/index/001079120" target="_blank">总共有 23 条读者评论</a> ]]></description>
-      <link>http://www.ftchinese.com/story/001079120</link>
-      <pubDate>Mon, 27 Aug 2018 01:41:04 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[电动车电池：用什么替代钴？]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/6/000080066_piclink.jpg"/><br>孙德生波士顿报道
- <br><p>在距离波士顿一小时车程外的一个工业园的实验室里，塔夫茨大学(Tufts)教授迈克尔•齐默尔曼(Michael Zimmerman)希望他在地下室发明的一种材料，可以帮助解决电动汽车行业面临的危机，该行业在不经意间把自己的命运与全球最贫穷且最不稳定的国家之一捆绑在一起。</p>
-<p>在教学间隙，齐默尔曼经营着初创企业“离子材料”(Ionic Materials)，该公司的电池材料可能标志着汽... ]]></description>
-      <link>http://www.ftchinese.com/story/001079115</link>
-      <pubDate>Mon, 27 Aug 2018 01:39:23 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[特劳特邓德隆：中国企业在贸易战时代的生存之道]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/8/000079968_piclink.jpg"/><br>王丰
- <br><p>8月23日，美中两国副部级官员在华盛顿举行的贸易谈判无果而终。当天早些时候，两国原计划中的第二轮“关税炮火”——向对方价值160亿美元商品加征关税，已经打响。这场贸易战将按早已张扬的排兵布阵计划，继续走向深入，短期内难见缓解迹象；各界分析人士对其持续时间的预期，早已从“月”为单位过渡到“年”。贸易战对于中国宏观经济和各个产业的影响，已经有汗牛充栋的分析；但是从微观层面，每家中国企业应该如何应... ]]></description>
-      <link>http://www.ftchinese.com/story/001079104</link>
-      <pubDate>Mon, 27 Aug 2018 01:33:21 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[社会学家能否解决数字时代难题？]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/3/000078143_piclink.jpg"/><br>吉莲•邰蒂
- <br><p>最近，Facebook与美国非营利组织“社会科学研究委员会”(Social Science Research Council)展开一项引人注目的新试验，该组织支持心理学、社会学和人类学等学科的研究。</p>
-<p>几个月前，这家硅谷科技巨擘宣布，将在社会科学研究委员会和一家名为Social Science One的新的独立学术组织的指导下，允许学者申请获得其20亿用户数据的访问权限。这代表着... ]]></description>
-      <link>http://www.ftchinese.com/story/001079118</link>
-      <pubDate>Mon, 27 Aug 2018 00:21:52 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[美联储官员：越来越多的美国企业拟转嫁关税成本]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/0/000065380_piclink.jpg"/><br>萨姆•弗莱明杰克逊霍尔报道
- <br><p>美联储(Federal Reserve)政策制定者警告称，在这家美国央行寻求保持通胀稳定之际，美国企业将唐纳德•特朗普(Donald Trump)总统的关税成本转嫁给消费者的举措，可能会使货币政策决策复杂化。</p>
-<p>亚特兰大联邦储备银行(Atlanta Fed)行长拉斐尔•博斯蒂克(Raphael Bostic)对英国《金融时报》表示，他认为美国正处于消费者开始感受到钢铝等产品关税上... ]]></description>
-      <link>http://www.ftchinese.com/story/001079123</link>
-      <pubDate>Sun, 26 Aug 2018 21:49:42 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[印度批准65亿美元军备采购]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/8/000076848_piclink.jpg"/><br>艾米•卡兹明新德里报道
- <br><p>印度政府已批准购买65亿美元军事装备，包括111架海军直升机。在亚洲军备竞赛不断升级的背景下，新德里方面正寻求升级其日趋老化的国防装备。</p>
-<p>此举出炉之际，印度总理纳伦德拉•莫迪(Narendra Modi)领导的政府在履行其承诺的2500亿美元军事现代化支出方面正面临困难，一些新装备购买计划受到严格的竞标条件阻碍，还有一连串招标被放弃。</p>
-<p>莫迪在三年前决定取消126架... ]]></description>
-      <link>http://www.ftchinese.com/story/001079124</link>
-      <pubDate>Sun, 26 Aug 2018 21:35:26 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[Lex专栏：蔚来的真正对手]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/9/000080069_piclink.jpg"/><br>Lex专栏
- <br><p>蔚来(Nio)在美国上市的推销词听上去相当熟悉。这家电动汽车企业是一位有着国际抱负的电商企业家的心血。李斌(William Bin Li)看起来仿佛很可以顺势取代埃隆•马斯克(Elon Musk)，如果后者将特斯拉(Tesla)私有化的话。</p>
-<p>遗憾的是，中国的马斯克追随者和拉斯维加斯的猫王(Elvis)模仿者一样多。中国号称拥有数百家电动汽车初创企业。蔚来中文名称意为“蓝天即将来... ]]></description>
-      <link>http://www.ftchinese.com/story/001079122</link>
-      <pubDate>Sun, 26 Aug 2018 21:25:56 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[美国共和党元老麦凯恩逝世]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/3/000064153_piclink.jpg"/><br>记者报道
- <br><p>美国共和党参议员约翰•麦凯恩(John McCain)在与癌症进行了漫长的斗争后于上周六离世，世界各国领导人纷纷表示哀悼。</p>
-<p>这位曾经的总统候选人去年夏天被诊断出患有恶性脑瘤，在去世前一天，他的家人宣布他将停止治疗。</p>
-<p>巴拉克•奥巴马(Barack Obama)在一篇缅怀麦凯恩的文章中称：“我们中很少有人经历过约翰曾经历过的考验，也很少有人被要求展示他那样的勇气。”奥... ]]></description>
-      <link>http://www.ftchinese.com/story/001079121</link>
-      <pubDate>Sun, 26 Aug 2018 21:20:06 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[侵入美国选举网站的少年黑客]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/3/000065523_piclink.jpg"/><br>汉娜•库赫勒
- <br><p>11岁的比安卡(Bianca)留着卷卷的棕色波波头，穿着紧身裤，她想让我知道民主正处在危险之中。她刚刚侵入一个仿制的州选举网站，目的是展示在投票日更改投票结果是多么容易。</p>
-<p>“我是为美国以及全世界这么做的。如果孩子们可以入侵选举系统，你需要改变些东西，”她说，“如果我们不修复现在，未来将统统被毁灭。”</p>
-<p>比安卡是在今年夏季拉斯维加斯举行的黑客大会Def Con上试图攻... ]]></description>
-      <link>http://www.ftchinese.com/story/001079114</link>
-      <pubDate>Sun, 26 Aug 2018 21:15:31 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[租金之痛，宣告软阶层社会来临]]></title>
-      <description><![CDATA[ <img src="http://i.ftimg.net/picture/1/000052961_piclink.jpg"/><br>徐瑾
- <br><p>一叶知秋。</p>
-<p>近期北京租金突然暴涨，引发关注，真实原因尚待更多考察，单纯基于中介的垄断抬价难以完全解释，北京政府在拆除违章建筑方面的努力或许也助力不少。网间众说纷纭，不意外的是打击“黑中介”的激愤之语。在媒体报道中，年入数十万以上的白领或者中产，在租金上涨面前仿佛如被重拳击倒。不少人对于这类报道的第一反应则是，租房也算中产？比起租金上涨的新闻本身，新闻背后的中产生存状态更耐人寻味...<hr/> <a href="http://www.ftchinese.com/comments/index/001079053" target="_blank">总共有 60 条读者评论</a> ]]></description>
-      <link>http://www.ftchinese.com/story/001079053</link>
-      <pubDate>Sun, 26 Aug 2018 17:54:10 GMT</pubDate>
     </item>
   </channel>
 </rss>
