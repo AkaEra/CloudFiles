@@ -69,9 +69,7 @@
   "outboundDetour": [
     {
       "protocol": "freedom",
-      "settings": {
-        "response": null
-      },
+      "settings": {},
       "tag": "direct"
     },
     {
