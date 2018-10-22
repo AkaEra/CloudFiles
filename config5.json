@@ -6,12 +6,16 @@
   },
   "inbound": {
     "port": 1080,
-    "listen": "0.0.0.0",
+    "listen": "127.0.0.1",
     "protocol": "socks",
     "settings": {
       "auth": "noauth",
       "udp": true,
       "ip": "127.0.0.1"
+    },
+    "sniffing": {
+      "enabled": true,
+      "destOverride": ["tls", "http"]
     }
   },
   "outbound": {
@@ -62,7 +66,12 @@
       "security": null,
       "tcpSettings": null,
       "kcpSettings": null,
-      "wsSettings": null
+      "wsSettings": null,
+      "httpSettings": null,
+      "dsSettings": null,
+      "sockopt": {
+        "tcpFastOpen": true
+      }
     },
     "mux": {
       "enabled": false

@@ -6,12 +6,16 @@
   },
   "inbound": {
     "port": 1080,
-    "listen": "0.0.0.0",
+    "listen": "127.0.0.1",
     "protocol": "socks",
     "settings": {
       "auth": "noauth",
       "udp": true,
       "ip": "127.0.0.1"
+    },
+    "sniffing": {
+      "enabled": true,
+      "destOverride": ["tls", "http"]
     }
   },
   "outbound": {
@@ -25,8 +29,9 @@
           "users": [
             {
               "id": "03042ad7-6316-46a0-8473-65768b0f1fb2",
-              "alterId": 64,
-              "security": "aes-128-gcm"
+              "alterId": 0,
+              "security": "aes-128-gcm",
+              "level": 1
             }
           ]
         },
@@ -36,8 +41,9 @@
           "users": [
             {
               "id": "03042ad7-6316-46a0-8473-65768b0f1fb2",
-              "alterId": 64,
-              "security": "aes-128-gcm"
+              "alterId": 0,
+              "security": "aes-128-gcm",
+              "level": 1
             }
           ]
         },
@@ -47,8 +53,9 @@
           "users": [
             {
               "id": "03042ad7-6316-46a0-8473-65768b0f1fb2",
-              "alterId": 64,
-              "security": "aes-128-gcm"
+              "alterId": 0,
+              "security": "aes-128-gcm",
+              "level": 1
             }
           ]
         }
@@ -62,6 +69,11 @@
       "wsSettings": {
         "connectionReuse": true,
         "path": "/na"
+      },
+      "httpSettings": null,
+      "dsSettings": null,
+      "sockopt": {
+        "tcpFastOpen": true
       }
     },
     "mux": {
