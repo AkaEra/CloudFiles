@@ -1,6 +1,6 @@
 ﻿// Created by Aka
 
-var proxy = "SOCKS5 127.0.0.1:1080";
+var proxy = "SOCKS5 127.0.0.1:1080; HTTPS www.copyplay.net:443";
 
 var rules = [
   "|http://85.17.73.31/",
