@@ -15,6 +15,9 @@
 ! or suggestion / enhancement at issue tracker:
 ! https://github.com/gfwlist/gfwlist/issues/.
 
+!-- Added by Aka --
+||v2ray.com
+
 !---------403/451/520 & URL Redirects---------
 !--ehentai
 |http://85.17.73.31/
@@ -6989,7 +6992,6 @@ uygur.org
 
 !--------------------VV-------------------------
 .v2ray.com
-||v2ray.com
 !|http://v2ray.com
 .van001.com
 .van698.com
