@@ -4,84 +4,85 @@
     "error": "Verror.log",
     "loglevel": "debug"
   },
-  "inbound": {
-    "port": 1080,
-    "listen": "127.0.0.1",
-    "protocol": "socks",
-    "settings": {
-      "auth": "noauth",
-      "udp": true,
-      "ip": "127.0.0.1"
-    },
-    "sniffing": {
-      "enabled": true,
-      "destOverride": ["tls", "http"]
-    }
-  },
-  "outbound": {
-    "tag": "agentout",
-    "protocol": "vmess",
-    "settings": {
-      "vnext": [
-        {
-          "address": "jp.ohmyv2.win",
-          "port": 80,
-          "users": [
-            {
-              "id": "03042ad7-6316-46a0-8473-65768b0f1fb2",
-              "alterId": 0,
-              "security": "aes-128-gcm",
-              "level": 1
-            }
-          ]
-        },
-        {
-          "address": "us.ohmyv2.win",
-          "port": 80,
-          "users": [
-            {
-              "id": "03042ad7-6316-46a0-8473-65768b0f1fb2",
-              "alterId": 0,
-              "security": "aes-128-gcm",
-              "level": 1
-            }
-          ]
-        },
-        {
-          "address": "vus.ohmyv2.win",
-          "port": 80,
-          "users": [
-            {
-              "id": "03042ad7-6316-46a0-8473-65768b0f1fb2",
-              "alterId": 0,
-              "security": "aes-128-gcm",
-              "level": 1
-            }
-          ]
-        }
-      ]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "security": "",
-      "tcpSettings": null,
-      "kcpSettings": null,
-      "wsSettings": {
-        "connectionReuse": true,
-        "path": "/na"
+  "inbounds": [
+    {
+      "port": 10808,
+      "listen": "127.0.0.1",
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "ip": "127.0.0.1"
       },
-      "httpSettings": null,
-      "dsSettings": null,
-      "sockopt": {
-        "tcpFastOpen": true
+      "sniffing": {
+        "enabled": true,
+        "destOverride": ["tls", "http"]
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "agentout",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "jp.ohmyv2.win",
+            "port": 80,
+            "users": [
+              {
+                "id": "03042ad7-6316-46a0-8473-65768b0f1fb2",
+                "alterId": 0,
+                "security": "aes-128-gcm",
+                "level": 1
+              }
+            ]
+          },
+          {
+            "address": "us.ohmyv2.win",
+            "port": 80,
+            "users": [
+              {
+                "id": "03042ad7-6316-46a0-8473-65768b0f1fb2",
+                "alterId": 0,
+                "security": "aes-128-gcm",
+                "level": 1
+              }
+            ]
+          },
+          {
+            "address": "vus.ohmyv2.win",
+            "port": 80,
+            "users": [
+              {
+                "id": "03042ad7-6316-46a0-8473-65768b0f1fb2",
+                "alterId": 0,
+                "security": "aes-128-gcm",
+                "level": 1
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "",
+        "tcpSettings": null,
+        "kcpSettings": null,
+        "wsSettings": {
+          "connectionReuse": true,
+          "path": "/na"
+        },
+        "httpSettings": null,
+        "dsSettings": null,
+        "sockopt": {
+          "tcpFastOpen": true
+        }
+      },
+      "mux": {
+        "enabled": true
       }
     },
-    "mux": {
-      "enabled": true
-    }
-  },
-  "inboundDetour": null,
-  "outboundDetour": [
     {
       "protocol": "freedom",
       "settings": {},
@@ -112,6 +113,16 @@
         {
           "type": "field",
           "port": null,
+          "outboundTag": "agentout",
+          "ip": null,
+          "domain": [
+            "www.v2ray.com",
+            "services.googleapis.cn"
+          ]
+        },
+        {
+          "type": "field",
+          "port": null,
           "outboundTag": "direct",
           "ip": [
             "0.0.0.0/8",
@@ -130,7 +141,12 @@
             "fc00::/7",
             "fe80::/10",
             "geoip:cn"
-          ],
+          ]
+        },
+        {
+          "type": "field",
+          "port": null,
+          "outboundTag": "direct",
           "domain": [
             "geosite:cn"
           ]

@@ -4,81 +4,82 @@
     "error": "Verror.log",
     "loglevel": "debug"
   },
-  "inbound": {
-    "port": 1080,
-    "listen": "127.0.0.1",
-    "protocol": "socks",
-    "settings": {
-      "auth": "noauth",
-      "udp": true,
-      "ip": "127.0.0.1"
-    },
-    "sniffing": {
-      "enabled": true,
-      "destOverride": ["tls", "http"]
+  "inbounds": [
+    {
+      "port": 10808,
+      "listen": "127.0.0.1",
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "ip": "127.0.0.1"
+      },
+      "sniffing": {
+        "enabled": true,
+        "destOverride": ["tls", "http"]
+      }
     }
-  },
-  "outbound": {
-    "tag": "agentout",
-    "protocol": "shadowsocks",
-    "settings": {
-      "servers": [
-        {
-          "address": "jp.ohmyv2.win",
-          "port": 81,
-          "password": "namaho.org+LNVTU",
-          "method": "chacha20-ietf-poly1305",
-          "ota": false,
-          "email": "v2rayn@v2ray.com",
-          "level": 1
-        },
-        {
-          "address": "us.ohmyv2.win",
-          "port": 81,
-          "password": "namaho.org+LNVTU",
-          "method": "chacha20-ietf-poly1305",
-          "ota": false,
-          "email": "v2rayn@v2ray.com",
-          "level": 1
-        },
-        {
-          "address": "jp.ohmyv2.win",
-          "port": 19680,
-          "password": "namaho.org+A2018",
-          "method": "chacha20-ietf-poly1305",
-          "ota": false,
-          "email": "v2rayn@v2ray.com",
-          "level": 1
-        },
-        {
-          "address": "us.ohmyv2.win",
-          "port": 19680,
-          "password": "namaho.org+A2018",
-          "method": "chacha20-ietf-poly1305",
-          "ota": false,
-          "email": "v2rayn@v2ray.com",
-          "level": 1
+  ],
+  "outbounds": [
+    {
+      "tag": "agentout",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "jp.ohmyv2.win",
+            "port": 81,
+            "password": "namaho.org+LNVTU",
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "email": "v2rayn@v2ray.com",
+            "level": 1
+          },
+          {
+            "address": "us.ohmyv2.win",
+            "port": 81,
+            "password": "namaho.org+LNVTU",
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "email": "v2rayn@v2ray.com",
+            "level": 1
+          },
+          {
+            "address": "jp.ohmyv2.win",
+            "port": 19680,
+            "password": "namaho.org+A2018",
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "email": "v2rayn@v2ray.com",
+            "level": 1
+          },
+          {
+            "address": "us.ohmyv2.win",
+            "port": 19680,
+            "password": "namaho.org+A2018",
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "email": "v2rayn@v2ray.com",
+            "level": 1
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": null,
+        "tcpSettings": null,
+        "kcpSettings": null,
+        "wsSettings": null,
+        "httpSettings": null,
+        "dsSettings": null,
+        "sockopt": {
+          "tcpFastOpen": true
         }
-      ]
-    },
-    "streamSettings": {
-      "network": "tcp",
-      "security": null,
-      "tcpSettings": null,
-      "kcpSettings": null,
-      "wsSettings": null,
-      "httpSettings": null,
-      "dsSettings": null,
-      "sockopt": {
-        "tcpFastOpen": true
+      },
+      "mux": {
+        "enabled": false
       }
     },
-    "mux": {
-      "enabled": false
-    }
-  },
-  "inboundDetour": null,
-  "outboundDetour": [
     {
       "protocol": "freedom",
       "settings": {},
@@ -109,6 +110,16 @@
         {
           "type": "field",
           "port": null,
+          "outboundTag": "agentout",
+          "ip": null,
+          "domain": [
+            "www.v2ray.com",
+            "services.googleapis.cn"
+          ]
+        },
+        {
+          "type": "field",
+          "port": null,
           "outboundTag": "direct",
           "ip": [
             "0.0.0.0/8",
@@ -127,7 +138,12 @@
             "fc00::/7",
             "fe80::/10",
             "geoip:cn"
-          ],
+          ]
+        },
+        {
+          "type": "field",
+          "port": null,
+          "outboundTag": "direct",
           "domain": [
             "geosite:cn"
           ]
