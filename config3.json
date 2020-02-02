@@ -27,7 +27,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "jp.ohmyv2.win",
+            "address": "jp.v234.xyz",
             "port": 80,
             "users": [
               {
@@ -39,7 +39,7 @@
             ]
           },
           {
-            "address": "us.ohmyv2.win",
+            "address": "us.v234.xyz",
             "port": 80,
             "users": [
               {
@@ -51,7 +51,7 @@
             ]
           },
           {
-            "address": "vus.ohmyv2.win",
+            "address": "vus.v234.xyz",
             "port": 80,
             "users": [
               {

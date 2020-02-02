@@ -27,7 +27,7 @@
       "settings": {
         "servers": [
           {
-            "address": "jp.ohmyv2.win",
+            "address": "jp.v234.xyz",
             "port": 81,
             "password": "namaho.org+LNVTU",
             "method": "chacha20-ietf-poly1305",
@@ -36,7 +36,7 @@
             "level": 1
           },
           {
-            "address": "us.ohmyv2.win",
+            "address": "us.v234.xyz",
             "port": 81,
             "password": "namaho.org+LNVTU",
             "method": "chacha20-ietf-poly1305",
@@ -45,7 +45,7 @@
             "level": 1
           },
           {
-            "address": "jp.ohmyv2.win",
+            "address": "jp.v234.xyz",
             "port": 19680,
             "password": "namaho.org+A2018",
             "method": "chacha20-ietf-poly1305",
@@ -54,7 +54,7 @@
             "level": 1
           },
           {
-            "address": "us.ohmyv2.win",
+            "address": "us.v234.xyz",
             "port": 19680,
             "password": "namaho.org+A2018",
             "method": "chacha20-ietf-poly1305",
